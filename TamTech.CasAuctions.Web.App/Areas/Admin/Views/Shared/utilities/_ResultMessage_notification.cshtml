@@ -1,0 +1,99 @@
+﻿
+@if (ViewData != null)
+{
+    if (ViewData["SuccessResultMode"] != null && (bool)ViewData["SuccessResultMode"] == true)
+    {
+      
+        <script>
+            $notification.success("Success", "@ViewData["SuccessModel"]",5000);
+        </script>
+    }
+    else if (ViewData["ErrorResultMode"] != null && (bool)ViewData["ErrorResultMode"] == true && !ViewData.ModelState.IsValid)
+    {
+
+        foreach (var error in ViewData.ModelState)
+        {
+            foreach (var value in error.Value.Errors)
+            {
+               
+                <script>
+                    $notification.error("error", "@value.ErrorMessage",5000);
+                </script>
+            }
+        }
+
+
+        @*foreach (var error in ViewData.ModelState.Errors)
+            {
+                <div class="alert alert-danger" role="alert">
+                    <strong></strong> @error.ErrorMessage
+                </div>
+            }*@
+    }
+    else if (ViewData["ExpResultMode"] != null && (bool)ViewData["ExpResultMode"] == true && !ViewData.ModelState.IsValid)
+    {
+        foreach (var error in ViewData.ModelState)
+        {
+            foreach (var value in error.Value.Errors)
+            {
+                
+                <script>
+            $notification.error("Exception", "@value.ErrorMessage",5000);
+                </script>
+            }
+
+        }
+
+    }
+    else if (ViewData["WarningResultMode"] != null && (bool)ViewData["WarningResultMode"] == true)
+    {
+        if (!ViewData.ModelState.IsValid)
+        {
+            foreach (var error in ViewData.ModelState)
+            {
+                foreach (var value in error.Value.Errors)
+                {
+                    
+                    <script>
+            $notification.warning("Warning", "@value.ErrorMessage",5000);
+                    </script>
+                }
+            }
+        }
+        else
+        {
+            
+            <script>
+            $notification.warning("Warning", "@ViewData["SuccessModel"]");
+            </script>
+
+        }
+    }
+    else if (ViewData["InfoResultMode"] != null && (bool)ViewData["InfoResultMode"] == true)
+    {
+        if (!ViewData.ModelState.IsValid)
+        {
+            foreach (var error in ViewData.ModelState)
+            { 
+                foreach (var value in error.Value.Errors)
+                {
+                    <script>
+            $notification.info("Information", "@value.ErrorMessage",5000);
+                    </script>
+                }
+            }
+        }
+        else
+        {
+            <h1>InfoResultMode</h1>
+            <script>
+            $notification.info("Information", "@ViewData["SuccessModel"]",5000);
+            </script>
+
+        }
+    }
+    else
+    {
+       
+    }
+}

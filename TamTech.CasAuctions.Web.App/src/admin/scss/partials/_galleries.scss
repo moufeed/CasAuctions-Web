@@ -1,0 +1,411 @@
+
+.s-summary{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 430px; 
+}
+ 
+.gi-header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding:0 0 3px 0;
+    @media screen and (max-width : 767px){
+        flex-direction: column;
+    }
+    .actions{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .btn{
+            margin: 0 2px;
+            height: 35px;
+            width: 35px;
+            text-align: center;
+            padding: 0;
+            line-height: 35px;
+            .fa{
+                margin: 0px;
+            }
+            &:hover{
+                background: $yellow;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.gi-card{
+    display:   flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 220px; 
+    margin: 10px 0;
+    border: 1px solid #e1e1e1;
+    padding: 0 10px;
+    @media screen and (max-width : 767px){
+        flex-direction: column;
+        height:auto; 
+    }
+
+
+    
+    
+
+    .gi-image{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        background: #f7f7f7;
+        position: relative;
+        perspective: 350px;
+        @media screen and (max-width : 767px){
+            width: auto;
+            height:auto; 
+        }
+        &:after{
+            position: absolute;
+            top: calc(50% - 30px);
+            left: calc(50% - 30px);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%; 
+            display:   flex;
+            justify-content: center;
+            align-items: center;
+            font-family: FontAwesome;
+            content: '\f00e';
+            background: rgba(#000,.8);
+            color: #fff;
+            font-size: 20px;
+            transform: rotateX(90deg);
+            opacity: 0;
+            transition: transform .4s , opacity .5s;
+        }
+        img{
+            max-width: 95%;
+            max-height: 95%;
+
+        }
+    }
+
+    .gi-info{
+        width: calc(100% - 220px);
+        h3{
+            font-size: 17px;  
+        }
+        @media screen and (max-width : 767px){
+            width:100%;
+        }
+        > h3{
+            font-weight: bolder;
+             
+        }
+    }
+    .gi-meta{
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        padding: 5px 0;
+        color: #666;
+        span{
+            display: inline-block; 
+            margin: 0 5px; 
+            i{margin: 0 5px; }
+        }
+    }
+    .gi-suumary{
+        max-height: 140px;
+        overflow: auto;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 5px 0;
+        @media screen and (max-width : 767px){ 
+            
+            height:auto; 
+            max-height: none;
+        }
+    } 
+
+    &:hover{
+        .gi-image:after{
+            opacity: 1;
+            transform: rotateX(360deg);
+        }
+    }
+}
+//------------------------------------------------------------------------------------------
+
+.gi-figure{
+    position: relative;
+    overflow: hidden;
+    background:#f7f7f7;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 250px;
+    display:flex;
+    justify-content: center;
+    img{
+        position: relative;
+        display: block;
+        height: 100%;
+        //max-width: 100%;
+        margin: auto;
+    }
+    .date{
+         float: left;
+	    transition: transform 0.35s;
+        transform: translate3d(0,200%,0);
+        position: relative;
+        display:inline-block;
+        line-height: 35px;
+    }
+    figcaption{
+        text-transform: uppercase;
+        backface-visibility: hidden;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;
+        padding: 10px;
+        height: 50px; 
+        background: #f7f7f7; 
+        color: #3c4a50;
+        transition: transform 0.35s;
+        transform: translate3d(0,100%,0);
+    }
+    p{
+        letter-spacing: 1px;
+        font-size: 68.5%;
+        margin: 0;
+    }
+    .icon-links a{
+        float: right;
+        color: $textColor;
+         
+        transition: transform 0.35s;
+        transform: translate3d(0,200%,0);
+        margin: 0 1px;  
+        padding: 5px;
+        height: 35px;
+        width: 35px; 
+        background: transparent; 
+        line-height: 23px;
+        border-radius: 50%;
+        transition: all .2s;
+        &:hover{
+            color: #fff;
+            &.btn-link-edit{
+                color: darken($orange, 5%);
+                background: rgba($orange ,.4);
+            }
+            &.unpublished {
+                color: darken($green, 15%);
+                background: rgba($green ,.4);
+            }
+            &.published {
+                color: darken($yellow, 15%);
+                background: rgba($yellow ,.4);
+            }
+            &.btn-link-delete{
+                color: darken($red, 5%);
+                background: rgba($red ,.4);  
+            }
+        }
+    }
+    .title{
+        position: absolute;
+        top: 35px;
+        width: 100%;
+        color: $textColor;
+        text-transform: none;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.45s ,transform 0.35s;
+        backface-visibility: hidden;
+        transform: translate3d(0,-100%,0); 
+        line-height: 26px; 
+        span{
+            background: rgba(#fff,.9);
+            padding: 5px;
+        }
+    }
+
+    &:hover{ 
+        box-shadow: 0 2px 0 -1px rgba(#000,0.1);
+        figcaption , .icon-links a ,.title ,.date{
+            transform: translate3d(0,0,0);
+        }
+        .title{
+            opacity: 1;   
+        }
+        .date{
+             
+            transition-delay: 0.05s;
+        }
+        p.icon-links a{
+            &:nth-child(3) {
+               
+                transition-delay: 0.1s;
+            }
+            &:nth-child(2) {
+                
+                transition-delay: 0.15s;
+            }
+            &:first-child {
+                
+                transition-delay: 0.2s;
+            }
+        }
+    }
+}
+ 
+
+
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+.gallery_item{
+    margin: 15px 0;
+    background: #fff;
+    
+    
+    figure{
+        width: 100%;
+        height: 250px;
+        background: darken(#fff,5%);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-height: 100%;
+        } 
+
+        i{
+            position: absolute;
+            z-index: 10;
+            font-size: 25px;
+            color: rgba(255, 255, 255, 0.74);
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+        }
+    }
+    .info{
+        border: 1px solid #dfdfdf;
+        border-top: 0;
+        padding: 0;
+        padding-top: 15px;
+    }
+
+    h4{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 14px;
+        font-weight: bolder;
+        margin: 0 15px 15px ;
+        height: 15px;
+    }
+
+    .actions{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #dfdfdf;
+        @media  screen and ( max-width : 767px){
+            flex-direction:column; 
+
+            .btn-group  {
+                border-top: 1px solid #dfdfdf; 
+            }
+        } //media screen 767
+        
+        a{
+            margin: 0;
+            padding: 10px 12px;
+            border-top: 0;
+            border-bottom: 0; 
+            border-radius: 0 !important;
+             
+            @media screen and  (min-width : 1200px ) and (max-width : 1500px){
+                padding: 10px 6px;
+            } 
+             
+            @media  screen and ( max-width : 1024px){
+                padding: 10px 8px;
+                 
+            } 
+
+            &.btn{
+                border-color: #dfdfdf;
+                min-width: 24.7%;
+                .fa{
+                    margin: side-values(0 5px 0 0);
+                }
+                &:last-child:not(:first-child){
+                    border-#{$right}-width : 0;
+                    @media  screen and ( max-width : 767px){
+                        border-#{$right}-width : 1px ; 
+                    }
+                } 
+            }
+        }
+    }
+    .image-info{
+        //margin-#{$left}:15px;  
+        text-align: center;
+        display: inline-block;
+        min-width: 24%;
+        @media  screen and ( max-width : 767px){
+           margin: 10px 5px;
+            
+        }
+        @media screen and  (min-width : 1199px ) and (max-width : 1640px){
+            display: none;
+        } 
+    }
+}
+
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.image-thumbnail{
+    position: relative;
+    display: inline-block;
+    .btn-removeImage{
+        cursor: pointer;
+        @include absolute(top $right ,-10px);
+        background: #fff;
+        @include square(40px);
+        border-radius: 50% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 1px 11px 0 rgba(0, 0, 0, 0.34);
+        &:hover{
+            background: $red;
+            color: #fff;
+        }
+        &:active{
+            transform: scale(.95);
+        }
+     }
+}
+/*
+   <div class="">
+                                        <img src="@Model.MainImage" style="max-width:300px" class="img-thumbnail m-b3">
+                                        <a class="btn btn-link "><i class="fa fa-times"></i></a>
+                                        <input type="hidden" name="MainImage" value="@Model.MainImage" />
+                                    </div> 
+*/

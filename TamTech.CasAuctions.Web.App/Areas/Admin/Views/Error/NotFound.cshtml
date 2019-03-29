@@ -1,0 +1,129 @@
+﻿@{ 
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NotFound</title>
+    <style>
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+#notfound {
+    position: relative;
+    height: 100vh;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 560px;
+    width: 100%;
+    padding-left: 160px;
+    line-height: 1.1;
+}
+
+        .notfound .notfound-404 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-flex;
+            width: 140px;
+            height: 140px;
+            max-width: 256px;
+            max-height: 256px;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+        }
+
+.notfound .notfound-404:before {
+ content: '';
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ -webkit-transform: scale(2.4);
+         transform: scale(2.4);
+ border-radius: 50%;
+ background-color: #f2f5f8;
+ z-index: -1;
+}
+.notfound .notfound-404 img{
+    width:100%; 
+}
+.notfound h1 {
+ font-family: 'Nunito', sans-serif;
+ font-size: 65px;
+ font-weight: 700;
+ margin-top: 0px;
+ margin-bottom: 10px;
+ color: #363f6f;
+ text-transform: uppercase;
+}
+
+.notfound h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #363f6f;
+}            
+
+.notfound p {
+ font-family: 'Nunito', sans-serif;
+ color: #999fa5;
+ font-weight: 400;
+}
+
+.notfound a {
+ font-family: 'Nunito', sans-serif;
+ display: inline-block;
+ font-weight: 700;
+ border-radius: 40px;
+ text-decoration: none;
+ color: #388dbc;
+}
+
+@@media only screen and (max-width: 767px) {
+ .notfound .notfound-404 {
+   width: 110px;
+   height: 110px;.notfound .notfound-404 
+ }
+ .notfound {
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 110px;
+ }
+}
+    </style>
+</head>
+<body>
+    <div id="notfound">
+    
+        <div class="notfound">
+            <div class="notfound-404">
+                <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDM2OCAzNjgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM2OCAzNjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiPgo8Zz4KCTxnPgoJCTxnPgoJCQk8cGF0aCBkPSJNMTg0LDBDODIuNTQ0LDAsMCw4Mi41NDQsMCwxODRzODIuNTQ0LDE4NCwxODQsMTg0YzEwMS40NjQsMCwxODQtODIuNTQ0LDE4NC0xODRTMjg1LjQ2NCwwLDE4NCwweiBNMTg0LDM1MiAgICAgYy05Mi42NCwwLTE2OC03NS4zNi0xNjgtMTY4UzkxLjM2LDE2LDE4NCwxNmM5Mi42MzIsMCwxNjgsNzUuMzYsMTY4LDE2OFMyNzYuNjMyLDM1MiwxODQsMzUyeiIgZmlsbD0iIzQwNDA0MCIvPgoJCQk8cGF0aCBkPSJNMTQ0LDE1MmMwLTEzLjIzMi0xMC43NjgtMjQtMjQtMjRzLTI0LDEwLjc2OC0yNCwyNHMxMC43NjgsMjQsMjQsMjRTMTQ0LDE2NS4yMzIsMTQ0LDE1MnogTTExMiwxNTJjMC00LjQwOCwzLjU5Mi04LDgtOCAgICAgczgsMy41OTIsOCw4cy0zLjU5Miw4LTgsOFMxMTIsMTU2LjQwOCwxMTIsMTUyeiIgZmlsbD0iIzQwNDA0MCIvPgoJCQk8cGF0aCBkPSJNMjQ4LDEyOGMtMTMuMjMyLDAtMjQsMTAuNzY4LTI0LDI0czEwLjc2OCwyNCwyNCwyNHMyNC0xMC43NjgsMjQtMjRTMjYxLjIzMiwxMjgsMjQ4LDEyOHogTTI0OCwxNjAgICAgIGMtNC40MTYsMC04LTMuNTkyLTgtOHMzLjU4NC04LDgtOGM0LjQxNiwwLDgsMy41OTIsOCw4UzI1Mi40MTYsMTYwLDI0OCwxNjB6IiBmaWxsPSIjNDA0MDQwIi8+CgkJCTxwYXRoIGQ9Ik0xODQsMjI0Yy0yOS44MjQsMC01OC4yNCwxMi42MzItNzcuOTYsMzQuNjY0Yy0yLjk0NCwzLjI5Ni0yLjY2NCw4LjM1MiwwLjYyNCwxMS4yOTYgICAgIGMzLjI5NiwyLjk1Miw4LjM1MiwyLjY2NCwxMS4yOTYtMC42MjRDMTM0LjY0OCwyNTAuNjg4LDE1OC43MiwyNDAsMTg0LDI0MGMyNS4yOCwwLDQ5LjM1MiwxMC42ODgsNjYuMDQsMjkuMzM2ICAgICBjMS41NzYsMS43NjgsMy43NjgsMi42NjQsNS45NiwyLjY2NGMxLjg5NiwwLDMuODE2LTAuNjcyLDUuMzM2LTIuMDRjMy4yODgtMi45NDQsMy41NjgtOCwwLjYyNC0xMS4yOTYgICAgIEMyNDIuMjQsMjM2LjY0LDIxMy44MzIsMjI0LDE4NCwyMjR6IiBmaWxsPSIjNDA0MDQwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+            </div>
+            <h1>404</h1>
+            <h2>Oops! Page Not Be Found</h2>
+            <p>Sorry but the page you are looking for does not exist, have been removed. name changed or is temporarily unavailable</p>
+            <a href="/">Back to homepage</a>
+        </div>
+    </div>
+</body>
+</html>

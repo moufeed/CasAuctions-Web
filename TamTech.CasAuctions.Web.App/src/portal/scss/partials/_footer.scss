@@ -1,0 +1,78 @@
+  
+.main-footer{
+    background: $footer_background;
+    color: $footer_color;
+    a{
+        color: $footer_color;
+    }
+    
+.social-list{
+    a{
+        .fa {
+            background: $footer_social_link_background;
+            color: $footer_social_link_color;
+            @include square(45px);
+            @include makeflex(flex,row,center,center);
+            border-radius: 50%;
+            transition:  all .2s;
+        }
+        &:hover{
+            text-decoration: none;
+            .fa{
+                background: $white;
+                @each $i in $social-colors{
+                    &[class*="#{nth($i,1)}"]{ 
+                        color :  nth($i,2); 
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+.footer-nav{
+    margin-top:rem(25px);
+    li{
+        a{
+            text-transform: uppercase;
+            font-weight: 700;
+            position: relative;
+            display: block;
+            &:after,&:before{
+                content: '';
+                position: absolute;
+                left: 0;
+                @include size(100%,2px);
+                opacity: 0;
+                background: $footer_nav_line_color;
+                transition: opacity 0.3s, transform 0.3s;
+            }
+            &:before{
+                transform: translateY(-10px);
+                top: 0;
+            }
+            &:after{
+                transform: translateY(10px); 
+                bottom: 0;
+            }
+            &:hover{
+                &:after,&:before{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+.bootom_bar{
+    background: $bootom_bar_background;
+    color:$bootom_bar_color;
+    
+    a{
+        color: $bootom_bar_link_color;
+    }
+}
+
+ 

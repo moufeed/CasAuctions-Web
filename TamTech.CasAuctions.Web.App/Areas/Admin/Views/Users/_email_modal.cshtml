@@ -1,0 +1,43 @@
+﻿<!-- Modal -->
+<div class="modal fade" id="EmailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">@Localizer["email_to"] :  <span class="mailto"></span></h4>
+
+            </div>
+            <form asp-action="SendJsonEmail" asp-controller="Email"   id="NewEmail" class=" forn-new form-label-left  ">
+
+                <input type="hidden" name="Recipients[0]" id="Recipient" />
+                <input type="hidden" name="userName" id="userName" />
+
+                    
+                <div class="modal-body">
+
+
+
+
+                    <div class="form-group clearfix">
+                        <label for="Subject" class="control-label  mb-3">
+                            @Localizer["f_subject"] <i class="fa fa-asterisk c-red fz-10 "></i>
+                        </label>
+                        <input type="text" name="Subject" class="form-control"  id="ut-subject"  required/>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="Message" class="control-label ">
+                            @Localizer["f_massage"]<i class="fa fa-asterisk c-red fz-10 "></i>
+                        </label>
+                        <textarea name="Message" id="Message" class="form-control" rows="12" required></textarea>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">@Localizer["close"]</button>
+                    <button type="submit" class="btn btn-primary">@Localizer["send"]</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

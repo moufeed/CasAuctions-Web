@@ -1,0 +1,1715 @@
+
+#-------------------------------------------------------------------------
+#:admin panel
+#-------------------------------------------------------------------------
+
+msgid "AdminPanelWeb"
+msgstr "yönetici Paneli Web"
+
+msgid "AdminPanel"
+msgstr "yönetici Paneli"
+
+msgid "visit_public_site"
+msgstr "Genel Siteyi Ziyaret"
+
+msgid "SEO"
+msgstr "SEO"
+ 
+msgid "Add"
+msgstr "Ekle"
+
+msgid "Create"
+msgstr "Oluştur"
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "close"
+msgstr "Kapat"
+
+msgid "save"
+msgstr "Kaydet"
+
+msgid "delete"
+msgstr "Sil"
+
+msgid "cancel"
+msgstr "İptal"
+
+msgid "yes"
+msgstr "Evet"
+
+msgid "remove"
+msgstr "Sil"
+
+msgid "search"
+msgstr "Ara"
+
+msgid "reset"
+msgstr "Reset"
+
+msgid "send"
+msgstr "Gönder"
+
+msgid "Update"
+msgstr "Güncelle"
+
+msgid "Upload"
+msgstr "Yükle"
+
+msgid "edit"
+msgstr "Düzenle"
+
+msgid "back"
+msgstr "Geri"
+
+msgid  "Browse"
+msgstr "Gözat"
+
+msgid  "select"
+msgstr "Seç"
+
+msgid "filter"
+msgstr "Filtre"
+
+msgid "save_and_continue"
+msgstr "Kaydet Ve Devam Et"
+
+msgid "back_to_list"
+msgstr "Listeye Geri Dön"
+ 
+msgid "add_Item"
+msgstr "Öğe Ekle"
+ 
+msgid "title"
+msgstr "Başlık"
+
+msgid "published"
+msgstr "Yayımlanmış"
+
+msgid "unpublished"
+msgstr "Yayımlanmamış"
+
+msgid "created_date"
+msgstr "Oluşturma Tarihi"
+
+msgid "modified_date"
+msgstr "Değiştirme Tarihi"
+
+msgid "slug"
+msgstr "Slug"
+
+msgid "summary"
+msgstr "Özet"
+
+msgid "section"
+msgstr "Bölüm"
+
+msgid "image"
+msgstr "Resim"
+
+msgid "icon"
+msgstr "Simge"
+
+msgid "total"
+msgstr "Toplam"
+
+msgid "locked_by_system"
+msgstr "Sistem Tarafından Kilitlendi"
+  
+msgid "meta_keywords"
+msgstr "Meta Anahtar Kelimeleri"
+
+msgid "meta_description"
+msgstr "Meta Açıklaması"
+
+msgid "content"
+msgstr "İçerik"
+
+msgid "position"
+msgstr "Pozisyon"
+
+msgid "blocked"
+msgstr "Engellendi"
+
+msgid "active"
+msgstr "Aktif"
+
+msgid "files"
+msgstr "Dosyalar"
+
+msgid "visible"
+msgstr "Görünür"
+
+msgid "status"
+msgstr "Statü"
+
+msgid "invisible"
+msgstr "Görünmez"
+
+msgid "main_image"
+msgstr "Ana Resim"
+
+msgid "key"
+msgstr "Anahtar"
+
+msgid "manage"
+msgstr "Yönet"
+
+msgid "deleted"
+msgstr "Silindi!"
+
+msgid "confirm_title"
+msgstr "Emin Misiniz?"
+
+msgid "confirm_text"
+msgstr "Bunu Geri Alamayacaksınız!"
+
+msgid "confirm_yes"
+msgstr "Evet"
+
+msgid "Confirm_cancel"
+msgstr "İptal"
+
+msgid "characters"
+msgstr "Karakter"
+
+msgid "none"
+msgstr "Yok"
+ 
+msgid "more"
+msgstr "Daha Fazla"
+
+msgid "publish_unpublish"
+msgstr "Yayımla / Yayımlamayı İptal"
+
+msgid "total_items"
+msgstr "Toplam Öğeler :"
+
+msgid "showing_of"
+msgstr "{2} Satırdan {0} İle {1} Arası Gösterme"
+
+msgid "all"
+msgstr "Tüm"
+
+msgid "change_password"
+msgstr "Parolayı Değiştir"
+
+msgid "languages"
+msgstr "Diller"
+
+#global Forms
+
+msgid "f_title"
+msgstr "Başlık :"
+
+msgid "f_name"
+msgstr "İsim :"
+
+msgid  "f_slug"
+msgstr "Slug :"
+
+msgid  "f_section"
+msgstr "Bölüm :"
+
+msgid  "f_main_image"
+msgstr "Ana Resim :"
+
+msgid  "f_video_thumbnail"
+msgstr "Video resmi :"
+
+msgid "f_video_url"
+msgstr "Video linki :"
+
+msgid "f_video_id"
+msgstr "Video kimliği"
+
+
+msgid  "choose_file"
+msgstr "Dosya Seçin."
+ 
+msgid  "f_summary"
+msgstr "Özet :"
+ 
+msgid  "f_description"
+msgstr "Açıklama :"
+
+msgid  "f_content"
+msgstr "İçerik :"
+
+msgid  "f_meta_keywords"
+msgstr "Meta Anahtar Kelimeleri :"
+
+msgid  "f_meta_tags"
+msgstr "Anahtar Kelimeler :"
+
+msgid  "f_meta_description"
+msgstr "Meta Açıklaması :"
+
+msgid  "f_display_order"
+msgstr "Görüntüleme Sırası :"
+
+msgid "f_url"
+msgstr "Url :"
+
+msgid "f_url_target"
+msgstr "Url Target :"
+
+msgid "f_username"
+msgstr "Kullanıcı Adı :"
+
+msgid "f_email"
+msgstr "E-posta :"
+
+msgid "f_password"
+msgstr "Parola :"
+
+msgid "f_confirmpassword"
+msgstr "Parolayı Onayla :"
+
+msgid "f_phone"
+msgstr "Telefon :"
+
+msgid "f_role"
+msgstr "Rol :"
+
+msgid "f_gender"
+msgstr "Cinsiyet :"
+
+msgid "f_subject"
+msgstr "Konu :"
+
+msgid "f_recipients"
+msgstr "Alıcı :"
+
+msgid "f_massage"
+msgstr "Mesaj :"
+
+msgid "f_icon"
+msgstr "Simge :"
+
+msgid "f_sku"
+msgstr "Sku :"
+
+msgid "f_stock_quantity"
+msgstr "Stok Miktarı :"
+
+msgid "f_price"
+msgstr "Fiyat :"
+
+msgid "f_discount_price"
+msgstr "İndirimli Fiyat :"
+
+msgid "f_type"
+msgstr "Tür :"
+
+msgid "f_key"
+msgstr "Anahtar :"
+
+msgid "f_position"
+msgstr "Pozisyon :"
+
+msgid "f_public_url"
+msgstr "Genel URL :"
+
+msgid "f_created_date"
+msgstr "Oluşturma Tarihi"
+
+msgid "f_post_date"
+msgstr "Post Date"
+
+#seo form 
+
+msgid "f_headline"
+msgstr "Başlık :"
+
+msgid "f_author"
+msgstr "Yazar :"
+
+msgid "f_publisher"
+msgstr "Yayımcı :"
+
+msgid "f_brand"
+msgstr "Marka :"
+
+msgid "f_category"
+msgstr "Kategori :"
+
+msgid "f_provider"
+msgstr "Sağlayıcı :"
+
+msgid "f_keywords"
+msgstr "Anahtar Kelimeler :"
+
+msgid "f_cuisine"
+msgstr "Mutfak :"
+
+msgid "f_section_parent"
+msgstr "Bölümün Üstü :"
+
+msgid "f_company"
+msgstr "şirket :"
+
+msgid "f_job_position"
+msgstr "İş pozisyonu :"
+
+msgid "f_avater_image"
+msgstr "Resim :"
+
+msgid "f_rating"
+msgstr "Değerlendirme :"
+
+msgid "f_message"
+msgstr "Mesaj :"
+
+#global Tables
+
+msgid  "t_title"
+msgstr "Başlık"
+
+msgid  "t_name"
+msgstr "İsim"
+
+msgid  "t_description"
+msgstr "Açıklama"
+
+msgid  "t_postion"
+msgstr "Pozisyon"
+
+msgid  "t_create_date"
+msgstr "Oluşturma Tarihi"
+
+msgid  "t_modified_date"
+msgstr "Değiştirme Tarihi"
+
+msgid  "t_type"
+msgstr "Tür"
+
+msgid  "t_key"
+msgstr "Anahtar"
+
+msgid  "t_visibility"
+msgstr "Görünürlük"
+
+msgid  "t_actions"
+msgstr "İşlemler"
+
+msgid  "t_published"
+msgstr "Yayımlanmış"
+
+msgid  "t_unpublished"
+msgstr "Yayımlanmamış"
+
+msgid  "t_publish"
+msgstr "Yayımla"
+
+msgid  "t_unpublish"
+msgstr "Yayımlamayı İptal"
+
+msgid  "t_details"
+msgstr "Ayrıntılar"
+
+msgid  "t_edit"
+msgstr "Düzenle"
+
+msgid  "t_remove"
+msgstr "Sil"
+
+msgid  "t_delete"
+msgstr "Sil"
+
+msgid  "t_order"
+msgstr "Sıralama"
+
+msgid  "t_url"
+msgstr "Url"
+
+msgid  "t_username"
+msgstr "Kullanıcı Adı"
+
+msgid  "t_mobileNumber"
+msgstr "Cep Telefon Numarası"
+
+msgid  "t_email"
+msgstr "E-posta Adresi"
+
+msgid  "t_active"
+msgstr "Aktif"
+
+msgid  "t_mobile_confirmed"
+msgstr "Cep Telefon Numarasını Onaylama"
+
+msgid  "t_email_confirmed"
+msgstr "E-postayı Onaylama"
+
+msgid  "t_image"
+msgstr "Resim"
+
+msgid  "t_summary"
+msgstr "Özet"
+
+msgid  "t_display_order"
+msgstr "Görüntüleme Sırası"
+ 
+msgid  "t_sku"
+msgstr "SKU"
+ 
+msgid  "t_slug"
+msgstr "Slug"
+
+msgid  "t_quantity"
+msgstr "Miktar"
+
+msgid  "t_price"
+msgstr "Fiyat"
+
+msgid "t_discount_price"
+msgstr "İndirimli Fiyat"
+
+msgid "t_stock_quantity"
+msgstr "Stok Miktarı"
+
+msgid "t_attributes"
+msgstr "Özellikler"
+
+msgid "t_logo"
+msgstr "Logo"`
+
+msgid "t_total_items"
+msgstr "Toplam"
+
+msgid "t_section_parent"
+msgstr "Üst"
+
+msgid "t_status"
+msgstr "Statü"
+
+msgid "t_detials"
+msgstr "Ayrıntılar"
+
+msgid "t_city"
+msgstr "Şehir"
+
+msgid "t_position"
+msgstr "POZİSYON"
+
+msgid "t_section"
+msgstr "Bölümlü"
+
+
+msgid "t_company"
+msgstr "şirket"
+
+msgid "t_job_position"
+msgstr "İş pozisyonu"
+
+msgid "t_rating"
+msgstr "değerlendirme"
+
+msgid "t_message"
+msgstr "Mesaj"
+
+#labels
+
+msgid "l_full_name"
+msgstr "Ad Ve Soyad"
+
+msgid "l_name"
+msgstr "İsim"
+
+msgid "l_email"
+msgstr "E-posta"
+
+msgid "l_mobile"
+msgstr "Cep Telefonu"
+
+msgid "l_phone"
+msgstr "Telefon"
+
+msgid "l_city"
+msgstr "Şehir"
+
+msgid "l_zip_code"
+msgstr "Posta Kodu"
+
+msgid "l_address"
+msgstr "Adres"
+
+msgid "l_date"
+msgstr "Tarih"
+
+msgid "l_quantity"
+msgstr "Miktar"
+
+msgid "l_price"
+msgstr "Fiyat"
+
+msgid "l_status"
+msgstr "Statü"
+
+msgid "l_notes"
+msgstr "Notlar"
+
+
+
+# global alerts 
+ 
+msgid "success"
+msgstr "Başarı"
+
+msgid "error"
+msgstr "Hata"
+
+msgid "user_has_been_created"
+msgstr "Kullanıcı Oluşturuldu"
+
+msgid  "published_successfully"
+msgstr "Başarıyla Yayımlandı"
+
+msgid  "unpublished_successfully"
+msgstr "Yayımlamayı Başarıyla İptal Edildi"
+
+msgid  "was_successfully_published"
+msgstr "Başarıyla Yayımlandı"
+
+msgid  "was_successfully_unpublished"
+msgstr "Yayımlamayı Başarıyla İptal Edildi"
+ 
+msgid  "no_data_table"
+msgstr "Tabloda Veri Yok."
+ 
+msgid  "upload_failed"
+msgstr "<strong>Oops! </strong>&nbsp;&nbsp;Yükleme Başarısız Oldu."
+
+msgid "email_has_been_sent"
+msgstr "<strong>{0}</strong> Başlıklı E-posta <strong>{1}</strong> İsimli Olan Kullanıcıya Başarıyla Gönderildi."
+
+msgid "email_has_not_been_sent"
+msgstr "<strong>{0}</strong> Başlıklı E-posta  <strong>{1}</strong> İsimli Olan Kullanıcıya Gönderilmedi , Daha Sonra Tekrar Deneyin Veya Yöneticiyle İletişime Geçin."
+
+msgid  "are_you_sure"
+msgstr "Emin Misiniz?"
+
+msgid  "you_wont_be_able_to_revert_this"
+msgstr "Bunu Geri Alamayacaksınız!"
+
+msgid  "yse_delete"
+msgstr "Evet, Onu Sil!"
+
+msgid  "something_wrong"
+msgstr "Bir Şeyler Yanlış Gitti"
+
+msgid  "description_is_only_used_in_mobile_view"
+msgstr "Not : </strong>Bu Açıklama Sadece Mobil Görünümünde Kullanılıyor."
+ 
+msgid  "image_uploading_error"
+msgstr "Resmi Yüklenirken Bir Hata Oluştu!"
+
+msgid "service_creation_successfully"
+msgstr "Hizmet Oluşturma Başarıyla Yapıldı."
+
+msgid "slider_creation_successfully"
+msgstr "Slider Oluşturma Başarıyla Yapıldı."
+
+msgid "slider_updating_successfully"
+msgstr "Slider Güncelleme Başarıyla Yapıldı."
+ 
+msgid "gallery_item_creation_successfully"
+msgstr "galeri öğesi Oluşturma Başarıyla Yapıldı."
+
+msgid "gallery_item_updating_successfully"
+msgstr "galeri öğesi Güncelleme Başarıyla Yapıldı."
+
+msgid "deleted_successfully"
+msgstr "Başarıyla Silindi."
+
+msgid "item_deleted"
+msgstr "Öğe Silindi."
+
+msgid "block_user_from_logging_in"
+msgstr "Bu Kullanıcının Engellemesi, Giriş Yapmasını Engelleyecektir."
+
+msgid "text_will_be_truncated"
+msgstr "Dikkatli Olun! Metniniz Kesilecektir."
+
+msgid "text_count_be_more_than"
+msgstr "Metni 300 Karakterden Daha Uzundur."
+
+msgid "updateted_successfully"
+msgstr "Başarıyla Güncellendi"
+
+msgid "product_havent_attributes"
+msgstr "Bu Ürünün Herhangi Bir Özelliği Yok."
+
+msgid "exception_msg"
+msgstr "Üzgünüz, İşlem İşlenirken Bir Hata Oluştu. Lütfen Daha Sonra Tekrar Deneyin."
+
+#admin sidebar
+
+msgid "view_all"
+msgstr "Tümünü Görüntüle"
+
+msgid "all_posts"
+msgstr "Tüm Yazılar"
+
+msgid "all_sections"
+msgstr "Tüm Bölümler"
+
+msgid "Home"
+msgstr "Ana Sayfa"
+
+msgid "Pages"
+msgstr "Sayfalar"
+
+msgid "new_html_page"
+msgstr "Yeni Html Sayfa"
+
+msgid "new_section_page"
+msgstr "Yeni Bölümlü Sayfa"
+
+msgid "Menus"
+msgstr "Menüler"
+
+msgctxt "admin.Views.Shared._side_menu"
+
+msgid "Galleries"
+msgstr "Galeriler"
+
+msgid "new_gallery"
+msgstr "Yeni Galeri"
+
+msgid "Sliders"
+msgstr "Sliders"
+
+msgid "new_slider"
+msgstr "Yeni Slider"
+
+msgctxt "admin.Views.Shared._side_menu"
+
+msgid "Services"
+msgstr "Hizmetler"
+
+msgid "new_service"
+msgstr "Yeni Hizmet"
+
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "new_user"
+msgstr "Yeni Kullanıcı"
+
+msgid "Catalog"
+msgstr "Katalog"
+
+msgctxt "admin.Views.Shared._side_menu"
+
+msgid "Products"
+msgstr "Ürünler"
+
+msgid "Manufacturer"
+msgstr "Üretici"
+
+msgid "Categories"
+msgstr "Kategoriler"
+
+msgid "Reviews"
+msgstr "Yorumlar"
+
+msgid "Messages"
+msgstr "Mesajlar"
+
+msgid "requests"
+msgstr "Talepler"
+
+#: _SeoWebPage.cshtml
+msgid "page_description"
+msgstr "Sayfa Açıklaması :"
+
+msgid "page_name"
+msgstr "Sayfa İsmi :"
+
+#:_SeoService.cshtml
+msgid "service_name"
+msgstr "Hizmet İsmi :"
+
+msgid "service_description"
+msgstr "Hizmet Açıklaması :"
+
+msgid "service_provider"
+msgstr "Hizmet Sağlayıcı :"
+
+#:_SeoRecipe.cshtml
+msgid "recipe_name"
+msgstr "Yemek Tarifi İsmi:"
+
+msgid "recipe_keywords"
+msgstr "Yemek Tarifi Anahtar Kelimeleri :"
+
+msgid "recipe_description"
+msgstr "Yemek Tarifi Açıklaması :"
+
+msgid "recipe_category"
+msgstr "Yemek Tarifi Kategorisi :"
+
+msgid "recipe_cuisine"
+msgstr "Yemek Tarifi Mutfağı :"
+
+msgid "cook_time"
+msgstr "Pişirme Süresi:"
+
+msgid "prep_time"
+msgstr "Hazırlama Süresi :"
+
+msgid "total_time"
+msgstr "Toplam Süre :"
+
+msgid "time_in_minutes"
+msgstr "Dakika Cinsinden Süre :"
+
+msgid "number_of_servings"
+msgstr "Kaç Kişilik :"
+
+msgid "recipe_ingredient"
+msgstr "Yemek Tarifi Malzemeleri :"
+
+msgid "add_ingredient"
+msgstr "Malzeme Ekle"
+
+msgid "recipe_instructions"
+msgstr "Yemek Tarifi Talimatları :"
+
+msgid "add_instructions"
+msgstr "Talimat Ekle"
+
+msgid "Author"
+msgstr "Yazar :"
+
+#:_SeoProduct.cshtml
+msgid "product_name"
+msgstr "Ürün İsmi :"
+
+msgid "product_description"
+msgstr "Ürün Açıklaması :"
+
+msgid "brand_name"
+msgstr "Marka İsmi :"
+
+msgid "product_Category"
+msgstr "Ürün Kategorisi :"
+
+msgid "add_category"
+msgstr "Kategori Ekle :"
+
+#:_SeoGallery.cshtml
+msgid "gallery_name"
+msgstr "Galeri İsmi :"
+
+msgid "gallery_description"
+msgstr "Galeri Açıklaması :"
+
+msgid "gallery_author"
+msgstr "Galeri Yazarı :"
+
+#:_SeoArticle.cshtml
+msgid "article_name"
+msgstr "Makale İsmi :"
+
+msgid "article_headLine"
+msgstr "Makale Başlığı :"
+
+msgid "article_description"
+msgstr "Makale Açıklaması :"
+
+msgid "article_author"
+msgstr "Makale Yazarı :"
+
+msgid "article_publisher"
+msgstr "Makale Yayımcısı :"
+
+#:_SeoFields.cshtml
+msgid "seo_type"
+msgstr "Seo Türü :"
+
+msgid "select_type"
+msgstr "Tür Seç"
+
+msgid "seo_markup"
+msgstr "Seo Markup :"
+
+msgid "WebPage"
+msgstr "Web Sayfa"
+
+msgid "Article"
+msgstr "Makale"
+
+msgid "Recipe"
+msgstr "Yemek Tarifi"
+
+msgid "ImageGallery"
+msgstr "Galeri"
+
+msgctxt "admin.Views.Shared._SeoFields"
+
+msgid "Service"
+msgstr "Hizmet"
+
+msgctxt "admin.Views.Shared._SeoFields"
+
+msgid "Product"
+msgstr "Ürün"
+
+msgid "edit_markup"
+msgstr "Markup Düzenle"
+
+msgid "edit_markup_title"
+msgstr "Emin Misiniz?"
+
+msgid "edit_markup_msg"
+msgstr "Umarım Ne Yaptığınızı Biliyorsunuzdur"
+
+#: CreateHtmlPage.cshtml
+msgid "create_html_page"
+msgstr "Html Sayfa Oluştur"
+
+msgid "html_creating_form"
+msgstr "Html Sayfa Oluşturma Formu"
+
+msgid "author_name"
+msgstr "Yazar İsmi :"
+
+#:CreateSectionsPage.cshtml
+msgid "create_sections_page"
+msgstr "Bölümlü Sayfa Oluştur"
+
+msgid "sections_creating_form"
+msgstr "Bölümlü Sayfa Oluşturma Formu"
+
+msgid "page_content"
+msgstr "Sayfa İçeriği"
+
+msgid "add_content"
+msgstr "İçerik Ekle"
+
+#:EditHtmlPage.cshtml
+msgid "edit_htmal_page"
+msgstr "Html Sayfa Düzenle"
+
+msgid "html_editing_form"
+msgstr "Html Sayfa Düzenleme Formu"
+
+#: EditSectionsPage.cshtml
+msgid "edit_sections_page"
+msgstr "Bölümlü Sayfa Düzenle"
+
+msgid "sections_editing_form"
+msgstr "Bölümlü Sayfa Düzenleme Formu"
+
+#: pages Controller
+msgid "c_type"
+msgstr "Tür"
+
+msgid "c_id"
+msgstr "ID"
+
+msgid "parameter_required"
+msgstr "{0} Parametre Gereklidir!" 
+
+msgid "html_page_creation_successfully"
+msgstr "Html Sayfa Oluşturma Başarıyla Yapıldı."
+
+msgid "html_page_updating_successfully"
+msgstr "Html Sayfa Güncelleme Başarıyla Yapıldı."
+
+msgid "section_page_creation_successfully"
+msgstr "Bölümlü Sayfa Oluşturma Başarıyla Yapıldı."
+
+msgid "section_page_updating_successfully"
+msgstr "Bölümlü Sayfa Güncelleme Başarıyla Yapıldı."
+  
+#: pages Index.cshtml
+msgid "new_html_page"
+msgstr "Yeni HTML Sayfa"
+
+msgid "new_section_page"
+msgstr "Yeni Bölümlü Sayfa"
+
+#: HtmlPageDetails.cshtml
+msgid "page_details"
+msgstr "Sayfa Ayrıntıları"
+ 
+#:menus controller
+msgid "menu_creation_successfully"
+msgstr "Menü Oluşturma Başarıyla Yapıldı."
+
+msgid "menu_updating_successfully"
+msgstr "Menü Güncelleme Başarıyla Yapıldı."
+
+#:menus Index.cshtml
+msgid "menus"
+msgstr "Menüler"
+
+msgid "new_menu"
+msgstr "Yeni Menü"
+
+#:createform.cshtml
+
+msgid "create_menu"
+msgstr "Menü Oluştur"
+
+#:EditForm.cshtml
+msgid "edit_menu"
+msgstr "Menü Düzenle"
+
+msgid "menu_structure"
+msgstr "Menü Yapısı"
+
+msgid "submenu"
+msgstr "Alt Menü"
+
+
+
+#: menus _modal.cshtml
+
+msgid "page"
+msgstr "Sayfa"
+
+msgid "parent_menu"
+msgstr "Üst Menü"
+
+msgid "link"
+msgstr "Bağlantı"
+
+msgid "static_page"
+msgstr "Statik Sayfa"
+
+msgid "service"
+msgstr "Hizmet"
+
+
+msgid "gallery"
+msgstr "Galeri"
+
+msgid "posts_section"
+msgstr "Yazılar bölüm"
+
+msgid "services_section"
+msgstr "hizmetler bölümü"
+
+msgid "gallery_section"
+msgstr "Galeri bölümü"
+
+msgid "add_to_menu"
+msgstr "Menüye Ekle"
+
+msgctxt "admin.Views.Menus.partials._modal"
+
+msgid "product"
+msgstr "Ürün"
+
+msgid "Create_section"
+msgctxt "Yeni Bölüm"
+
+#:users Controller
+msgid "c_roles"
+msgstr "Roller"
+
+msgid "c_roles_required"
+msgstr "Roller Gereklidir!"
+
+msgid "c_user_creation_successfully"
+msgstr "Kullanıcı Oluşturma Başarıyla Yapıldı."
+
+
+#: Users Index.cshtml
+msgid "Users"
+msgstr "Kullanıcılar"
+
+msgid "new_user"
+msgstr "Yeni Kullanıcı"
+
+msgid "roles"
+msgstr "Roller"
+
+msgid "user_role"
+msgstr "Kullanıcı Rolü"
+
+#:Users  Create.cshtml
+msgid "User_Create"
+msgstr "Kullanıcı - Oluşturma"
+
+msgid "new_user"
+msgstr "Yeni Kullanıcı"
+
+#: Users Edit.cshtml
+msgid "user_edit"
+msgstr "Kullanıcı - Düzenleme"
+
+msgid "edit_user"
+msgstr "Kullanıcı Düzenle"
+
+msgid "choose_picture"
+msgstr "Resim Seçin"
+
+#: Users Details.cshtml
+msgid "user_details"
+msgstr "Kullanıcı Ayrıntıları"
+
+msgid "user_information"
+msgstr "Kullanıcı Bilgileri"
+
+msgid "user_status"
+msgstr "Kullanıcı Statüsü :"
+
+msgid "send_email"
+msgstr "E-posta Gönder"
+
+msgid "unblock_user"
+msgstr "Kullanıcının Engellemesini Kaldır"
+
+msgid "block_user"
+msgstr "Kullanıcıyı Engelle"
+
+#:CreateEmail.cshtml
+msgid "new_email"
+msgstr "Yeni E-posta"
+
+#:Services Controller
+
+#:Services index.cshtml
+msgctxt "admin.Views.Services.index"
+
+msgid "services"
+msgstr "Hizmetler"
+
+msgid "new_service"
+msgstr "Yeni Hizmet"
+
+#:services Form.cshtml
+
+msgid "services_edit"
+msgstr "Hizmetler - Düzenleme"
+
+msgid "services_create"
+msgstr "Hizmetler - Oluşturma"
+
+msgid "create_service"
+msgstr "Hizmet Oluştur"
+
+msgid "edit_service"
+msgstr "Hizmet Güncelle"
+
+msgid "icon_visibility"
+msgstr "Simge Görünürlüğü"
+
+#: Services Details.cshtml
+msgid "service_details"
+msgstr "Hizmet Ayrıntıları"
+
+#: Sliders index.cshtml
+msgid "new_slider"
+msgstr "Yeni Slider"
+
+#: EditSliderItemForm.cshtml
+msgid "edit_slider_item"
+msgstr "Slider Öğesi Düzenle"
+ 
+msgid "f_slider_title"
+msgstr "Slider Başlığı"
+
+#:EditSliderForm.cshtml
+msgid "edit_slider"
+msgstr "Slider Düzenle"
+ 
+msgid "unpublish/publish"
+msgstr "Yayımlamayı İptal/Yayımla"
+ 
+msgid "slider"
+msgstr "Slider"
+
+#: _sliderItems.cshtml
+msgid "slider_items"
+msgstr "Slider Öğeleri"
+ 
+msgid "upload_single_image"
+msgstr "Tek Resim Yükle"
+ 
+msgid "add_video"
+msgstr "Video ekle"
+
+#: sliders Details.cshtml
+msgid "slider_details"
+msgstr "Slider Ayrıntıları"
+
+#:CreateSliderItemForm.cshtml
+msgid "create_slider_item"
+msgstr "Slider Öğesi Oluştur"
+ 
+msgid "back_to_slider"
+msgstr "Slider'e Geri Dön"
+
+#:CreateSliderForm.cshtml
+msgid "create_slider"
+msgstr "Slider Oluştur"
+
+
+#:galleries index.cshtml
+msgid "new_gallery"
+msgstr "Yeni Galeri"
+
+
+#:FormGalleryItem.cshtml
+msgid "create_gallery_item"
+msgstr "Galeri Öğesi Oluştur"
+
+msgid "edit_gallery_item"
+msgstr "Galeri Öğesi Düzenle"
+
+msgid "back_to_gallery"
+msgstr "Galeriye Geri Dön"
+
+msgid "create_video_item"
+msgstr "Video Oluştur"
+
+msgid "edit_video_item"
+msgstr "Video Düzenle"
+
+
+
+#:FormGallery.cshtml 
+msgid "create_gallery"
+msgstr "Galeri Oluştur"
+
+msgid "update_gallery"
+msgstr "Galeri Güncelle"
+ 
+msgid "upload_multiple_images"
+msgstr "Birden Fazla Resim Yükle"
+
+
+#: galleries Details.cshtml
+msgid "galleries_details"
+msgstr "Galeri Ayrıntıları"
+
+msgid "gallery_pictures"
+msgstr "Galeri Resimleri"
+
+#:_galleryitems.cshtml
+msgid "gallery_items"
+msgstr "Galeri Öğeleri"
+
+msgid "publish_all"
+msgstr "Tümünü Yayımla"
+
+msgid "Publish"
+msgstr "Yayımla"
+
+msgid "unpublish"
+msgstr "Yayımlamayı İptal"
+
+msgid "publish_all_images"
+msgstr "Tüm Resimleri Yayımla"
+
+#:products controller
+
+msgid "product_ceation_successfully"
+msgstr "Ürün Oluşturma Başarıyla Yapıldı."
+
+msgid "product_updating_successfully"
+msgstr "Ürün Güncelleme Başarıyla Yapıldı."
+
+msgid "combination_creation_successfully"
+msgstr "Ürün Kombinasyonu Oluşturma Başarıyla Yapıldı."
+
+msgid "attribute_creation_successfully"
+msgstr "Ürün Özelliği Oluşturma Başarıyla Yapıldı."
+
+msgid "attribute_updating_successfully"
+msgstr "Ürün Özelliği Güncelleme Başarıyla Yapıldı."
+
+msgid "attribute_value_creation_successfully"
+msgstr "Ürün Özelliğinin Değeri Oluşturma Başarıyla Yapıldı."
+
+msgid "attribute_value_updating_successfully"
+msgstr "Ürün Özelliğinin Değeri Güncelleme Başarıyla Yapıldı."
+
+#: product javascript 
+msgid "delete_combination"
+msgstr "Kombinasyon Sil"
+
+#: products Index.cshtml
+msgctxt "admin.Views.Products.index"
+
+msgid "Products"
+msgstr "Ürünler"
+
+msgid "new_product"
+msgstr "Yeni Ürün"
+
+#: products List.cshtml
+msgid "Products_list"
+msgstr "Ürün Listesi"
+
+#: products Form.cshtml
+msgid "create_product"
+msgstr "Ürün Oluştur"
+
+msgid "edit_product"
+msgstr "Ürün Güncelle"
+
+msgid "product_info"
+msgstr "Ürün Bilgileri"
+
+msgid "product_specifications"
+msgstr "Ürün Spesifikasyonları"
+
+msgid "product_description"
+msgstr "Ürün Açıklaması"
+
+msgid "product_pictures"
+msgstr "Ürün Resimleri"
+
+msgid "product_attributes"
+msgstr "Ürün Özellikleri"
+
+#: products combination Modal
+msgid "select_new_combination"
+msgstr "Yeni Kombinasyon Seçin Ve Aşağıdaki Ayrıntıları Girin"
+
+#: _Form_information_tab.cshtml
+msgid "f_short_description"
+msgstr "Kısa Açıklama :"
+
+msgid "f_full_description"
+msgstr "Tam Açıklama (WEB) :"
+
+msgid "maximum_cart_quantity"
+msgstr "Maksimum Sepet Miktarı"
+ 
+msgid "requires_shipping"
+msgstr "Kargo Gerektirir"
+
+msgid "free_shipping"
+msgstr "Ücretsiz Kargo"
+
+msgid "weight"
+msgstr "Ağırlık"
+
+msgid "gram"
+msgstr "Gram"
+
+msgid "millimeter"
+msgstr "Milimetre"
+
+msgid "height"
+msgstr "Yükseklik"
+
+msgid "length"
+msgstr "Uzunluk"
+
+msgid "width"
+msgstr "Genişlik"
+
+#: products _Form_Images_tab.cshtml
+msgid "product_images"
+msgstr "Ürün Resimleri"
+
+msgid "add_images"
+msgstr "Resimler Ekle"
+
+msgid "remove_selected_images"
+msgstr "Seçili Resimleri Sil"
+
+#: Products _Form_Attributes_tab.cshtml
+msgid "attributes"
+msgstr "Özellikler"
+
+msgid "attribute_combinations"
+msgstr "Özellik Kombinasyonları"
+
+msgid "values"
+msgstr "Değerler"
+
+msgid "option_value"
+msgstr "Seçenek Değeri"
+
+msgid "add_option"
+msgstr "Seçenek Ekle"
+
+msgid "add_attribute"
+msgstr "Özellik Ekle"
+
+msgid "add_combination"
+msgstr "Kombinasyon Ekle"
+
+#: categories controller
+
+msgid "category_creation_successfully"
+msgstr "Kategori Oluşturma Başarıyla Yapıldı."
+
+#: caegories index.cshtml
+msgid "new_category"
+msgstr "Yeni Kategori"
+
+#: home _welcome-panel.cshtml
+msgid "welcome_to_tamcms"
+msgstr "TamCMS Yönetici Paneline Hoşgeldiniz!"
+
+msgid "welcome_message"
+msgstr "Sizin Başlamanız İçin Birkaç Bağlantı Topladık:"
+ 
+msgid "create_page"
+msgstr "Sayfa Oluştur"
+ 
+msgid "next_steps"
+msgstr "Sonraki Adımlar"
+
+msgid "get_started"
+msgstr "Başlayın"
+
+msgid "more_actions"
+msgstr "Daha Fazla İşlemler"
+ 
+msgid "upload_first_gallery"
+msgstr "İlk Galerinizi Yükleyin"
+ 
+msgid "managing_services"
+msgstr "Hizmetlerinizi Yönetmeye Başlayın"
+ 
+msgid "view_site"
+msgstr "Web Sitenizi Görüntüle"
+ 
+msgid "check_home_slider"
+msgstr "Ana Sayfanızın Sliderini Kontrol Edin"
+
+#: validator.messages
+
+msgid "this_is_field_is_required"
+msgstr "Bu Alan Gereklidir."
+
+msgid "fix_this_field"
+msgstr "Lütfen Bu Alanı Düzeltin."
+
+msgid "enter_valid_email"
+msgstr "Lütfen Geçerli Bir E-posta Adresi Girin."
+
+msgid "enter_valid_url"
+msgstr "Lütfen Geçerli Bir URL Girin."
+
+msgid "enter_valid_date"
+msgstr "Lütfen Geçerli Bir Tarih Girin."
+
+msgid "enter_valid_iso"
+msgstr "Lütfen Geçerli Bir Tarih Girin (ISO)."
+
+msgid "enter_valid_number"
+msgstr "Lütfen Geçerli Bir Numara Girin."
+
+msgid "enter_only_digits"
+msgstr "Lütfen Sadece Rakamlar Giriniz."
+
+msgid "enter_same_value"
+msgstr "Lütfen Aynı Değeri Tekrar Girin."
+
+msgid "enter_more_than_characters"
+msgstr "Lütfen En Fazla {{0}} Karakter Girin."
+
+msgid "enter_at_least_characters"
+msgstr "Lütfen En Az {{0}} Karakter Girin."
+
+msgid "enter_value_between_characters"
+msgstr "Lütfen Karakter Sayısı İçin {{0}} İle {{1}} Arasında Bir Değer Girin."
+
+msgid "enter_value_between_0_and_1"
+msgstr "Lütfen {{0}} İle {{1}} Arasında Bir Değer Girin."
+
+msgid "enter_value_less_or_equal"
+msgstr "Lütfen {{0}}'DAn Küçük Veya Eşit Bir Değer Girin."
+
+msgid "enter_value_greater_or_equal"
+msgstr "Lütfen {{0}}'DAn Büyük Veya Eşit Bir Değer Girin."
+
+msgid "enter_multiple_of"
+msgstr "Lütfen {{0}}'(n)In Katlarından Bir Değer Girin."
+
+msgid "enter_vaild_extension"
+msgstr "Lütfen Geçerli Bir Uzantı İle Bir Değer Girin."
+
+#: Posts index.cshtml
+msgid "Posts"
+msgstr "Yazılar"
+
+msgid "new_post"
+msgstr "Yeni Yazı"
+
+msgid "page_size"
+msgstr "Sayfa Boyutu :"
+
+msgid "sort_by"
+msgstr "Sıralama Ölçütü :"
+
+msgid "post_name"
+msgstr "Yazı Başlığı :"
+
+msgid "section_name"
+msgstr "Bölüm İsmi :"
+
+ 
+#: Posts Form.cshtml
+msgid "post_edit"
+msgstr "Yazı Düzenle"
+
+msgid "post_create"
+msgstr "Yazı Oluştur"
+
+#: Posts Details.cshtml
+
+msgid "post_details"
+msgstr "Yazı Ayrıntıları"
+
+
+#: Sections Controller
+
+msgid "section_creation_successfully"
+msgstr "Bölüm Oluşturma Başarıyla Yapıldı."
+
+msgid "section_editing_successfully"
+msgstr "Bölüm Güncelleme Başarıyla Yapıldı."
+
+#:Sections index.cshtml
+
+msgid "sections"
+msgstr "Bölümler"
+
+msgid "new_section"
+msgstr "Yeni Bölüm"
+
+#:Sections Form.cshtml
+
+msgid "create_section"
+msgstr "Bölüm Oluştur"
+
+msgid "edit_section"
+msgstr "Bölüm Düzenle"
+
+#: Section Details.cshtml
+
+msgid "section_details"
+msgstr "Bölüm Ayrıntıları"
+
+msgid "section_parent"
+msgstr "Bölümün Üstü"
+
+# : request index.cshtml 
+
+msgid "customer_name"
+msgstr "Müşteri İsmi"
+
+msgid "all_cities"
+msgstr "Tüm Şehirler"
+
+msgid "choice_option"
+msgstr "Seçenek Seç"
+
+#: request details.cshtml
+
+msgid "request_details"
+msgstr "Talep Ayrıntıları"
+ 
+msgid "request_status"
+msgstr "Talep Statüsü"
+
+msgid "request_date"
+msgstr "Tarih"
+
+msgid "personal_information"
+msgstr "Özlük Bilgileri"
+
+msgid "request_information"
+msgstr "Talep Bilgileri"
+
+msgid "request_history"
+msgstr "İşlem Geçmişi"
+
+msgid "process_date"
+msgstr "İşlem Tarihi"
+
+msgid "current_status"
+msgstr "Şimdiki Statü"
+
+msgid "previous_status"
+msgstr "Önceki Statü"
+ 
+msgid "information"
+msgstr "Bilgi"
+
+msgid "history"
+msgstr "Geçmiş"
+
+msgid "greaterThan_msg"
+msgstr "Değeri x'den Daha Büyük Olmalıdır.   x = "
+
+
+
+msgid "slug_msg"
+msgstr "Sadece Rakamlar , harfler ve _ , - , + Semboller Kullanın. Boşluklar Girilmez. En Az 3 Rakam Veya Harf Girin."
+
+msgid "regex_msg"
+msgstr "Lütfen Girdinizi Kontrol Edin."
+
+msgid "lessThan_msg"
+msgstr "Değeri x 'den Daha Küçük Olmalıdır.   x = "
+
+msgid "json_msg"
+msgstr "Geçerli JSON Markup Girmelisiniz."
+
+msgid "schemaType_msg"
+msgstr  "@@Türü Gereklidir Ve Boş Olamaz"
+
+msgid "url_msg"
+msgstr "Url http://example.com Formunda Olmalıdır."
+
+msgid "filesize_msg"
+msgstr "File size must be less than"
+
+# :controller adminbaseController.cs // filters
+
+msgid "title_a_to_z"
+msgstr "Başlık: A'dan Z'ye"
+
+msgid "title_z_to_a"
+msgstr "Başlık: Z'den A'ya"
+
+msgid "newst_first"
+msgstr "En Yeni İlk"
+
+msgid "oldest_first"
+msgstr "En Eski İlk"
+
+msgid "l_status"
+msgstr "Statü :"
+
+#:home page
+
+msgid "home_page"
+msgstr "Ana Sayfa"
+
+#: _statisticsPanel.cshtml
+msgid "h_page"
+msgstr "Sayfalar"
+
+msgid "h_section"
+msgstr "Bölümler"
+
+msgid "h_service"
+msgstr "Hizmetler"
+
+msgid "h_gallery"
+msgstr "Galeriler"
+
+msgid "more_info"
+msgstr "Daha Fazla Bilgi"
+
+msgid "fullscreen"
+msgstr "Tam Ekran"
+
+msgid "Log_Out"
+msgstr "çıkış yap"
+
+
+
+msgid "Slug_tr"
+msgstr "Slug"
+
+msgid "Title_tr"
+msgstr "Başlık"
+
+msgid "MainImage_tr"
+msgstr "Ana Resim"
+
+msgid "VideoUrl_tr"
+msgstr "Video linki"
+
+msgid "Content_tr"
+msgstr "İçerik"
+
+msgid "Image_tr"
+msgstr "Ana Resim"
+
+msgid "section_projects"
+msgstr "projeler"
+
+msgid "section_works"
+msgstr "Eserleri"
+
+msgid "View_in_website"
+msgstr "Web sitesinde görüntüle"
+
+msgid "new_tab"
+msgstr "Yeni sekme"
+
+msgid "same_tab"
+msgstr "Aynı sekme'de"
+
+
+msgid "start_chat_in_whatsapp"
+msgstr "whatsapp'ta sohbete başla"
+
+msgid "mobile_number_not_confirmed"
+msgstr "cep telefonu numarası onaylanmadı"
+
+
+msgid "TAMCMS_UsersAdmin"
+msgstr "UsersAdmin"
+
+msgid "TAMCMS_MenusContentAdmin"
+msgstr "MenusContentAdmin"
+
+msgid "TAMCMS_PagesContentAdmin"
+msgstr "PagesContentAdmin"
+
+msgid "TAMCMS_PostAuthor"
+msgstr "PostAuthor"
+
+msgid "TAMCMS_GalleriesContentAdmin"
+msgstr "GalleriesContentAdmin"
+
+msgid "TAMCMS_SlidersContentAdmin"
+msgstr "SlidersContentAdmin"
+
+msgid "TAMCMS_PostsContentAdmin"
+msgstr "PostsContentAdmin"
+
+msgid "TAMCMS_ServicesContentAdmin"
+msgstr "ServicesContentAdmin"
+
+msgid "TAMCMS_ProductsContentAdmin"
+msgstr "ProductsContentAdmin"
+
+msgid "TAMCMS_PostsEditor"
+msgstr "PostsEditor"
+
+
+msgid "email_to"
+msgstr "e-posta"
+
+msgid "email_sent"
+msgstr "Mesajı gönderildi."
+
+# testimonials
+msgid "new_testimonial"
+msgstr ""
+
+msgid "edit_testimonial"
+msgstr ""
+
+msgid "create_testimonial"
+msgstr ""
+
+msgid "testimonial_details"
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

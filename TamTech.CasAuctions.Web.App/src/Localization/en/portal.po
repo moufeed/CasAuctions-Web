@@ -1,0 +1,197 @@
+
+# adminbar
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Log_Out"
+msgstr "Log Out"
+
+# tobbar
+msgid "mail_Us"
+msgstr "Mail Us"
+
+# bootombar
+msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
+msgstr "Copyright © 2018 tamtech solutions. All rights reserved."
+
+msgid "Powered_by"
+msgstr "Powered by"
+
+msgid "tamtech"
+msgstr "Tamtech"
+
+# index
+msgid "Welcome_Totamtech"
+msgstr "Welcome Totamtech"
+
+msgid "Who_we_are"
+msgstr "Who we are?"
+
+msgid "services_we_offer"
+msgstr "Services we offer"
+
+msgid "What_we_do"
+msgstr "What we do"
+
+msgid "Why_Choose_Us"
+msgstr "Why Choose Us?"
+
+msgid "What_Clients_say"
+msgstr "What Clients say?"
+
+msgid "Our_Clients"
+msgstr "Our Clients"
+
+msgid "meet_our_clients"
+msgstr "Meet our clients"
+
+#about us
+
+msgid "our_mission"
+msgstr "Our Mission"
+
+msgid "happy_clients"
+msgstr "Happy Clients"
+
+msgid "years_in_business"
+msgstr "Years in Business"
+
+msgid "cups_of_coffee"
+msgstr "Cups of Coffee"
+
+msgid "no_projects"
+msgstr "No. of Projects"
+
+msgid "our_values"
+msgstr "Our Value"
+
+msgid "our_vision"
+msgstr "Our Vision"
+
+ 
+
+#: contact us
+msgid "contact_us"
+msgstr "Contact Us"
+
+msgid "Address"
+msgstr "Address"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Mobile"
+msgstr "Mobile"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Find_us"
+msgstr "Find us"
+
+msgid "Get_in_Touch"
+msgstr "Get in Touch"
+
+msgid "send_us_meesage"
+msgstr "Send us a meesage"
+
+msgid "name"
+msgstr "Name"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Send_it"
+msgstr "Send it"
+
+msgid "close"
+msgstr "Close"
+
+msgid "mobile_no"
+msgstr "Mobile No"
+
+msgid "dear_customer"
+msgstr  "Dear  <strong class=\"customer_name\"></strong>, thanks for reaching out!"
+
+msgid  "We_have_received_your_message"
+msgstr  "We have received your message and would like to thank you for writing to us. If it's urgent, You can also use the mobile number listed below to talk to us."
+
+msgid  "have_great_day"
+msgstr  "Have a great day!"
+
+
+msgid "About_Us"
+msgstr "About Us"
+
+msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
+msgstr "Call us today at <span>{0}</span> or Email us at <span>{1}</span>"
+
+msgid  "Start_Now"
+msgstr "Start Now"
+
+#:galleries
+msgid "our_galleries"
+msgstr "Our Galleries"
+
+msgid "Galleries"
+msgstr "Galleries"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "our_services"
+msgstr "Our Services"
+
+msgid "read_more"
+msgstr "Read More"
+
+#: Products
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Our_products"
+msgstr "Our Products"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "By"
+msgstr "By"
+
+msgid "share_this_post"
+msgstr "Share this Post"
+
+
+#request quote
+
+msgid "request_quote"
+msgstr "Request Quote"
+
+
+msgid "AuthorName"
+msgstr "Author name"
+
+msgid "Company"
+msgstr "Company"
+
+msgid "job_position"
+msgstr "Job position"
+
+msgid "avatar"
+msgstr "Avater"
+
+msgid "rating"
+msgstr "Rating"
+
+msgid "title"
+msgstr "Title"

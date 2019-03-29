@@ -1,0 +1,102 @@
+﻿
+<div class="top_nav">
+
+    <div class="nav_menu">
+
+        <nav>
+            <div class="nav toggle">
+                <a id="menu_toggle">
+                  <svg  viewBox="0 0 53 53"  width="25">
+                    <path d="M2,13.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,13.5,2,13.5z"/>
+                    <path d="M2,28.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,28.5,2,28.5z"/>
+                    <path d="M2,43.5h49c1.104,0,2-0.896,2-2s-0.896-2-2-2H2c-1.104,0-2,0.896-2,2S0.896,43.5,2,43.5z"/>
+                  </svg>
+                </a>
+
+            </div>
+
+
+            @*@using IdentityServer4.Extensions
+            @{
+                string name = null;
+                if (!true.Equals(ViewData["signed-out"]))
+                {
+                    name = Context.User?.GetDisplayName();
+                }
+            }*@
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+
+
+                @*@if (!string.IsNullOrWhiteSpace(name))
+                {
+                    <li class="">
+                        <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+
+                            @name
+
+                            <i class=" fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu pull-right flip-dir">
+                            <li><a asp-area="identity" asp-action="changepassword" asp-controller="auth"><i class="fa fa-key pull-right flip-dir"></i> @Localizer["change_password"]</a></li>
+                            <li><a asp-area="identity" asp-action="Logout" asp-controller="Account"><i class="fa fa-sign-out pull-right flip-dir"></i> @Localizer["Log_Out"]</a></li>
+                        </ul>
+                    </li>
+                }*@
+
+                @if (CultureConstants.CulturesList?.Count > 1)
+                {
+                    string _lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+
+
+
+                    <li>
+                        <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-language" aria-hidden="true"></i>
+                            @Localizer["languages"]
+                            <i class=" fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-usermenu pull-right flip-dir">
+                            @foreach (var culture in CultureConstants.CulturesList)
+                            {
+
+
+                                <li class=" @((_lang == culture.Lang) ? "active" :"" )">
+                                    <a href="@Url.AdminUrl("index","home",new { area ="admin" ,culture = culture.Lang })">@culture.Name</a>
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                }
+
+
+                <li>
+                    <a href="/" class="" target="_blank">
+
+                        <i class=" fa fa-home"></i> @Localizer["visit_public_site"]
+                    </a>
+                </li>
+                <li>
+                    <a class="fullscreen" 
+                        data-toggle="tooltip"
+                        data-placement="bottom"
+                        title="@Localizer["fullscreen"]" >
+                        <svg viewBox="0 0 298.667 298.667" width="16">
+                            <polygon points="42.667,192 0,192 0,298.667 106.667,298.667 106.667,256 42.667,256" />
+                            <polygon points="0,106.667 42.667,106.667 42.667,42.667 106.667,42.667 106.667,0 0,0" />
+                            <polygon points="192,0 192,42.667 256,42.667 256,106.667 298.667,106.667 298.667,0" />
+                            <polygon points="256,256 192,256 192,298.667 298.667,298.667 298.667,192 256,192" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+ 

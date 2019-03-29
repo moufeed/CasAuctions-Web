@@ -1,0 +1,1700 @@
+#-------------------------------------------------------------------------
+#:admin panel
+#-------------------------------------------------------------------------
+
+msgid "AdminPanelWeb"
+msgstr "لوحة التّحكّم"
+
+msgid "AdminPanel"
+msgstr "لوحة تحكّم المدير"
+
+msgid "visit_public_site"
+msgstr "زيارة الموقع العام"
+
+msgid "SEO"
+msgstr "تحسين نتائج محرّك البحث (SEO)"
+ 
+msgid "Add"
+msgstr "إضافة"
+
+msgid "Create"
+msgstr "حفظ"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "close"
+msgstr "إغلاق"
+
+msgid "save"
+msgstr "حفظ"
+
+msgid "delete"
+msgstr "حذف"
+
+msgid "cancel"
+msgstr "إلغاء"
+
+msgid "yes"
+msgstr "نعم"
+
+msgid "remove"
+msgstr "إزالة"
+
+msgid "search"
+msgstr "بحث"
+
+msgid "reset"
+msgstr "اِسترجاع الضّبط الأوّليّ"
+
+msgid "send"
+msgstr "إرسال"
+
+msgid "Update"
+msgstr "تحديث"
+
+msgid "Upload"
+msgstr "رفع"
+
+msgid "edit"
+msgstr "تحرير"
+
+msgid "back"
+msgstr "الخلف"
+
+msgid  "Browse"
+msgstr "اِستعراض"
+
+msgid  "select"
+msgstr "اِختيار"
+
+msgid "filter"
+msgstr "تصفية"
+
+msgid "save_and_continue"
+msgstr "حفظ و متابعة"
+
+msgid "back_to_list"
+msgstr "العودة إلى القائمة"
+ 
+msgid "add_Item"
+msgstr "إضافة عنصر"
+ 
+msgid "title"
+msgstr "العنوان"
+
+msgid "published"
+msgstr "منشور"
+
+msgid "unpublished"
+msgstr "غير منشور"
+
+msgid "created_date"
+msgstr "تاريخ الإنشاء"
+
+msgid "modified_date"
+msgstr "تاريخ التّعديل"
+
+msgid "slug"
+msgstr "الاسم اللطيف"
+
+msgid "summary"
+msgstr "ملخّص"
+
+msgid "section"
+msgstr "قسم"
+
+msgid "image"
+msgstr "صورة"
+
+msgid "icon"
+msgstr "أيقونة"
+
+msgid "total"
+msgstr "Total"
+
+msgid "locked_by_system"
+msgstr "مُقفل من قِبل النّظام"
+
+msgid "meta_keywords"
+msgstr "كلمات مفتاحيّة"
+
+msgid "meta_description"
+msgstr "وصف"
+
+msgid "content"
+msgstr "محتوى"
+
+msgid "position"
+msgstr "موقع"
+
+msgid "blocked"
+msgstr "محجوب"
+
+msgid "active"
+msgstr "نشط"
+
+msgid "files"
+msgstr "ملفّات"
+
+msgid "visible"
+msgstr "مرئي"
+
+msgid "status"
+msgstr "حالة"
+
+msgid "invisible"
+msgstr "غير مرئي"
+
+msgid "main_image"
+msgstr "صورة رئيسيّة"
+
+msgid "key"
+msgstr "Key"
+
+msgid "manage"
+msgstr "إدارة"
+
+msgid "deleted"
+msgstr "تمّ حذفه!"
+
+msgid "confirm_title"
+msgstr "هل أنت متأكّد؟"
+
+msgid "confirm_text"
+msgstr "لن تستطيع التّراجع عن هذا!"
+
+
+msgid "confirm_yes"
+msgstr "نعم"
+
+msgid "Confirm_cancel"
+msgstr "إلغاء"
+
+msgid "characters"
+msgstr "محارف"
+
+msgid "none"
+msgstr "لا يوجد"
+ 
+msgid "more"
+msgstr "المزيد"
+
+msgid "publish_unpublish"
+msgstr "نشر /إلغاء النشر"
+
+msgid "total_items"
+msgstr "عدد العناصر :"
+
+msgid "showing_of"
+msgstr "عرض {0} إلى {1} من {2}"
+ 
+msgid "all"
+msgstr "الكل"
+
+msgid "change_password"
+msgstr "تغير كلمة السر"
+
+msgid "languages"
+msgstr "اللغات"
+
+#global Forms
+
+msgid "f_title"
+msgstr "العنوان :"
+
+msgid "f_name"
+msgstr "الاِسم :"
+
+msgid  "f_slug"
+msgstr "الأسم اللطيف (Slug) :"
+
+msgid  "f_section"
+msgstr "القسم :"
+
+msgid  "f_main_image"
+msgstr "الصّورة الرّئيسيّة :"
+
+msgid  "f_video_thumbnail"
+msgstr "صورة الغلاف :"
+
+msgid "f_video_url"
+msgstr "رابط الفيديو :"
+
+msgid "f_video_id"
+msgstr "معرف الفيديو :"
+
+msgid  "choose_file"
+msgstr "اِختيار ملف."
+ 
+msgid  "f_summary"
+msgstr "الملخّص :"
+ 
+msgid  "f_description"
+msgstr "الوصف :"
+
+msgid  "f_content"
+msgstr "المحتوى :"
+
+msgid  "f_meta_keywords"
+msgstr "كلمات مفتاحية :"
+
+msgid  "f_meta_tags"
+msgstr "كلمات مفتاحية :"
+
+msgid  "f_meta_description"
+msgstr "وصف الميتا :"
+
+msgid  "f_display_order"
+msgstr "ترتيب العرض :"
+
+msgid "f_url"
+msgstr "الرّابط :"
+
+msgid "f_url_target"
+msgstr "مكان فتح الرّابط :"
+
+msgid "f_username"
+msgstr "اِسم المستخدم :"
+
+msgid "f_email"
+msgstr "البريد الإلكترونيّ :"
+
+msgid "f_password"
+msgstr "كلمة السّر :"
+
+msgid "f_confirmpassword"
+msgstr "تأكيد كلمة السّر :"
+
+msgid "f_phone"
+msgstr "رقم الهاتف :"
+
+msgid "f_role"
+msgstr "الصّلاحيّات :"
+
+msgid "f_gender"
+msgstr "الجنس :"
+
+msgid "f_subject"
+msgstr "الموضوع :"
+
+msgid "f_recipients"
+msgstr "المستلمون :"
+
+msgid "f_massage"
+msgstr "الرّسالة :"
+
+msgid "f_icon"
+msgstr "الأيقونة :"
+
+msgid "f_sku"
+msgstr "Sku :"
+
+msgid "f_stock_quantity"
+msgstr "كميّة المخزون :"
+
+msgid "f_price"
+msgstr "السّعر :"
+
+msgid "f_discount_price"
+msgstr "سعر الخصم :"
+
+msgid "f_type"
+msgstr "النّوع :"
+
+msgid "f_key"
+msgstr "Key :"
+
+msgid "f_position"
+msgstr "الموقع :"
+
+msgid "f_public_url"
+msgstr "الرابط العام :"
+
+msgid "f_created_date"
+msgstr "تاريخ الأنشاء"
+
+msgid "f_post_date"
+msgstr "تاريخ المقالة"
+
+#seo form 
+msgid "f_headline"
+msgstr "العنوان الرّئيسي :"
+
+msgid "f_author"
+msgstr "المؤلّف :"
+
+msgid "f_publisher"
+msgstr "النّاشر :"
+
+msgid "f_brand"
+msgstr "العلامة التّجاريّة :"
+
+msgid "f_category"
+msgstr "الفئة :"
+
+msgid "f_provider"
+msgstr "المزوّد :"
+
+msgid "f_keywords"
+msgstr "كلمات مفتاحيّة :"
+
+msgid "f_cuisine"
+msgstr "المطبخ :"
+
+msgid "f_section_parent"
+msgstr "التصنيف الأب :"
+
+msgid "f_company"
+msgstr "شركة :"
+
+msgid "f_job_position"
+msgstr "المنصب الوظيفي :"
+
+msgid "f_avater_image"
+msgstr "الصورة :"
+
+msgid "f_rating"
+msgstr "التقيم :"
+
+msgid "f_message"
+msgstr "الرسالة :"
+
+
+#global Tables
+msgid  "t_title"
+msgstr "عنوان"
+
+msgid  "t_name"
+msgstr "اِسم"
+
+msgid  "t_description"
+msgstr "وصف"
+
+msgid  "t_postion"
+msgstr "موقع"
+
+msgid  "t_create_date"
+msgstr "تاريخ الإنشاء"
+
+msgid  "t_modified_date"
+msgstr "تاريخ التّعديل"
+
+msgid  "t_type"
+msgstr "نوع"
+
+msgid  "t_key"
+msgstr "Key"
+
+msgid  "t_visibility"
+msgstr "إمكانيّة الرّؤيا"
+
+msgid  "t_actions"
+msgstr "إجراءات"
+
+msgid  "t_published"
+msgstr "منشور"
+
+msgid  "t_unpublished"
+msgstr "غير منشور"
+
+msgid  "t_publish"
+msgstr "نشر"
+
+msgid  "t_unpublish"
+msgstr "إلغاء النّشر"
+
+msgid  "t_details"
+msgstr "تفاصيل"
+
+msgid  "t_edit"
+msgstr "تحرير"
+
+msgid  "t_remove"
+msgstr "إزالة"
+
+msgid  "t_delete"
+msgstr "حذف"
+
+msgid  "t_order"
+msgstr "الترتيب"
+
+msgid  "t_url"
+msgstr "رابط"
+
+msgid  "t_username"
+msgstr "اِسم المستخدم"
+
+msgid  "t_mobileNumber"
+msgstr "رقم الهاتف المحمول"
+
+msgid  "t_email"
+msgstr "عنوان البريد الإلكترونيّ"
+
+msgid  "t_active"
+msgstr "نشط"
+
+msgid  "t_mobile_confirmed"
+msgstr "تمّ تأكيد رقم الهاتف المحمول"
+
+msgid  "t_email_confirmed"
+msgstr "تمّ تأكيد عنوان البريد الإلكترونيّ"
+
+msgid  "t_image"
+msgstr "صورة"
+
+msgid  "t_summary"
+msgstr "ملخّص"
+
+msgid  "t_display_order"
+msgstr "ترتيب العرض"
+ 
+msgid  "t_sku"
+msgstr "SKU"
+ 
+msgid  "t_slug"
+msgstr "الأسم اللطيف"
+
+msgid  "t_quantity"
+msgstr "كميّة"
+
+msgid  "t_price"
+msgstr "سعر"
+
+msgid "t_discount_price"
+msgstr "سعر الخصم"
+
+msgid "t_stock_quantity"
+msgstr "كميّة المخزون"
+
+msgid "t_attributes"
+msgstr "سمات"
+
+msgid "t_logo"
+msgstr "شعار"
+
+msgid "t_total_items"
+msgstr "عدد العناصر"
+
+msgid "t_section_parent"
+msgstr "التصنيف الأب"
+
+msgid "t_status"
+msgstr "الحالة"
+
+msgid "t_detials"
+msgstr "التفاصيل"
+
+msgid "t_city"
+msgstr "المدينة"
+
+msgid "t_position"
+msgstr "الموقع"
+
+msgid "t_section"
+msgstr "التصنيف"
+
+
+msgid "t_company"
+msgstr "الشركة"
+
+msgid "t_job_position"
+msgstr "المنصب الوظيفي"
+
+msgid "t_rating"
+msgstr "التقيم"
+
+msgid "t_message"
+msgstr "الرسالة"
+
+#labels
+
+msgid "l_full_name"
+msgstr "الأسم الكامل"
+
+msgid "l_name"
+msgstr "الأسم"
+
+msgid "l_email"
+msgstr "البريد الألكتروني"
+
+msgid "l_mobile"
+msgstr "الجوال"
+
+msgid "l_phone"
+msgstr "الهاتف"
+
+msgid "l_city"
+msgstr "المدينة"
+
+msgid "l_zip_code"
+msgstr "العنوان البريدي"
+
+msgid "l_address"
+msgstr "العنوان"
+
+msgid "l_date"
+msgstr "التاريخ"
+
+msgid "l_quantity"
+msgstr "العدد"
+
+msgid "l_price"
+msgstr "السعر"
+
+msgid "l_status"
+msgstr "الحالة"
+
+msgid "l_notes"
+msgstr "ملاحظات"
+
+# global alerts 
+ 
+msgid "success"
+msgstr "نجاح"
+
+msgid "error"
+msgstr "خطأ"
+
+msgid "user_has_been_created"
+msgstr "تمّ إنشاء مستخدم"
+
+msgid  "published_successfully"
+msgstr "تمّ النّشر بنجاح"
+
+msgid  "unpublished_successfully"
+msgstr "تمّ إلغاء النّشر بنجاح"
+
+msgid  "was_successfully_published"
+msgstr "نُشر بنجاح"
+
+msgid  "was_successfully_unpublished"
+msgstr "أُلغيَ النّشر بنجاح"
+ 
+msgid  "no_data_table"
+msgstr "لا توجد بيانات متوفرة"
+ 
+msgid  "upload_failed"
+msgstr "<strong>عفواً! </strong>&nbsp;&nbsp;فشِل الرّفع."
+
+msgid "email_has_been_sent"
+msgstr "البريد الإلكترونيّ ذو العنوان <strong>{0}</strong> أُرسل للمستخدم <strong>{1}</strong>بنجاح"
+
+msgid "email_has_not_been_sent"
+msgstr "البريد الإلكترونيّ ذو العنوان <strong>{0}</strong> لم يُرسل للمستخدم <strong>{1}</strong> , حاول مرّة أُخرى لاحقاًأو تواصل مع المدير "
+
+msgid  "are_you_sure"
+msgstr "هل أنت متأكّد ؟"
+
+msgid  "you_wont_be_able_to_revert_this"
+msgstr "لن تستطيع التّراجع عن هذا!"
+
+msgid  "yse_delete"
+msgstr "نعم, حذف!"
+
+msgid  "something_wrong"
+msgstr "هناك خطأ ما"
+
+msgid  "description_is_only_used_in_mobile_view"
+msgstr "ملاحظة : </strong>هذا الوصف يُستخدم فقط في واجهة الهاتف المحمول."
+ 
+msgid  "image_uploading_error"
+msgstr "حدث خطأ أثناء رفع الصّورة!"
+
+msgid "service_creation_successfully"
+msgstr "تمّ إنشاء خدمة بنجاح. "
+
+msgid "slider_creation_successfully"
+msgstr "تمّ إنشاء سلايدر بنجاح."
+
+msgid "slider_updating_successfully"
+msgstr "تمّ تحديث السّلايدر بنجاح."
+ 
+msgid "gallery_item_creation_successfully"
+msgstr "تم إنشاء العنصر بنجاح"
+
+msgid "gallery_item_updating_successfully"
+msgstr "تم تحديث العناصر بنجاح"
+
+msgid "deleted_successfully"
+msgstr "تمّ الحذف بنجاح"
+
+msgid "item_deleted"
+msgstr "حُذف العنصر."
+
+msgid "block_user_from_logging_in"
+msgstr "حجب هذا المستخدم سيمنعه من تسجيل الدّخول"
+
+msgid "text_will_be_truncated"
+msgstr "كن حذراً! سيتم اِقتطاع النّص الّذي أدخلته"
+
+msgid "text_count_be_more_than"
+msgstr "النّص أطول من 300 محرف"
+
+msgid "updateted_successfully"
+msgstr "تمّ التّحديث بنجاح"
+
+msgid "product_havent_attributes"
+msgstr "هذا المنتج لا يملك أيّة سمات"
+
+msgid "exception_msg"
+msgstr "عذراً, حدث خطأ أثناء معالجة العمليّة. من فضلك, حاول مرّة أخرى لاحقاً "
+
+#admin sidebar
+
+msgid "view_all"
+msgstr "عرض الكلّ"
+
+msgid "all_posts"
+msgstr "كل المقالات"
+
+msgid "all_sections"
+msgstr "تصنيفات"
+
+msgid "Home"
+msgstr "الصّفحة الرّئيسيّة"
+
+msgid "Pages"
+msgstr "صفحات"
+
+msgid "new_html_page"
+msgstr "صفحة HTML جديدة"
+
+msgid "new_section_page"
+msgstr "صفحة sections جديدة"
+
+msgid "Menus"
+msgstr "قوائم"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Galleries"
+msgstr "معارض الصّور"
+
+msgid "new_gallery"
+msgstr "معرض صور جديد"
+
+msgid "Sliders"
+msgstr "سلايدرات"
+
+msgid "new_slider"
+msgstr "سلايدر جديد"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Services"
+msgstr "خدمات"
+
+msgid "new_service"
+msgstr "خدمة جديدة"
+
+msgid "Users"
+msgstr "مستخدِمون"
+
+msgid "new_user"
+msgstr "مُستخدِم جديد"
+
+msgid "Catelog"
+msgstr "فهْرس"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Products"
+msgstr "منتَجات"
+
+msgid "Manufacturer"
+msgstr "مُنتِج"
+
+msgid "Categories"
+msgstr "فئات"
+
+msgid "Reviews"
+msgstr "تقييمات"
+
+msgid "Messages"
+msgstr "رسائل"
+
+msgid "requests"
+msgstr "الطلبات"
+
+#: _SeoWebPage.cshtml
+msgid "page_description"
+msgstr "وصف الصّفحة :"
+
+msgid "page_name"
+msgstr "اِسم الصّفحة :"
+
+#:_SeoService.cshtml
+msgid "service_name"
+msgstr "اِسم الخدمة :"
+
+msgid "service_description"
+msgstr "وصف الخدمة :"
+
+msgid "service_provider"
+msgstr "مُزوّد الخدمة :"
+
+#:_SeoRecipe.cshtml
+msgid "recipe_name"
+msgstr "اِسم الوصفة :"
+
+msgid "recipe_keywords"
+msgstr "كلمات مفتاحيّة للوصفة :"
+
+msgid "recipe_description"
+msgstr "وصف الوصفة :"
+
+msgid "recipe_category"
+msgstr "فئة الوصفة :"
+
+msgid "recipe_cuisine"
+msgstr "مطبخ الوصفة :"
+
+msgid "cook_time"
+msgstr "وقت الطّهي :"
+
+msgid "prep_time"
+msgstr "وقت التّحضير :"
+
+msgid "total_time"
+msgstr "الوقت الكلّيّ :"
+
+msgid "time_in_minutes"
+msgstr "الوقت بالدّقائق :"
+
+msgid "number_of_servings"
+msgstr "عدد حصص الطّعام :"
+
+msgid "recipe_ingredient"
+msgstr "مكوّنات الوصفة :"
+
+msgid "add_ingredient"
+msgstr "أضف مكوّنات"
+
+msgid "recipe_instructions"
+msgstr "تعليمات الوصفة :"
+
+msgid "add_instructions"
+msgstr "أضف تعليمات"
+
+msgid "Author"
+msgstr "المؤلّف :"
+
+#:_SeoProduct.cshtml
+msgid "product_name"
+msgstr "اِسم المنتَج :"
+
+msgid "product_description"
+msgstr "وصف المنتَج :"
+
+msgid "brand_name"
+msgstr "اِسم العلامة التّجاريّة :"
+
+msgid "product_Category"
+msgstr "فئة المنتَج :"
+
+msgid "add_category"
+msgstr "أضف فئة :"
+
+#:_SeoGallery.cshtml
+msgid "gallery_name"
+msgstr "اِسم المعرض :"
+
+msgid "gallery_description"
+msgstr "وصف المعرض :"
+
+msgid "gallery_author"
+msgstr "مؤلّف المعرض :"
+
+#:_SeoArticle.cshtml
+msgid "article_name"
+msgstr "اِسم المقالة :"
+
+msgid "article_headLine"
+msgstr "عنوان المقالة الرّئيسيّ :"
+
+msgid "article_description"
+msgstr "وصف المقالة :"
+
+msgid "article_author"
+msgstr "مؤلّف المقالة :"
+
+msgid "article_publisher"
+msgstr "ناشر المقالة :"
+
+#:_SeoFields.cshtml
+msgid "seo_type"
+msgstr "أنواع (SEO) :"
+
+msgid "select_type"
+msgstr "اِختيار نوع"
+
+msgid "seo_markup"
+msgstr "Seo Markup :"
+
+msgid "WebPage"
+msgstr "Web Page"
+
+msgid "Article"
+msgstr "مقالة"
+
+msgid "Recipe"
+msgstr "وصفة"
+
+msgid "ImageGallery"
+msgstr "معرض صور"
+
+msgctxt "admin.Views.Shared._SeoFields"
+msgid "Service"
+msgstr "خدمة"
+
+msgctxt "admin.Views.Shared._SeoFields"
+msgid "Product"
+msgstr "منتَج"
+
+msgid "edit_markup"
+msgstr "Edit Markup"
+
+msgid "edit_markup_title"
+msgstr "هل أنت متأكّد؟"
+
+msgid "edit_markup_msg"
+msgstr "آمل أنّك تعرف الأمر الّذي تقوم به"
+
+
+
+#: CreateHtmlPage.cshtml
+msgid "create_html_page"
+msgstr "إنشاء صفحة HTML"
+
+msgid "author_name"
+msgstr "اِسم المؤلّف :"
+
+msgid "html_creating_form"
+msgstr "نموذج إنشاء صفحة HTML"
+
+#:CreateSectionsPage.cshtml
+msgid "create_sections_page"
+msgstr "إنشاء صفحة Sections"
+
+msgid "sections_creating_form"
+msgstr "نموذج إنشاء صفحة Sections"
+
+msgid "page_content"
+msgstr "محتوى الصّفحة"
+
+msgid "add_content"
+msgstr "إضافة محتوى"
+
+#:EditHtmlPage.cshtml
+msgid "edit_html_page"
+msgstr "تحرير صفحة الـ HTML"
+
+msgid "html_editing_form"
+msgstr "نموذج تحرير صفحة الـ HTML"
+
+#: EditSectionsPage.cshtml
+msgid "edit_sections_page"
+msgstr "تحرير صفحة الـ Sections"
+
+msgid "sections_editing_form"
+msgstr "نموذج تحرير صفحة الـ Sections"
+
+#: pages Controller
+msgid "c_type"
+msgstr "نوع"
+
+msgid "c_id"
+msgstr "معرّف"
+
+msgid "parameter_required"
+msgstr "المعامل {0} مطلوب!" 
+
+msgid "html_page_creation_successfully"
+msgstr "تمّ إنشاء صفحة HTML بنجاح."
+
+msgid "html_page_updating_successfully"
+msgstr "تمّ تحديث صفحة الـ HTML بنجاح."
+
+msgid "section_page_creation_successfully"
+msgstr "تمّ إنشاء صفحة Sections بنجاح."
+
+msgid "section_page_updating_successfully"
+msgstr "تمّ تحديث صفحة الـ Sections بنجاح."
+  
+#: pages Index.cshtml
+msgid "new_html_page"
+msgstr "صفحة HTML جديدة"
+
+msgid "new_section_page"
+msgstr "صفحة Sections جديدة"
+
+#: HtmlPageDetails.cshtml
+msgid "page_details"
+msgstr "تفاصيل الصّفحة
+ 
+#:menus controller
+msgid "menu_creation_successfully"
+msgstr "تمّ إنشاء قائمة بنجاح."
+
+msgid "menu_updating_successfully"
+msgstr "تمّ تحديث القائمة بنجاح."
+
+#:menus Index.cshtml
+msgid "menus"
+msgstr "قوائم"
+
+msgid "new_menu"
+msgstr "قائمة جديدة"
+
+#:createform.cshtml
+
+msgid "create_menu"
+msgstr "إنشاء قائمة"
+
+#:EditForm.cshtml
+msgid "edit_menu"
+msgstr "تعديل قائمة"
+
+msgid "menu_structure"
+msgstr "بنية القائمة "
+
+msgid "submenu"
+msgstr "قائمة فرعيّة"
+
+#: menus _modal.cshtml
+msgid "page"
+msgstr "صفحة"
+
+msgid "parent_menu"
+msgstr "قائمة فرعيّة"
+
+msgid "link"
+msgstr "رابط"
+
+msgid "static_page"
+msgstr "صفحة ثابتة"
+
+msgid "service"
+msgstr "خدمة"
+
+msgid "gallery"
+msgstr "معرض"
+
+msgid "posts_section"
+msgstr "تصنبفات المقالات"
+
+msgid "services_section"
+msgstr "تصنيفات الخدمات"
+
+msgid "gallery_section"
+msgstr "تصنيفات معرض الصور"
+
+msgid "add_to_menu"
+msgstr "إضافة للقائمة"
+
+msgctxt "admin.Views.Menus.partials._modal"
+msgid "product"
+msgstr "منتَج"
+
+msgid "Create_section"
+msgctxt "تصنيف جديد"
+
+#:users Controller
+msgid "c_roles"
+msgstr "أدوار"
+
+msgid "c_roles_required"
+msgstr "تعيين أحد الأدوار مطلوب!"
+
+msgid "c_user_creation_successfully"
+msgstr "تمّ إنشاء مستخدم بنجاح."
+
+
+#: Users Index.cshtml
+msgid "Users"
+msgstr "مستخدمون"
+
+msgid "new_user"
+msgstr "مستخدم جديد"
+
+msgid "roles"
+msgstr "أدوار"
+
+msgid "user_role"
+msgstr "دور المستخدم"
+
+#:Users  Create.cshtml
+msgid "User_Create"
+msgstr "إنشاء مستخدم"
+
+msgid "new_user"
+msgstr "مستخدم جديد"
+
+#: Users Edit.cshtml
+msgid "user_edit"
+msgstr "تحرير مستخدم
+
+msgid "edit_user"
+msgstr "تحرير المستخدم"
+
+msgid "choose_picture"
+msgstr "اِختيار صورة"
+
+#: Users Details.cshtml
+msgid "user_details"
+msgstr "تفاصيل المستخدم"
+
+msgid "user_information"
+msgstr "معلومات المستخدم
+
+msgid "user_status"
+msgstr "حالة المستخدم :"
+
+msgid "send_email"
+msgstr "إرسال بريد إلكترونيّ"
+
+msgid "unblock_user"
+msgstr "إلغاء حجب المستخدم"
+
+msgid "block_user"
+msgstr "حجب المستخدم"
+
+#:CreateEmail.cshtml
+msgid "new_email"
+msgstr "بريد إلكترونيّ جديد"
+
+#:Services Controller
+
+#:Services index.cshtml
+msgctxt "admin.Views.Services.index"
+msgid "services"
+msgstr "خدمات"
+
+msgid "new_service"
+msgstr "خدمة جديدة"
+
+#:services Form.cshtml
+
+msgid "services_edit"
+msgstr "تحرير خدمة "
+
+msgid "services_create"
+msgstr "إنشاء خدمة "
+
+msgid "create_service"
+msgstr "إنشاء خدمة."
+
+msgid "edit_service"
+msgstr "تحديث خدمة."
+
+msgid "icon_visibility"
+msgstr "إمكانيّة رؤية الأيقونة"
+
+#: Services Details.cshtml
+msgid "service_details"
+msgstr "تفاصيل الخدمة"
+
+#: Sliders index.cshtml
+msgid "new_slider"
+msgstr "سلايدر جديد"
+
+#: EditSliderItemForm.cshtml
+msgid "edit_slider_item"
+msgstr "تحرير صورة في السّلايدر"
+ 
+msgid "f_slider_title"
+msgstr "عنوان السّلايدر :"
+
+#:EditSliderForm.cshtml
+msgid "edit_slider"
+msgstr "تحرير سلايدر"
+ 
+msgid "unpublish/publish"
+msgstr "نشر/إلغاء النّشر"
+ 
+msgid "slider"
+msgstr "سلايدر"
+
+#: _sliderItems.cshtml
+msgid "slider_items"
+msgstr "صور السّلايدر"
+ 
+msgid "upload_single_image"
+msgstr "رفع صورة واحدة"
+ 
+msgid "add_video"
+msgstr "إضافة فيديو"
+
+#: sliders Details.cshtml
+msgid "slider_details"
+msgstr "تفاصيل السّلايدر"
+
+#:CreateSliderItemForm.cshtml
+msgid "create_slider_item"
+msgstr "إنشاء صورة في السّلايدر"
+ 
+msgid "back_to_slider"
+msgstr "العودة إلى السّلايدر"
+
+#:CreateSliderForm.cshtml
+msgid "create_slider"
+msgstr "إنشاء سلايدر"
+
+
+#:galleries index.cshtml
+msgid "new_gallery"
+msgstr "معرض صور جديد"
+
+
+
+#:FormGalleryItem.cshtml
+msgid "create_gallery_item"
+msgstr "إنشاء صورة في المعرض"
+
+msgid "edit_gallery_item"
+msgstr "تحديث صورة في المعرض"
+
+msgid "back_to_gallery"
+msgstr "العودة إلى معرض الصّور"
+
+msgid "create_video_item"
+msgstr "إضافة فيديو"
+
+msgid "edit_video_item"
+msgstr "تعديل الفيديو"
+
+#:FormGallery.cshtml 
+msgid "create_gallery"
+msgstr "إنشاء معرض صور"
+
+msgid "update_gallery"
+msgstr "تحديث معرض صور"
+ 
+msgid "upload_multiple_images"
+msgstr "رفع عدّة صور"
+
+
+#: galleries Details.cshtml
+msgid "galleries_details"
+msgstr "تفاصيل معرض الصّور"
+
+msgid "gallery_pictures"
+msgstr "صور المعرض"
+
+#:_galleryitems.cshtml
+msgid "gallery_items"
+msgstr "صور المعرض"
+
+msgid "publish_all"
+msgstr "نشر الكلّ"
+
+msgid "Publish"
+msgstr "نشر"
+
+msgid "unpublish"
+msgstr "إلغاء النّشر"
+
+msgid "publish_all_images"
+msgstr "نشر كلّ الصّور"
+
+#:products controller
+
+msgid "product_ceation_successfully"
+msgstr "تمّ إنشاء منتَج بنجاح."
+
+msgid "product_updating_successfully"
+msgstr "تمّ تحديث المنتَج بنجاح."
+
+msgid "combination_creation_successfully"
+msgstr "تمّ إنشاء منتَج مخصّص بنجاح."
+
+msgid "attribute_creation_successfully"
+msgstr "تمّ إنشاء سمات منتَج بنجاح."
+
+msgid "attribute_updating_successfully"
+msgstr "تمّ تحديث سمات المنتَج بنجاح."
+
+msgid "attribute_value_creation_successfully"
+msgstr "تمّ إنشاء قيم سمات المنتَج بنجاح."
+
+msgid "attribute_value_updating_successfully"
+msgstr "تمّ تحديث قيم سمات المنتَج بنجاح."
+
+#: product javascript 
+msgid "delete_combination"
+msgstr "حذف المنتَج المخصّص"
+#: products Index.cshtml
+msgctxt "admin.Views.Products.index"
+msgid "Products"
+msgstr "المنتَجات"
+
+msgid "new_product"
+msgstr "منتَج جديد"
+
+#: products List.cshtml
+msgid "Products_list"
+msgstr "قائمة المنتَجات"
+
+#: products Form.cshtml
+msgid "create_product"
+msgstr "إنشاء منتَج."
+
+msgid "edit_product"
+msgstr "تحديث منتَج."
+
+msgid "product_info"
+msgstr "معلومات المنتَج"
+
+msgid "product_specifications"
+msgstr "مواصفات المنتَج"
+
+msgid "product_description"
+msgstr "وصف المنتَج"
+
+msgid "product_pictures"
+msgstr "صور المنتَج"
+
+msgid "product_attributes"
+msgstr "سمات المنتَج"
+
+#: products combination Modal
+msgid "select_new_combination"
+msgstr "اِختر منتَج مخصّص جديد و أدخل التّفاصيل أدناه "
+
+#: _Form_information_tab.cshtml
+msgid "f_short_description"
+msgstr "وصف قصير :"
+
+msgid "f_full_description"
+msgstr "وصف كامل (WEB) :"
+
+msgid "maximum_cart_quantity"
+msgstr "الكميّة القصوى لعربة التّسوّق"
+ 
+msgid "requires_shipping"
+msgstr "يتطلّب شحن"
+
+msgid "free_shipping"
+msgstr "شحن مجّانيّ"
+
+msgid "weight"
+msgstr "الوزن"
+
+msgid "gram"
+msgstr "غرام"
+
+msgid "millimeter"
+msgstr "ميلّيمتر"
+
+msgid "height"
+msgstr "الإرتفاع"
+
+msgid "length"
+msgstr "الطّول"
+
+msgid "width"
+msgstr "العرض"
+
+#: products _Form_Images_tab.cshtml
+msgid "product_images"
+msgstr "صور المنتَج"
+
+msgid "add_images"
+msgstr "إضافة صور"
+
+msgid "remove_selected_images"
+msgstr "إزالة الصّور المحدّدة"
+
+#: Products _Form_Attributes_tab.cshtml
+msgid "attributes"
+msgstr "السّمات"
+
+msgid "attribute_combinations"
+msgstr "الخصائص"
+
+msgid "values"
+msgstr "القيم"
+
+msgid "option_value"
+msgstr "قيمة الخيار"
+
+msgid "add_option"
+msgstr "إضافة خيار"
+
+msgid "add_attribute"
+msgstr "إضافة سمة"
+
+msgid "add_combination"
+msgstr "إضافة خصائص"
+
+#: categories controller
+
+msgid "category_creation_successfully"
+msgstr "تمّ إنشاء فئة بنجاح."
+
+#: caegories index.cshtml
+msgid "new_category"
+msgstr "فئة جديدة"
+
+#: home _welcome-panel.cshtml
+msgid "welcome_to_tamcms"
+msgstr "مرحباً بكم في لوحة تحكّم TamCMS!"
+
+msgid "welcome_message"
+msgstr "لقد قمنا بجمع بعض الرّوابط من أجل أن تبدأ:"
+
+msgid "create_page"
+msgstr "إنشاء صفحة"
+ 
+msgid "next_steps"
+msgstr "خطوات تالية"
+
+msgid "get_started"
+msgstr "في البداية"
+
+msgid "more_actions"
+msgstr "المزيد"
+
+msgid "upload_first_gallery"
+msgstr "اِرفع أوّل معرض صور"
+ 
+msgid "managing_services"
+msgstr "اِبدأ بإدارة خدماتك"
+ 
+msgid "view_site"
+msgstr "اِستعرض موقعك"
+ 
+msgid "check_home_slider"
+msgstr "تحقّق من سلايدر صفحتك الرّئيسيّة"
+
+#: validator.messages
+
+msgid "this_is_field_is_required"
+msgstr "هذا الحقل مطلوب."
+
+msgid "fix_this_field"
+msgstr "أصلح هذا الحقل من فضلك."
+
+msgid "enter_valid_email"
+msgstr "أدخل عنوان بريد إلكترونيّ صالح من فضلك."
+
+msgid "enter_valid_url"
+msgstr "أدخل رابط صالح من فضلك."
+
+msgid "enter_valid_date"
+msgstr "أدخل تاريخ صالح من فضلك."
+
+msgid "enter_valid_iso"
+msgstr "أدخل تاريخ (ISO) صالح من فضلك."
+
+msgid "enter_valid_number"
+msgstr "أدخل رقم صالح من فضلك."
+
+msgid "enter_only_digits"
+msgstr "أدخل أرقام فقط من فضلك."
+
+msgid "enter_same_value"
+msgstr "أدخل القيمة نفسها مرّة ثانية من فضلك."
+
+msgid "enter_more_than_characters"
+msgstr "لا تدخل أكثر من {0} محرف من فضلك."
+
+msgid "enter_at_least_characters"
+msgstr "أدخل على الأقل {0} محرف من فضلك."
+
+msgid "enter_value_between_characters"
+msgstr "أدخل قيمة بطول يتراوح بين {0} و {1} محرف من فضلك."
+
+msgid "enter_value_between_0_and_1"
+msgstr "أدخل قيمة بين {0} و {1} من فضلك."
+
+msgid "enter_value_less_or_equal"
+msgstr "أدخل قيمة أصغر أو تساوي {0} من فضلك."
+
+msgid "enter_value_greater_or_equal"
+msgstr "أدخل قيمة أكبر أو تساوي {0} من فضلك."
+
+msgid "enter_multiple_of"
+msgstr "أدخل مضاعف للعدد {0} من فضلك."
+
+msgid "enter_vaild_extension"
+msgstr "أدخل قيمة بِامتداد صالح من فضلك."
+#: Posts index.cshtml
+msgid "Posts"
+msgstr "مقالات"
+
+msgid "new_post"
+msgstr "مقالة جديدة"
+
+msgid "page_size"
+msgstr "عدد العناصر"
+
+msgid "sort_by"
+msgstr "ترتيب حسب"
+
+msgid "post_name"
+msgstr "عنوان المقالة"
+
+msgid "section_name"
+msgstr "اسم التصنيف"
+
+
+
+#: Posts Form.cshtml
+msgid "post_edit"
+msgstr "تعديل مقالة"
+
+msgid "post_create"
+msgstr "مقالة جديدة"
+
+
+
+#: Posts Details.cshtml
+
+msgid "post_details"
+msgstr "تفاصيل المقالة"
+
+#: Sections Controller
+
+msgid "section_creation_successfully"
+msgstr "تم إنشاء التصنيف بنجاح"
+
+msgid "section_editing_successfully"
+msgstr "تم تعديل التصنيف بنجاح"
+
+#:Sections index.cshtml
+
+msgid "sections"
+msgstr "التصنيفات"
+
+msgid "new_section"
+msgstr "تصنيف جديد"
+
+#:Sections Form.cshtml
+
+msgid "create_section"
+msgstr "تصنيف جديد"
+
+msgid "edit_section"
+msgstr "تحرير التصنيف"
+
+#: Section Details.cshtml
+msgid "section_details"
+msgstr "تفاصيل التصنيف"
+
+msgid "section_parent"
+msgstr "التصنيف الأب"
+
+# : request index.cshtml 
+
+msgid "customer_name"
+msgstr "الأسم"
+
+msgid "all_cities"
+msgstr "كل المدن"
+
+msgid "choice_option"
+msgstr "ترتيب بحسب"
+
+#: request details.cshtml
+
+msgid "request_details"
+msgstr "تفاصيل الطلب"
+ 
+msgid "request_status"
+msgstr "حالة الطلب"
+
+msgid "request_date"
+msgstr "تاريخ الطلب"
+
+msgid "personal_information"
+msgstr "المعلومات الشخصية"
+
+msgid "request_information"
+msgstr "معلومات الطلب"
+
+msgid "request_history"
+msgstr "العمليات المنفذة"
+
+msgid "process_date"
+msgstr "تاريخ العملية"
+
+msgid "current_status"
+msgstr "الحالة"
+
+msgid "previous_status"
+msgstr "الحالة السابقة"
+
+msgid "information"
+msgstr "المعلومات"
+
+msgid "history"
+msgstr "ارشيف"
+ 
+msgid "greaterThan_msg"
+msgstr "يجب ان تكون القيمة أكبر من  "
+
+msgid "slug_msg"
+msgstr "فقط احرف وارقام والمسافات غير مسموحة ويمكن استخدم  _ + -"
+
+msgid "regex_msg"
+msgstr "الرجاء التأكد من القيمة المدخلة"
+
+msgid "lessThan_msg"
+msgstr "القيمة يجب ان تكون أقل من"
+
+msgid "json_msg"
+msgstr "الرجاء إدخال شيفرة برمجية صالحة"
+
+msgid "schemaType_msg"
+msgstr  " لايمكن ترك حقل (@type) فارغ"
+
+msgid "url_msg"
+msgstr "الرجاء إدخال رابط صحيح  http://example.com "
+
+msgid "filesize_msg"
+msgstr "حجم الملف يجب ان يكون اصغر من"
+
+# :controller adminbaseController.cs // filters
+
+msgid "title_a_to_z"
+msgstr "الأسم : ا الى ي" 
+
+msgid "title_z_to_a"
+msgstr "الأسم : ي الى ا"
+
+msgid "newst_first"
+msgstr "الأحدث أولاً"
+
+msgid "oldest_first"
+msgstr "الأقدام أولاً" 
+ 
+
+
+#:home page
+
+msgid "home_page"
+msgstr "الرئيسية"
+
+
+#: _statisticsPanel.cshtml
+
+msgid "h_page"
+msgstr "الصفحات"
+
+msgid "h_section"
+msgstr "التصنيفات"
+
+msgid "h_service"
+msgstr "الخدمات"
+
+msgid "h_gallery"
+msgstr "المعارض"
+
+msgid "more_info"
+msgstr "معرفة المزيد"
+
+msgid "fullscreen"
+msgstr "ملئ الشاشة"
+
+msgid "Log_Out"
+msgstr "تسجيل الخروج"
+
+
+msgid "Slug_ar"
+msgstr "الاسم اللطيف"
+
+msgid "Title_ar"
+msgstr "العنوان"
+
+msgid "MainImage_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "VideoUrl_ar"
+msgstr "رابط الفيديو"
+
+msgid "Content_ar"
+msgstr "محتوى"
+
+msgid "Image_ar"
+msgstr "الصّورة الرّئيسيّة"
+
+msgid "section_projects"
+msgstr "مشاريع"
+
+msgid "section_works"
+msgstr "أعمال"
+
+msgid "View_in_website"
+msgstr "مشاهدة ضمن الموقع"
+
+msgid "new_tab"
+msgstr " فتح في تبويب جديد"
+
+msgid "same_tab"
+msgstr " فتح في نفس التبويب"
+
+msgid "start_chat_in_whatsapp"
+msgstr "بدء محادثة"
+
+msgid "mobile_number_not_confirmed"
+msgstr "رقم الجوال غير مؤكد"
+
+
+msgid "TAMCMS_UsersAdmin"
+msgstr "مدير المستخدمين"
+
+msgid "TAMCMS_MenusContentAdmin"
+msgstr "مدير القوائم"
+
+msgid "TAMCMS_PagesContentAdmin"
+msgstr "مدير الصفحات"
+
+msgid "TAMCMS_PostAuthor"
+msgstr "مؤلف المقالات"
+
+msgid "TAMCMS_GalleriesContentAdmin"
+msgstr "مدير المعارض"
+
+msgid "TAMCMS_SlidersContentAdmin"
+msgstr "مدير السلايدرات"
+
+msgid "TAMCMS_PostsContentAdmin"
+msgstr "مدير المقالات"
+
+msgid "TAMCMS_ServicesContentAdmin"
+msgstr "مدير الخدمات"
+
+msgid "TAMCMS_ProductsContentAdmin"
+msgstr "مدير النتجات"
+
+msgid "TAMCMS_PostsEditor"
+msgstr "محرر مقالات"
+
+
+msgid "email_to"
+msgstr "رسالة إلى"
+
+msgid "email_sent"
+msgstr "تم إرسال الرسالة"
+
+# testimonials
+msgid "new_testimonial"
+msgstr "توصية جديدة"
+
+
+msgid "edit_testimonial"
+msgstr "تعديل التوصية"
+
+msgid "create_testimonial"
+msgstr "إنشاء توصية"
+
+msgid "testimonial_details"
+msgstr "تفاصيل التوصية"
+
+msgid "testimonials"
+msgstr "التوصيات"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

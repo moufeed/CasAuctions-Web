@@ -1,0 +1,114 @@
+﻿
+@if (ViewData != null)
+{
+    if (ViewData["SuccessResultMode"] != null && (bool)ViewData["SuccessResultMode"] == true)
+    {
+
+        <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Success!</strong> @ViewData["SuccessModel"]
+        </div>
+    }
+    else if (ViewData["ErrorResultMode"] != null && (bool)ViewData["ErrorResultMode"] == true && !ViewData.ModelState.IsValid)
+    {
+
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Error!</strong>
+            @foreach (var error in ViewData.ModelState)
+            {
+                foreach (var value in error.Value.Errors)
+                {
+                    @value.ErrorMessage <br />
+                }
+            }
+        </div>
+
+
+        @*foreach (var error in ViewData.ModelState.Errors)
+            {
+                <div class="alert alert-danger" role="alert">
+                    <strong></strong> @error.ErrorMessage
+                </div>
+            }*@
+    }
+    else if (ViewData["ExpResultMode"] != null && (bool)ViewData["ExpResultMode"] == true && !ViewData.ModelState.IsValid)
+    {
+
+
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Exception!</strong>
+            @foreach (var error in ViewData.ModelState)
+            {
+                foreach (var value in error.Value.Errors)
+                {
+
+                    @value.ErrorMessage <br />
+                }
+
+            }
+        </div>
+
+    }
+    else if (ViewData["WarningResultMode"] != null && (bool)ViewData["WarningResultMode"] == true)
+    {
+        if (!ViewData.ModelState.IsValid)
+        {
+
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong>
+                @foreach (var error in ViewData.ModelState)
+                {
+                    foreach (var value in error.Value.Errors)
+                    {
+                        @value.ErrorMessage <br />
+
+                    }
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Warning!</strong> @ViewData["SuccessModel"]
+            </div>
+        }
+    }
+    else if (ViewData["InfoResultMode"] != null && (bool)ViewData["InfoResultMode"] == true)
+    {
+        if (!ViewData.ModelState.IsValid)
+        {
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Info!</strong>
+                @foreach (var error in ViewData.ModelState)
+                {
+                    foreach (var value in error.Value.Errors)
+                    {
+                        @value.ErrorMessage
+
+                    }
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <strong>Info!</strong> @ViewData["SuccessModel"]
+            </div>
+        }
+    }
+    else
+    {
+        @*<div class="alert alert-info alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <strong>Info!</strong> alert-info.
+        </div>*@
+
+    }
+}
+@*<div class="alert alert-info"> result message alert </div>*@

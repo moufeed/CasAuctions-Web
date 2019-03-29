@@ -1,0 +1,197 @@
+
+# adminbar
+msgid "Dashboard"
+msgstr "Kontrol Paneli"
+
+msgid "Log_Out"
+msgstr "Çıkış Yap"
+
+# tobbar
+msgid "mail_Us"
+msgstr "Bize E-Posta ile Ulaşın"
+
+# bootombar
+msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
+msgstr "Copyright © 2018 TamTech Solutions. Tüm Hakları Saklıdır."
+
+msgid "Powered_by"
+msgstr "Tarafından Desteklenmektedir"
+
+msgid "tamtech"
+msgstr "TamTech"
+
+# index
+msgid "Welcome_Totamtech"
+msgstr "TamTech'e Hoşgeldiniz"
+
+msgid "Who_we_are"
+msgstr "Biz Kimiz?"
+
+msgid "services_we_offer"
+msgstr "Sunduğumuz Hizmetler"
+
+msgid "What_we_do"
+msgstr "Neler Yapıyoruz?"
+
+msgid "Why_Choose_Us"
+msgstr "Neden Bizi Tercih Etmelisiniz?"
+
+msgid "What_Clients_say"
+msgstr "Müşterilerimiz Ne Diyor?"
+
+msgid "Our_Clients"
+msgstr "Müşterilerimiz"
+
+msgid "meet_our_clients"
+msgstr "Müşterilerimizle Tanışın"
+
+#about us
+
+msgid "our_mission"
+msgstr "Misyonumuz"
+
+msgid "happy_clients"
+msgstr "Mutlu Müşteriler"
+
+msgid "years_in_business"
+msgstr "İşletmelerde Yıllardır"
+
+msgid "cups_of_coffee"
+msgstr "Kahve Fincanları"
+
+msgid "no_projects"
+msgstr "Projelerin Sayısı"
+
+msgid "our_values"
+msgstr "Değerlerimiz"
+
+msgid "our_vision"
+msgstr "Vizyonumuz"
+
+ 
+
+#: contact us
+msgid "contact_us"
+msgstr "Bizimle İletişime Geçin"
+
+msgid "Address"
+msgstr "Adres"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Mobile"
+msgstr "Cep Telefonu"
+
+msgid "Email"
+msgstr "E-posta"
+
+msgid "Find_us"
+msgstr "Bizi Bulun"
+
+msgid "Get_in_Touch"
+msgstr "Temasa Geçin"
+
+msgid "send_us_meesage"
+msgstr "Bize Mesaj Gönderin"
+
+msgid "name"
+msgstr "İsim"
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "Send_it"
+msgstr "Gönder"
+
+msgid "close"
+msgstr "Kapat"
+
+msgid "mobile_no"
+msgstr "Cep Telefon Numarası"
+
+msgid "dear_customer"
+msgstr  "Sayın  <strong class=\"customer_name\"></strong>, İletişime Geçtiğiniz İçin Teşekkürler!"
+
+msgid  "We_have_received_your_message"
+msgstr  "Mesajınızı Aldık Ve Bize Yazdığınız İçin Teşekkür Ederiz. Acilse, Bizimle Konuşmak İçin Aşağıda Listelenen Cep Telefonu Numarasını Da Kullanabilirsiniz."
+
+msgid  "have_great_day"
+msgstr  "İyi Günler!"
+
+
+msgid "About_Us"
+msgstr "Hakkımızda"
+
+msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
+msgstr "Bizimle İletişim Kurmak İçin <span>{0}</span> Numarayı Arayın Veya <span>{1}</span> Adresinie E-posta Gönderin."
+
+msgid  "Start_Now"
+msgstr "Şimdi Başlayın"
+
+#:galleries
+msgid "our_galleries"
+msgstr "Galerilerimiz"
+
+msgid "Galleries"
+msgstr "Galeriler"
+
+msgid "Gallery"
+msgstr "Galeri"
+
+msgid "Services"
+msgstr "Hizmetler"
+
+msgid "our_services"
+msgstr "Hizmetlerimiz"
+
+msgid "read_more"
+msgstr "Devamını Okuyun"
+
+#: Products
+
+msgid "Products"
+msgstr "Ürünler"
+
+msgid "Our_products"
+msgstr "Ürünlerimiz"
+
+msgid "Previous"
+msgstr "Önceki"
+
+msgid "Next"
+msgstr "Sonraki"
+
+msgid "Description"
+msgstr "Açıklama"
+
+msgid "By"
+msgstr "Yapan"
+
+msgid "share_this_post"
+msgstr "Bu Yazıyı Paylaş"
+
+
+#request quote
+
+msgid "request_quote"
+msgstr "Fiyatlandırma Talebi"
+
+
+msgid "AuthorName"
+msgstr "Yazar Adı"
+
+msgid "Company"
+msgstr "şirket"
+
+msgid "job_position"
+msgstr "iş pozisyonu"
+
+msgid "avatar"
+msgstr "avatar"
+
+msgid "rating"
+msgstr "değerlendirme"
+
+msgid "title"
+msgstr "Başlık"

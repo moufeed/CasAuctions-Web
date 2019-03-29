@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>  
+    <Authors>TamTech</Authors>
+    <AssemblyVersion>0.0.3.5</AssemblyVersion>
+    <Version>0.0.3.5</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <FileVersion>0.0.3.5</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\CommonModels\Settings\**" />
+    <Compile Remove="Settings\Configurations\Cultures\Models\**" />
+    <EmbeddedResource Remove="Models\CommonModels\Settings\**" />
+    <EmbeddedResource Remove="Settings\Configurations\Cultures\Models\**" />
+    <None Remove="Models\CommonModels\Settings\**" />
+    <None Remove="Settings\Configurations\Cultures\Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>

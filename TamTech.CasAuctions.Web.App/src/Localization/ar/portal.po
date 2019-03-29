@@ -1,0 +1,204 @@
+
+# adminbar
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Log_Out"
+msgstr "تسجيل الخروج"
+
+# tobbar
+msgid "mail_Us"
+msgstr "راسلنا"
+
+# bootombar
+msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
+msgstr "جميع الحقوق محفوظة لصالح تام تك ©2018"
+
+msgid "Powered_by"
+msgstr "تطوير"
+
+msgid "tamtech"
+msgstr "تام تك"
+
+# index
+msgid "Welcome_Totamtech"
+msgstr "مرحبا بك في تام تك"
+
+msgid "Who_we_are"
+msgstr "من نحن ؟"
+
+msgid "services_we_offer"
+msgstr "خدمات نقدّمها"
+
+msgid "What_we_do"
+msgstr "عملنا"
+
+msgid "Why_Choose_Us"
+msgstr "لماذا نحن ؟"
+
+msgid "What_Clients_say"
+msgstr "ماذا يقول العملاء ؟"
+
+msgid "Our_Clients"
+msgstr "عملاؤنا"
+
+msgid "meet_our_clients"
+msgstr "اِلتقِ بعملائنا"
+
+# about us
+msgid "our_mission"
+msgstr "مهمّتنا"
+
+msgid "happy_clients"
+msgstr "عملاء سعيدون"
+
+msgid "years_in_business"
+msgstr "في مجال الأعمال لسنوات"
+
+msgid "cups_of_coffee"
+msgstr "فناجين قهوة"
+
+msgid "no_projects"
+msgstr "عدد من المشاريع"
+
+msgid "our_values"
+msgstr "قيمنا"
+
+msgid "our_vision"
+msgstr "رؤيتنا"
+
+#: contact us
+msgid "contact_us"
+msgstr "تواصل معنا"
+
+msgid "Address"
+msgstr "العنوان"
+
+msgid "Phone"
+msgstr "الهاتف"
+
+msgid "Mobile"
+msgstr " الهاتف المحمول"
+
+msgid "Email"
+msgstr "البريد الإلكترونيّ"
+
+msgid "Find_us"
+msgstr "جِدْنا"
+
+msgid "Get_in_Touch"
+msgstr "اِتّصل بنا"
+
+msgid "send_us_meesage"
+msgstr "أرسل لنا رسالة"
+
+msgid "name"
+msgstr "الاسم"
+
+msgid "Message"
+msgstr "الرّسالة"
+
+msgid "Send_it"
+msgstr "أرسل"
+
+msgid "close"
+msgstr "أغلق"
+
+msgid "mobile_no"
+msgstr "رقم الهاتف المحمول"
+
+msgid "dear_customer"
+msgstr  "عزيزي  <strong class=\"customer_name\"></strong>, شكراً لتواصلك معنا!"
+
+msgid  "We_have_received_your_message"
+msgstr  "لقد استلمنا رسالتك و نودّ أن نشكرك لمراسلتنا. إذا كان الأمر مستعجلاً, يمكنك أيضاً استخدام رقم الهاتف المحمول أدناه للتّحدّث معنا."
+
+msgid  "have_great_day"
+msgstr  "طاب يومك!"
+
+
+msgid "About_Us"
+msgstr "عنّا"
+
+msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
+msgstr "اِتّصل بنا اليوم على <span>{0}</span> أو أرسل لنا بريداً إلكترونيّاً على  <span>{1}</span>"
+
+msgid  "Start_Now"
+msgstr "اِبدأ الآن"
+
+#:galleries
+msgid "our_galleries"
+msgstr "معارضنا"
+
+msgid "Galleries"
+msgstr "معارض الصّور"
+
+msgid "Gallery"
+msgstr "معرض صور"
+
+msgid "Services"
+msgstr "خدمات"
+
+msgid "our_services"
+msgstr "خدماتنا"
+
+msgid "read_more"
+msgstr "اِقرأ أكثر"
+
+#: Products
+
+msgid "Products"
+msgstr "منتَجات"
+
+msgid "Our_products"
+msgstr "منتَجاتنا"
+
+msgid "Previous"
+msgstr "السّابق"
+
+msgid "Next"
+msgstr "التّالي"
+
+msgid "Description"
+msgstr "وصف"
+
+msgid "By"
+msgstr "بواسطة"
+
+msgid "share_this_post"
+msgstr "مشاركة "
+
+#request quote
+
+msgid "request_quote"
+msgstr "عرض سعر"
+
+msgid "AuthorName"
+msgstr "الإسم"
+
+msgid "Company"
+msgstr "الشركة"
+
+msgid "job_position"
+msgstr "المسمى الوظيفي"
+
+msgid "avatar"
+msgstr "الصورة"
+
+msgid "rating"
+msgstr "التقيم"
+
+msgid "title"
+msgstr "العنوان"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

@@ -1,0 +1,53 @@
+
+  .topbar{
+
+    @include media-breakpoint-only(md){
+        justify-content: center !important;
+    }
+  }
+
+.header-nav-top{
+    li {
+        margin: 0 rem(5px);
+        font-size: rem(13px);
+        color:$medium_text ;
+       i{
+        margin: 0 rem(2px);
+       }
+       a {
+           color: $default_link_color;
+           &:hover{
+               color: $default_link_hover_color;
+           }
+       }
+    }
+}
+
+
+
+
+.header-search{
+    margin-#{$left}:rem(15px);
+    position: relative;
+    .form-control{
+        border-radius: $header_input_border_radius;
+        padding-#{$right}:36px;
+    }
+    .btn{
+        @include absolute (top $right, 1px );  
+        background: transparent;
+        border: 0;
+        border-radius:50%; 
+        @include square(36px);
+        &:hover{
+            background: $buttons_light_hover_bg ;
+            color: $buttons_light_hover_color ;
+        }
+        &:active{  
+            background: $buttons_light_active_bg ;
+            color: $buttons_light_hover_color ;
+        }
+    }
+} 
+ 
+ 

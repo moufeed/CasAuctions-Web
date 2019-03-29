@@ -1,0 +1,167 @@
+﻿@model EmailVM
+@{
+    ViewData["Title"] = Localizer["new_email"];
+    ViewData["UnitTestPageClass"] = "ut-Email_create";
+    var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
+}
+
+<div class="clearfix">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>@Localizer["new_email"]</h3>
+        </div>
+        <div class="title_right">
+            @if (ViewBag.SpecificUser)
+            {
+                <a  OnClick="JavaScript: window.history.back(1); return false;"
+                   class="btn btn-blue"><span class="fa fa-chevron-left"></span>@Localizer["back"]</a>
+            }
+            else
+            {
+                <a asp-action="Index"
+                   class="btn btn-blue"><span class="fa fa-chevron-left"></span>@Localizer["back_to_list"]</a>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+
+        @{
+            ViewBag.LanguageTabsRouteValues = new Microsoft.AspNetCore.Routing.RouteValueDictionary {
+                { "username" , ViewBag.username},
+                { "email", ViewBag.email},
+                { "bt", ViewBag.route}
+            };
+        }
+        @await Html.PartialAsync("~/Areas/Admin/Views/Shared/partials/_LanguageTabs.cshtml")
+
+        <div class="x_panel p-x-0">
+            <div class="x_content">
+                @{ string target = "Create"; }
+
+                @using (Html.BeginForm(target, "Email", FormMethod.Post,
+        new
+        {
+            enctype = "multipart/form-data",
+            @class = "form-horizontal forn-new form-label-left m-t5",
+            id = "EmailForm"
+        }))
+
+                {
+                    @Html.ValidationSummary(true)
+
+
+                    <input type="hidden" name="UserName" value="@ViewBag.username" />
+
+                    <input type="hidden" name="route" value="@ViewBag.route" />
+
+                    <div class="form-group clearfix">
+                        <label asp-for="Subject" class="control-label col-md-2 col-sm-3 col-xs-12 ">@Localizer["f_subject"] <i class="fa fa-asterisk c-red fz-10 "></i>
+</label>
+                        <div class="col-md-10 col-lg-9 col-sm-5 col-xs-12">
+                            <input type="text" asp-for="Subject" class="form-control" required id="ut-subject" />
+                            <span asp-validation-for="Subject" class="text-danger invalid_field"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group clearfix">
+                        <label asp-for="Recipients" class="control-label col-md-2 col-sm-3 col-xs-12 ">@Localizer["f_recipients"]</label>
+                        <div class="col-md-10 col-lg-9 col-sm-5 col-xs-12">
+
+                            @if (ViewBag.SpecificUser)
+                            {
+
+                                <input type="hidden" name="Recipients" value="@ViewBag.email" />
+                                <input type="text" value="@ViewBag.username / @ViewBag.email" disabled class="form-control" />
+
+
+                            }
+                            else
+                            {
+                                <select asp-for="Recipients"
+                                        name="Recipients" id="Recipients"
+                                        asp-items="ViewBag.UsersList"
+                                        class="form-control select_picker"
+                                        multiple="multiple"
+                                        data-live-search="true"
+                                        size="5"
+                                        required
+                                        data-style="btn-select"
+                                        data-max-options="50"
+                                        data-selected-text-format="count > 4"></select>
+                                <span asp-validation-for="Recipients" class="text-danger invalid_field"></span>
+                            }
+                        </div>
+                    </div>
+
+
+                    <div class="form-group clearfix">
+                        <label asp-for="Message" class="control-label col-md-2 col-sm-3 col-xs-12 ">@Localizer["f_massage"]<i class="fa fa-asterisk c-red fz-10 "></i>
+</label>
+                        <div class="col-md-10 col-lg-9 col-sm-5 col-xs-12">
+                            <textarea asp-for="Message" class="form-control" rows="12" required></textarea>
+                            <span asp-validation-for="Message" class="text-danger invalid_field"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-10 col-lg-9 col-md-offset-3 col-sm-offset-4 col-sm-6 col-xs-12 text-right">
+                            <input type="submit" class="btn btn-success p-x-5 ut-send_btn" value="@Localizer["send"]">
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@section Styles{
+    <link href="~/Admin/lib/select2/dist/css/select2.min.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+
+    <script src="~/Admin/js/validator.min.js"></script>
+    <script src="~/Admin/lib/select2/dist/js/select2.min.js"></script>
+    <script src="~/Admin/lib/tinymce/tinymce.js"></script>
+
+    <script>
+         $('.select_picker').select2();
+
+
+        $('#EmailForm').validate({
+            errorClass: "invalid_field",
+            validClass: "valid_field",
+            ignore: ".ignore"
+        });
+
+
+        tinymce.init({
+            selector: '#Message',
+            branding: false,
+            min_height: 150,
+
+            statusbar: false,
+            theme: 'modern',
+            menubar: false,
+            plugins: ['code hr anchor pagebreak spellchecker '],
+            setup: function (editor) {
+                editor.on('change', function (e) {
+                    editor.save();
+                });
+            }
+        });
+
+    </script>
+
+}

@@ -1,0 +1,75 @@
+
+.post-content{
+    .main-image{
+        max-height: 500px;
+        overflow-y: hidden;
+        position: relative;
+        background: #f5f5f5;
+         img{
+            max-height: 100%;
+            max-width: 100%;
+         }
+    }
+    header{
+        padding-bottom: 15px;
+        h2{
+            color: $deep_navy;
+        }
+        small{
+            display: inline-block;
+            margin: 0 3px;
+        }
+        .fa{
+            color: lighten($light_text ,5%);
+        }
+    }
+}
+ 
+.categories-list{
+    ul{
+        ul{
+            margin-#{$left}: 10px;
+        }
+        li{
+            a{
+                position: relative;
+                color: $dark_text;
+                display: block;
+                height: 37px;
+                text-decoration: none;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+                padding: side-values(8px 0px 8px 22px);
+                text-transform: capitalize;
+                &:before{
+                    color: lighten($dark_text,25%);
+                    opacity: .7;
+                    font-family: "FontAwesome";
+                    content: if-ltr('\f105' ,'\f104');
+                    display: block;
+                    position: absolute;
+                    #{$left}: 10px;
+                    transition: all .3s;
+                        @include keyframe(arrowLeftRight){
+                            0% { transform: translate3d(-1px, 0, 0); }
+                            50% { transform: translate3d(1px, 0, 0); }
+                            100% { transform: translate3d(-1px, 0, 0); }
+                        }
+                }
+                &:hover{
+                    &::before{
+                        animation-name: arrowLeftRight;
+                        animation-duration: 500ms;
+                        animation-iteration-count: infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+ 
+ 
+
+ 
+ 

@@ -1,0 +1,21 @@
+
+@using TamTech.CasAuctions.Web.Core.Models
+@using Microsoft.AspNetCore.Mvc.Razor
+@using System.Text.RegularExpressions
+@using Newtonsoft.Json
+@using TamTech.CasAuctions.Web.Core.Extensions
+@using TamTech.CasAuctions.Web.App.Settings.Cultures
+@using CasAdmin.Settings.Configurations.AppSettings.Constants
+@using Microsoft.AspNetCore.Mvc.Localization
+
+@using TamTech.CasAuctions.Web.Core.ViewModels.Admin.User
+@using TamTech.CasAuctions.Web.Core.ViewModels.Admin.Email
+@using TamTech.CasAuctions.Web.Core.Models.CommonModels.Filters
+@using TamTech.CasAuctions.Web.Core.Models.IdentityModels
+@inject IViewLocalizer Localizer
+
+@using TamTech.CasAuctions.Web.Core.ViewModels
+@using TamTech.CasAuctions.Web.Core.Settings.Configurations.Cultures
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *, TamTech.CasAuctions.Web.Core

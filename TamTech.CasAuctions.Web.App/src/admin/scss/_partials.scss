@@ -1,0 +1,26 @@
+
+ 
+@import "../lib/bootstrap-3.3.7/css/bootstrap";
+@import './node_modules/chart.js/dist/Chart.min';
+@import 
+        'lib/fonts',
+        "lib/lightbox",
+        "lib/switch",
+        "lib/custom-scrollbar",
+        "lib/btn";
+
+@import 
+        "partials/defualt" ,
+        "partials/sidebar" ,
+        "partials/topbar" ,
+        "partials/template" ,
+        "partials/table" ,
+        "partials/custom",
+        "partials/services", 
+        "partials/galleries", 
+        "partials/sliders" ,
+        "partials/seo" ,
+        "partials/home/welcome-panel",
+        "partials/home/statistics_panel",
+        "partials/requests"
+ ; 

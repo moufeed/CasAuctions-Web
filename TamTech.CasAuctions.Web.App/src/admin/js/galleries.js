@@ -1,0 +1,179 @@
+$(document).ready(() => {
+
+
+    $(document).on("click", ".delete__gallery", function (event) {
+        event.preventDefault();
+        var $this = $(this),
+            target = $this.data('target'),
+            dataurl = $this.data('url'),
+            error = $this.data('msg-error') || "Error!",
+            deleted = $this.data('msg-deleted') || "Deleted successfully";
+            
+        $Confirm({},function (result) {
+            if (result.value) {
+                $.ajax({
+                        url: dataurl,
+                        type: 'Get',
+                        dataType: "json",
+                        data: {}
+                    })
+                    .done(function (data) {
+                        if (data.success) {
+                            $notification.success("", deleted , 2000, "fa fa-check");
+                            $(target).remove();
+                        } else {
+                            
+                            var errors = data.errors;
+                            if (errors.length > 0) {
+                                txt = MakeErrorsMsg(errors);
+                                $notification.error("", txt , 3500, "fa fa-exclamation-circle");
+                            }
+                        }
+                    }).fail(function (jqXHR, Status) {
+                        $notification.error(error, jqXHR.statusText, 2000, "fa fa-exclamation-circle");
+                    })
+            }
+        })
+
+    })
+
+
+
+ 
+
+
+
+    $(document).on("click", ".toggle__publish__item", function (event) {
+        event.preventDefault();
+        var $this = $(this),
+            dataurl = $this.data('url'),
+            unpublish =  $this.data('text-unpublish') || "unpublish",
+            publish =  $this.data('text-publish') || "publish";
+
+        $this.find('.fa').removeClass().addClass("fa fa-spinner fa-pulse");
+
+        $.ajax({
+                url: dataurl,
+                type: 'GET',
+                dataType: "json",
+                data: {}
+            })
+            .done(function (data) {
+                if (data.success) { //.toggleClass("ut-unpublished ut-published");
+                     
+                    if($this.hasClass("unpublished")){
+                        $this.attr("title", unpublish);
+                        $this.toggleClass("unpublished published  ut-unpublished ut-published");
+                        $this.find('.fa').removeClass().addClass("fa fa-eye-slash");
+                        $this.find(".text").text(unpublish)
+                    }else{
+                        
+                        $this.attr("title", publish);
+                        $this.toggleClass("unpublished published  ut-unpublished ut-published");
+                        $this.find('.fa').removeClass().addClass("fa fa-eye");
+                        $this.find(".text").text(publish)
+                    }
+
+
+                } else {
+                    
+                    var errors = data.errors;
+                    if (errors.length > 0) {
+                        txt = MakeErrorsMsg(errors);
+                        $notification.error("", txt , 3500, "fa fa-exclamation-circle");
+                    }
+                }
+            })
+            .fail(function (jqXHR, Status) {
+                $notification.error(window.localization.error, jqXHR.statusText, 2000, "fa fa-exclamation-circle");
+            });
+    })
+
+
+
+    $(document).on("click", ".publish__all", function (event) {
+        event.preventDefault();
+
+        var $this = $(this),
+            dataurl = $this.data('url'),
+            title = $this.data('confirm-title') || "Publish ",
+            text = $this.data('confirm-text') || "Publish all Images",
+            yes = $this.data('confrim-yes') || 'Yes',
+            cancel = $this.data('confrim-cancel') || 'Cancel',
+            msg_published = $this.data('msg-published') || "Published successfully" ,
+            txt_unpublish = $this.data('txt-unpublish') || "unpublish";
+
+            $Confirm({
+                title : title,
+                text  : text,
+                type  : "warning",
+                confirmButtonText: yes ,
+                cancelButtonText : cancel
+            },function (result) {
+                if (result.value) {
+
+
+
+        $.ajax({
+                url: dataurl,
+                type: 'Get',
+                dataType: "json",
+                data: {}
+            })
+            .done(function (data) {
+                if (data.success) {
+                    $notification.success("", msg_published , 2000, "fa fa-check");
+
+                    $('.gallery__items').find('.toggle__publish__item.unpublished ').each(function (index, item) {
+                        $(item).attr("title",txt_unpublish );
+                        $(item).toggleClass("unpublished published");
+                        $(item).find('.fa').toggleClass("fa-eye fa-eye-slash");
+                        $(item).find(".text").text(txt_unpublish)
+                    })
+
+
+                } else {
+                    var errors = data.errors;
+                    if (errors.length > 0) {
+                        txt = MakeErrorsMsg(errors);
+                        $notification.error("", txt , 3500, "fa fa-exclamation-circle");
+                    }
+                }
+            }).fail(function (jqXHR, Status) {
+                $notification.error(window.localization.error, jqXHR.statusText, 2000, "fa fa-exclamation-circle");
+            });
+
+        }})
+    }); 
+}); //
+
+
+$(document).ready(function(){
+
+
+    $('.uploadinput').on('change',function(e){
+        
+        var fileInputTextContent = $(this).data('text');
+       
+        var files=[];
+         
+        $.each (e.target.files ,function(index,file){
+
+            files.push(file.name) 
+        })
+        
+        $("#FilesCount").text(files.length);
+        
+        $('.uploadfile .url').text((files.length > 0 ) ? files.join() : fileInputTextContent);
+        /* if(files.length > 0){
+            $("#submitImages").removeClass("disabled").removeAttr("disabled");
+        }else{
+            $("#submitImages").addClass("disabled").attr("disabled","disabled");
+        } */
+    }) 
+
+
+})
+
+
+

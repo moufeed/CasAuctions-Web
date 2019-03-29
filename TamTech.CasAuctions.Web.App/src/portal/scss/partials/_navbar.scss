@@ -1,0 +1,128 @@
+@include if-rtl{
+    .navbar-nav{
+        padding-right: 0; 
+    }
+}
+.main-navbar {
+    
+    padding: 0;
+    .nav-item {
+        .nav-link {
+            background: transparent;
+            border-radius: $button_border-radius;
+            transition: all .3s;
+            font-family: if-ltr("rw-regular",'tl-medium');
+            &:hover {
+                background: $nav_link_hover_bg;
+                color: $nav_link_hover_color;
+            }
+            @include media-breakpoint-up(lg) {
+                padding: rem(6px) rem(16px);
+            }
+        }
+        &.active {
+            a.nav-link {
+                background: $nav_link_active_bg;
+                color: $nav_link_active_color;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            .nav-link {
+                text-align: center;
+                margin:3px 0;
+            }
+        }
+
+        
+    }
+    .dropdown-menu{
+        a{
+            &:hover{
+                background: $nav_link_hover_bg;
+                color: $nav_link_hover_color;
+            }
+        }
+    }
+
+    @include media-breakpoint-only(md){
+        .navbar-nav{
+            width: 100%;
+            justify-content: center;
+            .nav-link {
+                padding: rem(6px) rem(14px);
+            }
+        }
+    }
+}
+ 
+
+.dropdown-menu{
+
+        &,ul ul{
+            background: $submenu_background;
+            border: $submenu_border ;
+            li{
+                a{
+                    color: $submenu_text_color ;
+                }
+                &:hover{
+                   > a{
+                        color: $submenu_hover_text_color;
+                        background: $submenu_hover_text_background ;
+                        .fa-caret{
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    @include media-breakpoint-up(md){
+                        > ul{
+                            opacity: 1;
+                            transform:translateX(0);
+                            display: block;
+                        }
+                    }
+                } 
+            }
+        }
+
+        li{
+            position: relative;
+            a{
+                padding: rem(5px) rem(12px);
+            }
+            ul{
+              
+              @include media-breakpoint-up(md){
+                opacity: 0;
+                @include absolute(top  $left , 0 100%);
+                transform: translateX(#{if-ltr('-50px','50px')});
+              }
+                min-width: rem(150px);
+                padding: rem(6px) 0;
+               
+                display: none;
+                transition:display .1s, transform .4s ,opacity .22s ;
+            }
+
+            &.dropdown-submenu{ 
+                .fa-caret{
+                    float: $right;
+                    line-height: 150%;
+                    transition: all .3s;
+                    &:before{
+                        content: if-ltr('\f0da','\f0d9');
+                    }
+                }
+            }
+        }
+ 
+}
+
+ 
+
+/*
+<div class=" show" aria-labelledby="navbarDropdown">
+                                <ul class="list-unstyled "><li class="">
+                                <a href="/portal/pagesabout_slug" class="dropdown-item">About</a></li><li class="dropdown-submenu "><a class="dropdown-item dropdown-toggle" href="#">submenu <i class="fa fa-caret"></i></a><ul class="list-unstyled submenu"><li class=""><a href="https://www.facebook.com" class="dropdown-item" target="_blank">facebook</a></li><li class=""><a href="/portal/products/Details58770162-e7ed-4731-b3a7-ad39ec886185" class="dropdown-item">mia gamble</a></li><li class=""><a href="/portal/pagesabout_slug" class="dropdown-item">About 3</a></li><li class=""><a href="http://twitter.com" class="dropdown-item" target="_blank">twitter</a></li></ul></li><li class=""><a href="https://www.facebook.com" class="dropdown-item" target="_blank">facebook</a></li><li class=""><a href="/portal/products/Detailsede3cb8d-1514-4968-92e2-28cdf5bedec7" class="dropdown-item">iphone</a></li></ul>
+                            </div>
+*/

@@ -1,0 +1,117 @@
+.card{
+     
+    position: relative;
+    box-shadow: 0px 1px 15px 1px rgba(69,65,78,0.08);
+    margin: 25px 0 10px;
+    padding: 35px 30px 25px;
+    overflow: hidden;
+    color: #fff;
+
+        &.card-page{
+            background:$color_A;
+            box-shadow: 0px 1px 15px 1px rgba($color_A, 0.25);
+        }
+        &.card-section{
+            background: $color_B;
+            box-shadow: 0px 1px 15px 1px rgba($color_B, 0.25);
+        }
+        &.card-service{
+            background:$color_C;
+            box-shadow: 0px 1px 15px 1px rgba($color_C, 0.25);
+           
+        }
+        &.card-gallery{
+            background:$color_D;
+            box-shadow: 0px 1px 15px 1px rgba($color_D, 0.25);
+        }
+    
+     
+
+    .icon{
+        display: inline-block;
+        font-family: FontAwesome; 
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        
+        &:after{
+            position: absolute; 
+            top: 90px;
+            opacity: 0.07;
+            #{$right}: 0;
+            transform: scale(5);
+        }
+        &.icon-page{
+            &:before ,&:after{
+                content: "\f0c5";
+            }
+        }
+        &.icon-section{
+            &:before,&:after{
+                content: "\f114";
+            }
+        }
+        &.icon-service{
+            &:before,&:after{
+                content: "\f1b3";
+            }
+        }
+        &.icon-gallery{
+            &:before,&:after{
+                content: "\f083";
+            }
+        }
+    }
+    .card-meta{
+        float: $right;
+        font-size: 18px;
+        
+        text-transform: capitalize;
+        text-align: center;
+        .title{
+             
+            font-weight: 300;
+        }
+        .count{
+            font-weight: 600;
+            font-size: 24px;
+            
+        }
+    }
+    .card-footer{
+        margin:15px 0 0 0  ;
+        
+        color: darken(#fff ,3%);
+        font-size: 14px;
+        span{
+            display: inline-block;
+            margin: 5px;
+            small{
+                color: #fff;
+            }
+        }
+    }
+}
+/*
+ <div class="card card-statistics">
+                <div class="card-body">
+                    <div class="clearfix">
+                        <span class="icon icon-@item.Key"></span>
+                        <div class="card-meta">
+                            <p class="title">@Localizer[$"h_{item.Key}"]</p>
+                            <strong class="count">@item.Value.Count</strong>
+                        </div>
+                    </div>
+                    <p class="text-muted mt-3 mb-0">
+                        <span class="published" 
+                              data-toggle="tooltip"
+                              title="@Localizer["t_published"]"
+                              data-placement="top">  <i class="fa fa-eye"></i>@item.Value.PublishedCount</span>
+                        <span class="unpublished" 
+                              data-toggle="tooltip"
+                              title="@Localizer["t_unpublished"]"
+                              data-placement="top">  <i class="fa fa-eye-slash"></i>@item.Value.UnpublishedCount</span>
+                    </p>
+                </div>
+            </div>
+*/

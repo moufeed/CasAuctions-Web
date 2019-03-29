@@ -1,0 +1,115 @@
+﻿
+
+@{ 
+    var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
+}
+<script src="~/Admin/lib/tinymce/tinymce.min.js"></script>
+    
+    @if (ViewBag.TinyMce_Contetnt_Id != null)
+    {
+    <script>
+
+
+        var toolbar_items = " undo redo | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect | formatselect fontselect fontsizeselect | searchreplace | bullist numlist | outdent indent  | link unlink anchor  | code | forecolor backcolor | fullscreen | table | subscript superscript | charmap link image media | hr ltr rtl | cut copy paste pastetext | visualchars visualblocks nonbreaking blockquote template | print preview codesample insertdatetime removeformat format | styleselect code";
+
+
+        var plugins = ['advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker autosave',
+                 'searchreplace wordcount visualblocks visualchars fullscreen insertdatetime media nonbreaking colorpicker code charmap',
+                 'save table contextmenu directionality emoticons template paste textcolor codesample importcss '];
+
+        var menu_bar = "edit insert view format table tools";
+
+    function UploadImage(blobInfo, success, failure){
+        var xhr, formData;
+        xhr = new XMLHttpRequest(blobInfo, success, failure);
+        xhr.withCredentials = false;
+        xhr.open('POST', "@Url.AdminUrl("UploadImage", "Home")");
+        xhr.onload = function() {
+            var json;
+            if (xhr.status != 200) {
+                failure('HTTP Error: ' + xhr.status);
+                return;
+            }
+            json = JSON.parse(xhr.responseText);
+
+            if (!json || typeof json.url != 'string') {
+                failure('Invalid JSON: ' + xhr.responseText);
+                return;
+            }
+            success(json.url);
+        };
+        formData = new FormData();
+        formData.append('file', blobInfo.blob(), blobInfo.filename());
+        xhr.send(formData);
+    }
+
+   var image_class_list = [ {title: 'None', value: ''},
+                            {title: 'Responsive', value: 'img-responsive'},
+                            {title: 'img-fluid', value: 'img-fluid '}];
+ 
+            tinymce.init({
+                    selector: '@ViewBag.TinyMce_Contetnt_Id',
+                    branding: false,
+                    language : "@(activeLang)", 
+                    theme: 'modern',
+                    height: 300,
+                    plugins: plugins,
+                    toolbar : toolbar_items ,
+                    toolbar_items_size: "small",
+                    menubar : menu_bar,
+                    images_upload_url: "@Url.AdminUrl("UploadImage", "Home")",
+                    images_upload_handler:  UploadImage,
+                    image_class_list: image_class_list ,
+                    image_advtab: true,
+                    relative_urls : false,
+                    //remove_script_host : false,
+                    //convert_urls: true,
+                    extended_valid_elements: 'img[class=myclass|!src|border:0|alt|title|width|height|style]',
+                    invalid_elements: "script,applet",
+                    schema: "html5",
+                    verify_html: true,
+                    paste_data_images: false,
+                    suffix: ".min",
+                    insertdatetime_formats: ["%H:%M:%S", "%Y-%m-%d", "%I:%M:%S %p", "%D"],
+                    block_formats: 'Paragraph=p;Header 1=h1;Header 2=h2;Header 3=h3',
+                    directionality:"@(System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName == "ar" ? "rtl" : "ltr")",
+                    content_css: "/portal/css/editor.css",
+                    importcss_merge_classes: false,
+                    setup: function(editor) {
+                            editor.on('change', function(e) {
+                                editor.save();
+                            })
+                    },
+                });
+
+      
+
+    </script>
+         
+    }
+
+@if (ViewBag.TinyMce_Suumry_Id != null)
+{
+    <script>
+        tinymce.init({
+            selector: '@ViewBag.TinyMce_Suumry_Id',
+            branding: false,
+            theme: 'modern',
+            force_br_newlines: true,
+            force_p_newlines: false,
+            forced_root_block :false,
+            min_height: 150,
+            statusbar: false,
+            menubar: false,
+            directionality:"@(DataCultureHelper.GetCurrent(Context.Request.Query) == "ar" ? "rtl" : "ltr")",
+            plugins: ['code hr anchor pagebreak spellchecker directionality code'],
+            toolbar :['undo redo | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify  |   fontselect fontsizeselect  | outdent indent   | code  |  hr ltr rtl |blockquote     removeformat '],
+            setup: function(editor) {
+                editor.on('change', function(e) {
+                    editor.save();
+                })}
+        });
+
+    </script>
+}
+  

@@ -1,0 +1,134 @@
+@model  UserModel
+ 
+    @{ ViewData["Title"] = Localizer["user_details"];
+        ViewData["UnitTestPageClass"] = "ut-Users_details";
+        //   Layout = "~/Views/Shared/_Layout.cshtml";
+        var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
+    }
+
+
+<div class="clearfix">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>@Localizer["user_details"]</h3>
+        </div>
+        <div class="title_right">
+            <a asp-action="Index" class="btn btn-blue"><span class="fa fa-chevron-left"></span>@Localizer["back_to_list"]</a>
+            
+        </div>
+    </div>
+</div>
+    <section class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            @{
+                ViewBag.LanguageTabsRouteValues = new Microsoft.AspNetCore.Routing.RouteValueDictionary {
+                        { "username" , Model.UserName},
+
+                    };
+            }
+            @await Html.PartialAsync("~/Areas/Admin/Views/Shared/partials/_LanguageTabs.cshtml")
+
+
+            <div class="x_panel">
+                <div class="x_content">
+
+                    <div class="cleafix user_details">
+                        @*<div class="user_image hidden">
+                        <img src="@Model.ImageUrl" alt="">
+                    </div>*@
+
+                        <div class="user_info m-l5">
+                            <header class="u_title p-y-2">
+                                <h3 class="display-inline">
+                                    @Model.UserName
+                                </h3>
+                            </header>
+                            <hr class="m-t2" />
+                            <div class=" p-l3 m-t3">
+                                <h4 class="c-blue"><strong>@Localizer["user_information"]</strong></h4>
+                                <ul class="list-unstyled u_information">
+                                    <li>
+                                        <strong>@Localizer["f_username"]</strong>
+                                        <span>@Model.UserName</span>
+                                    </li>
+
+                                    <li>
+                                        <strong>@Localizer["user_status"]</strong>
+                                        @if (Model.IsBlocked)
+                                        {<span class="c-red" id="UserStatus"><i class="fa fa-times-circle-o c-red"></i> @Localizer["blocked"]</span>
+                                    }
+
+                                    else
+                                    {<span class="c-green" id="UserStatus"><i class="fa fa-check"></i> @Localizer["active"]</span>
+                                }
+
+                                    </li>
+
+                                    <li>
+                                        <strong>@Localizer["f_phone"]</strong>
+                                        <span>@Model.MobileNumber</span>
+
+                                    </li>
+
+                                    <li>
+                                        <strong>@Localizer["f_email"]</strong>
+                                        <span>@Model.Email</span>
+
+                                    </li>
+
+
+
+                                </ul>
+                            </div>
+
+                            <hr />
+                            <div class="u_actions">
+                                <a class="btn btn-se btn-success ut-send_btn" href="@Url.AdminUrl("NewEmail","email" ,new { username = Model.UserName , email =Model.Email , bt = "users" })">
+                                    <i class="fa fa-envelope-open-o"></i>
+                                    @Localizer["send_email"]
+                                </a>
+                                @*<a class="btn btn-send" href="/Admin/Sms/new/@Model.UserName/@Model.MobileNumber.Replace("+" , "00")">
+                                <i class="fa fa-comment "></i>
+                                Send Sms
+                            </a>*@
+
+                                @if (Model.IsBlocked)
+                                {
+                                    <a class="btn btn-danger unblock toggleblock ut-unblock_btn"
+                                       data-unblock-url="@Url.AdminUrl("Unblock" ,"users" ,new { username = Model.UserName })"
+                                       data-block-url="@Url.AdminUrl("block" ,"users" ,new { username = Model.UserName })"
+                                       data-username="@Model.UserName"
+                                       data-confirm-title="@Localizer["are_you_sure"]"
+                                       data-confirm-text="@Localizer["block_user_from_logging_in"]"
+                                       data-confirm-yes=@Localizer["yes"]
+                                       data-id="@Model.Id" data-status="true">@Localizer["unblock_user"]</a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-danger block toggleblock  ut-block_btn"
+                                       data-username="@Model.UserName"
+                                       data-unblock-url="@Url.AdminUrl("Unblock" ,"users" ,new { username = Model.UserName })"
+                                       data-block-url="@Url.AdminUrl("block" ,"users" ,new { username = Model.UserName })"
+                                       data-id="@Model.Id"
+                                       data-status="false">@Localizer["block_user"]</a>
+                                }
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+ 
+
+
+ @section Scripts {
+   
+     <script src="~/Admin/js/users.min.js"></script>
+     
+ }

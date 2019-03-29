@@ -1,0 +1,25 @@
+
+ 
+.home_about_section{
+    background: $home_about_section;
+    padding: rem(100px) 0;
+    @include media-breakpoint-down(sm){
+        padding: rem(35px) 0;
+    }
+    .short-description{
+        font-size: rem(18px);
+        text-align: center;
+    }
+}
+ 
+#curveUpColor{
+    background: $home_about_section;
+    fill: $white;
+    height: 100px;
+    @include media-breakpoint-down(sm){
+        height: 50px;
+    }
+    @include media-breakpoint-only(md){
+        height: 75px;
+    }
+}

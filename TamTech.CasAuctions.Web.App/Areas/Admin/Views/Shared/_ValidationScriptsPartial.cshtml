@@ -1,0 +1,58 @@
+@{
+    var Lang = DataCultureHelper.GetCurrent(Context.Request.Query);
+}
+
+<environment include="Development">
+    <script src="~/Admin/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true""></script>
+    <script src="~/Admin/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+</environment>
+<environment exclude="Development">
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"
+            asp-fallback-src="~/Admin/lib/jquery-validation/dist/jquery.validate.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.validator"
+            crossorigin="anonymous"
+            integrity="sha384-Fnqn3nxp3506LP/7Y3j/25BlWeA3PXTyT1l78LjECcPaKCV12TsZP7yyMxOe/G/k">
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"
+            asp-fallback-src="~/Admin/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive"
+            crossorigin="anonymous"
+            integrity="sha384-JrXK+k53HACyavUKOsL+NkmSesD2P+73eDMrbTtTk0h4RmOF8hF8apPlkp26JlyH">
+    </script>
+</environment>
+
+
+
+@switch (Lang)
+{
+    case "ar":
+<script src = "/Admin/lib/jquery-validation/src/localization/messages_ar.js" ></script>
+        break;
+
+    case "tr":
+<script src = "/Admin/lib/jquery-validation/src/localization/messages_tr.js" asp-append-version="true"></script>
+        break;
+
+    case "fr":
+<script src = "/Admin/lib/jquery-validation/src/localization/messages_fr.js" asp-append-version="true"></script>
+        break;
+
+    case "de":
+<script src = "/Admin/lib/jquery-validation/src/localization/messages_de.js" asp-append-version="true"></script>
+        break;
+
+}
+  
+
+<script>
+    $.extend($.validator.messages, {
+        slug:  "@Localizer["slug_msg"]" ,
+        regex: "@Localizer["regex_msg"]",
+        greaterThan: $.validator.format("@Localizer["greaterThan_msg"]" + "{1}"),
+        lessThan: $.validator.format("@Localizer["lessThan_msg"]" + "{1}"),
+        json: "@Localizer["json_msg"]",
+        schemaType: "@Localizer["schemaType_msg"]",
+        filesize : $.validator.format("@Localizer["filesize_msg"]" + "{0} kb"), 
+    });
+</script>
+ $.validator.messages.

@@ -1,0 +1,38 @@
+.home_promo_section{
+    padding: rem(50px ) 0;
+    background: $home_promo_section_background;
+    position: relative;
+    @include media-breakpoint-down(sm){
+        padding: rem(35px) 0;
+    }
+    &:after{
+        @include absolute(top left , 0);
+        @include square(100%);
+        content: '';
+        background:$home_promo_section_overly_color;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    .promo{
+        
+        color: $promo_text_color;
+        h4{
+            span{
+                color: $promo_text_highlight_color;
+            }
+        }
+        p{
+            letter-spacing: 1px;
+            margin: 0;
+        }
+    }
+}
+ 
+@include media-breakpoint-down(sm){
+    .btn-bar{
+        margin-top: 15px;
+        text-align: center;
+    } 
+}

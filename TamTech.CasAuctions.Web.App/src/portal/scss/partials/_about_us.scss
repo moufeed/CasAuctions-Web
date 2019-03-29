@@ -1,0 +1,134 @@
+
+
+
+
+
+.b-image{
+    position: relative;
+    padding: side-values(15px 0 0 15px);
+    width: 100%;
+    
+    img{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    &:after{
+        background:$about_image_border_color;
+        content: "";
+        display: block;
+        max-width: 476px;
+        max-height: 476px;
+        position: absolute;
+        top: 0;
+        #{$left}: 0;
+        width: 75%;
+        height: 85%;
+        z-index: 0;
+    }
+
+    &.right{
+        padding: side-values(15px 15px 0 0);
+        &:after{
+            #{$left}: auto;
+            #{$right}: 0; 
+        }
+    }
+}
+
+.av_title{
+    margin-bottom: 25px;
+    strong{
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+        &:after{
+            @include absolute(bottom $left , -5px 0);
+            content: '';
+            @include size(50%,2px);
+            background: $about_title_border_color;
+        }
+    }
+}
+
+
+.av_text{
+    color:lighten( $gray-700 ,25%);
+    font-size: rem(16px);
+    line-height: 1.6;
+    @include if-ltr{
+        letter-spacing: 1px;
+    }
+}
+
+.av-list{
+    li{
+        position: relative;
+        line-height: 1.6;
+        margin-bottom: 5px;
+        padding-#{$left}: 20px; 
+        &:before{
+            position: absolute;
+            #{$left}: 0 ;
+            top: 1px;
+            content: '●';//⬤
+            font-size: 90%;
+            color: $about_list_dots_color;
+        }
+    }
+}
+
+
+// -----  description --- 
+.info-hero{
+    margin: rem(100px) 0;
+
+    .a_title{
+        font-size: rem(40px);
+       @include if-ltr{
+        letter-spacing: -2px;
+        text-transform: uppercase; 
+       }
+        font-family: if-ltr('os-bold','tl-bold'),$font-family-sans-serif; 
+    }
+
+    .a_text{
+        font-size: rem(16px);
+       letter-spacing: 1px;
+       line-height: 1.6;
+    }
+}
+
+
+// -----  vision mission --- 
+
+.vision,.mission ,.value {
+    padding: rem(75px) 0;
+  
+}
+
+
+.statistics_section{
+    padding: rem(75px) 0;
+    background: $statistics_section_background;
+    color: $statistics_section_color;
+}
+
+  .divcenter{
+    .ico{
+        font-size: rem(45px);
+        margin-bottom: rem(25px);
+        color: $statistics_section_icon_color
+    }
+    .counter{
+        margin-bottom: rem(10px);
+        font-size: rem(25px);
+    }
+    h5{
+        font-weight: 400;
+        font-family: if-ltr('rw-light','tl-light') , $font-family-sans-serif;
+    }
+  }
+
+ 

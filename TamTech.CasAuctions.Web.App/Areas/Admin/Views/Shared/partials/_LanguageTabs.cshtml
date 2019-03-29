@@ -1,0 +1,28 @@
+@{
+
+    string _lang = System.Globalization.CultureInfo.CurrentCulture.TwoLetterISOLanguageName;
+    var controller = ViewContext.RouteData.Values["Controller"].ToString();
+    var action = ViewContext.RouteData.Values["Action"].ToString();
+    var routeValues = ViewBag.LanguageTabsRouteValues != null ? (Microsoft.AspNetCore.Routing.RouteValueDictionary)ViewBag.LanguageTabsRouteValues : new Microsoft.AspNetCore.Routing.RouteValueDictionary(); ;
+    routeValues.Add("culture", _lang);
+
+
+
+}
+
+@if (CultureConstants.CulturesList?.Count > 1)
+{
+    <header class="language_bar clearfix">
+        <ul class="nav nav-tabs nav-header" role="tablist">
+            @foreach (var culture in CultureConstants.CulturesList)
+            {
+
+                routeValues["culture"] = culture.Lang;
+                <li class=" @((_lang == culture.Lang) ? "active" :"" )">
+                    <a href="@Url.AdminUrl( action, controller, routeValues)">@culture.Name</a>
+                </li>
+            }
+        </ul>
+    </header>
+}
+ 

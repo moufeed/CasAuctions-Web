@@ -1,0 +1,20 @@
+.slider-section{
+    min-height: 150px;
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    .tp-caption{
+        &.top-label{
+            background: $orange;
+            padding: 5px; 
+            color:$white;
+            z-index: 1;
+        }
+        &.main-label{
+            background: $white;
+            font-size: 18px;
+            padding: 10px 15px;
+            z-index: 0;
+        } 
+    }   
+  }  

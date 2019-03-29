@@ -1,0 +1,51 @@
+
+#curveDownColor{
+    height: 100px;
+    fill: $white;
+    background: darken($white ,5%);
+    margin-bottom: -7px;
+    @include media-breakpoint-down(sm){
+        height: 50px; 
+    }
+    @include media-breakpoint-only(md){
+        height: 75px;
+    }
+}
+
+.home_clients_section{
+    padding: rem(75px) 0;
+    background: darken($white ,5%);
+    @include media-breakpoint-down(sm){
+        padding: rem(35px) 0;
+    }
+ 
+}
+
+
+.clients_carousel{
+    .clients-img{
+       a{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 125px;
+           img{
+               width: 125px;
+               max-width: 95%;
+               max-height : 95%;
+               filter: grayscale(1);
+               opacity: .5;
+               transition: opacity .3s , filter .5s;
+           }
+
+           &:hover{
+            img{
+                filter: grayscale(0);
+                opacity:1; 
+            }
+           }    
+       }
+    }
+}
+ 
+

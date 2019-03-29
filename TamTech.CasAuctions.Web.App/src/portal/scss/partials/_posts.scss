@@ -1,0 +1,84 @@
+
+.post-item{
+    .post-image{
+            @include size(100%,250px);
+            overflow: hidden;
+            background:#f4f4f4;
+        img{
+            height: 100%;
+            width: auto; 
+        }
+    }
+
+    .title{
+        font-weight: normal;
+       // @include ellipse(16px ,1.1 , 2);
+        text-transform: capitalize;
+        a{
+            color: $dark_text;
+        }
+    }
+    .meta{
+        color: $medium_text;
+        small{
+            display: inline-block;
+            margin: 0 2px;
+        }
+        .fa{
+            color: $light_text;
+        }
+        a{
+            color: $dark_text;
+            &:hover{
+                color: $orange ;
+            }
+        }
+    }
+
+    .text{
+        @include ellipse(14px ,1.4, 3);
+        color: darken($medium_text, 5%);
+    }
+
+} 
+
+.widget-title{
+    strong{
+        display: inline-block;
+        border-bottom: 2px solid $deep_navy;
+        padding-bottom: 3px;
+    }
+}
+
+.widget{
+    ul{
+        ul{
+            margin-#{$left}:5px; 
+        }
+        li{
+
+           a{
+               display: block;
+               padding: 8px 14px;
+               border-bottom: 1px solid #eee;
+               position: relative;
+               color: $medium_text;
+               &:before{
+                  @include absolute( $left ,   0);
+                  font-family: "FontAwesome";
+                  content: if-ltr('\f105' ,'\f104');
+               }
+               &:hover{
+                   text-decoration:  none;
+                   color: $deep_navy;
+               }
+           }
+        }
+    }
+}
+
+
+/*
+ <div class="sections-list ">
+                    <h4><strong>@Localizer["Categories"]</strong></h4>
+*/

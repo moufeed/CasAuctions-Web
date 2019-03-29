@@ -1,0 +1,95 @@
+
+.welcome-panel{
+    padding: 35px 30px 25px;
+    h2{
+        margin-bottom: 0;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 1.2;
+    } 
+    .selogan{
+        color:$dark-gray;
+    }
+    
+    h3{
+        margin: 16px 0 0;
+        font-size: 16px; 
+        font-weight: 600;
+    }
+    ul{
+        margin: 15px auto;
+        li{
+            line-height: 16px;
+            margin-bottom: 10px;
+            i{
+                color:  $blue;
+                display: inline-block;
+                width: 25px;
+            }
+            a{
+                color: darken($blue,15%);
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+
+1iv class="x_panel ">
+    <div class="x_content ">
+        <h2>Welcome to TamCMS Admin Panel!</h2>
+	    <p cla 
+            </div>
+            <div class="col-sm-4">
+                <>Next Steps</>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/Admin/@activeLang/Galleries/Create">
+                            <i class="fa fa-upload"></i>
+                                Upload your first gallery
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Services" asp-action="Index">
+                        <i class="fa fa-cubes"></i>
+                            Start managing your services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                        <i class="fa fa-globe"></i>
+                        view your site
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3>More Actions</h3>
+                <ul class="list-unstyled"> 
+                    <li>
+                        <i class="fa fa-cogs"></i>
+                        Manage 
+                        <a asp-area="Admin" asp-controller="Users" asp-action="Index">
+                            Users
+                        </a>
+                        or  
+                        <a asp-area="Admin" asp-controller="Menus" asp-action="Index">
+                            menus
+                        </a>
+                    </li>
+
+                    <li>
+                        <a asp-area="Admin" asp-controller="Sliders" asp-action="Index">
+                            <i class="fa fa-picture-o"></i>
+                            Check your home page slider
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>*/

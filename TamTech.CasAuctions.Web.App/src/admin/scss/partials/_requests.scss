@@ -1,0 +1,54 @@
+.h_title{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.request_panel{
+    
+    p{
+        background: #f8f8f8;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-bottom: 15px;
+        &.justify-start{
+            justify-content: flex-start;
+        }
+        strong{
+            display: inline-block;
+            padding: 0 10px; 
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+    }
+}  
+
+.notes{
+    background: #f8f8f8;
+    min-height: 75px;
+    padding: 15px;
+}
+
+.rideo-label{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 5px;
+    span{
+        margin: 0 5px;
+    }
+}
+
+.label-submitted{
+    background: $light-blue; 
+}
+.label-inprogress{
+    background: $orange ;
+}
+.label-done{
+    background: $green ;
+}
+.label-rejected{
+    background:$red;
+}

@@ -1,0 +1,134 @@
+
+$img:"../img/";
+$font:"../fonts";
+
+
+
+
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import '../../../node_modules/bootstrap/scss/variables';
+
+$fa-font-path: "../fonts/fa";
+
+$orange : #f6a417;
+$blue:#3e9fd9;
+$deep_navy : #363f6f;
+$red :#F44336;
+$white : #fff;
+$light_text:#A2AEBB;
+$medium_text :#999999;
+$dark_text :#30323D;
+
+
+
+
+
+
+$invalid_field_color : $red;
+
+$header_input_border_radius : 25px ;
+$button_border-radius : 25px;
+
+$buttons_light_hover_color : $white;
+$buttons_light_hover_bg : $blue;
+$buttons_light_active_bg : darken($blue,5%);
+
+$form_control_focus_shadow :0 0 0 0.2rem  rgba($deep_navy,0.25);
+$form_control_focus_border : $deep_navy;
+
+$default_link_color : darken($medium_text ,5%);
+$default_link_hover_color : $blue;
+
+
+$title_underline_color :$orange;
+
+$backtop_background : $orange;
+$backtop_color : #fff;
+//header section 
+
+$section_header_stitle_color : $blue;
+$section_header_title_color : $black;
+$section_header_line_color: $blue;
+
+//navbar
+$nav_link_hover_bg : $blue;
+$nav_link_hover_color : $white;
+$nav_link_active_bg : $orange;
+$nav_link_active_color : $white;
+
+$submenu_background : #fff;
+$submenu_border : 1px solid rgba(#000,0.15);
+$submenu_text_color : $medium_text;
+$submenu_hover_text_background : $blue;
+$submenu_hover_text_color : #fff;
+
+//footer
+$footer_background: #30323D;
+$footer_color : $white;
+$footer_social_link_background : lighten($orange,15%);
+$footer_social_link_color : $white ;
+$footer_nav_line_color : $white;
+
+$bootom_bar_background : darken( $footer_background, 5%);
+$bootom_bar_color : $white;
+$bootom_bar_link_color : $blue; 
+
+// page header
+
+$page_header_row_height : 100px;
+$page_header_background_color : darken($white ,5%);
+$page_header_overlay_color : rgba( $deep_navy , .7);
+$page_header_title_color : $white ; 
+
+
+$c_title_line_color : $blue;
+$c_list_icons_color : lighten($orange,5%);
+
+$c_submit_btn_background : lighten($deep_navy ,15%);
+$c_submit_btn_color : $white;
+$c_submit_btn_hover_background :$deep_navy;
+$c_submit_btn_hover_color :$white;
+
+$gallery_item_height : 300px;
+$gallery_item_figure_background :darken($white ,3%);
+
+
+$product_Image_Border_color :$yellow;
+   
+$product_images_background : darken($white ,3%);
+$product_item_img_height : 450px;
+
+$product_owl_dots_color :$gray-300;
+$product_owl_dots_active_color : $blue;
+
+
+//home page
+$home_about_section :darken($white,2%);
+$home_services_icon_color :lighten($light_text ,10%);
+$home_services_icon_hover_color :$orange;
+
+$home_promo_section_background :transparent;//lighten($white ,5%) url('#{$img}company.jpg') top left /100% auto no-repeat
+$home_promo_section_overly_color : rgba( $deep_navy , .7);
+$promo_text_color : lighten($light_text ,25%);
+$promo_text_highlight_color : $orange;
+
+
+//services page
+$service_icon_color :$orange;
+
+//about page
+$about_image_border_color :$yellow;
+$about_title_border_color :$blue;
+$about_list_dots_color :$blue; 
+
+$statistics_section_background :$gray-300;
+$statistics_section_color :$dark_text;
+$statistics_section_icon_color : $gray-500;
+
+
+// html page
+
+
+$page_Image_Border_color :$yellow;
+$page_img_background : darken(#fff,5%);

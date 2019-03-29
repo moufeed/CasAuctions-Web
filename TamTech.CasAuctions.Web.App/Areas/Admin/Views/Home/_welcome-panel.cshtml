@@ -1,0 +1,68 @@
+@{
+    var route_lang = ViewContext.RouteData.Values["lang"];
+    var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
+}
+<div class="x_panel welcome-panel m-b0 m-t5 long-shadow">
+    <div class="x_content ">
+        <h2>@Localizer["welcome_to_tamcms"]</h2>
+	    <p class="selogan">@Localizer["welcome_message"]</p>
+
+        <div class="clearfix">
+            <div class="col-sm-4">
+                <h3 class="m-b5">@Localizer["get_started"]</h3>
+                <a asp-area="Admin" asp-controller="pages" asp-action="Index"
+                    class="btn btn-blue">@Localizer["create_page"]
+                </a>
+
+            </div>
+            <div class="col-sm-4">
+                <h3>@Localizer["next_steps"]</h3>
+                <ul class="list-unstyled">
+                    <li>
+                        <a asp-area="Admin" asp-controller="Galleries" asp-action="Index">
+                           
+                                <i class="fa fa-upload"></i>
+                                @Localizer["upload_first_gallery"]
+                            </a>
+                    </li>
+                    <li>
+                        <a asp-area="Admin" asp-controller="Services" asp-action="Index">
+                            <i class="fa fa-cubes"></i>
+                            @Localizer["managing_services"]  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fa fa-globe"></i>
+                            @Localizer["view_site"] 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3>@Localizer["more_actions"]</h3>
+                <ul class="list-unstyled"> 
+                    <li>
+                        <i class="fa fa-cogs"></i>
+                        @Localizer["manage"]  
+                        <a asp-area="Admin" asp-controller="Users" asp-action="Index">
+                            @Localizer["Users"]
+                        </a>
+                        @Localizer["or"]
+                        <a asp-area="Admin" asp-controller="Menus" asp-action="Index">
+                            @Localizer["Menus"]     
+                        </a>
+                    </li>
+
+                    <li>
+                        <a asp-area="Admin" asp-controller="Sliders" asp-action="Index">
+                            <i class="fa fa-picture-o"></i>
+                            @Localizer["check_home_slider"]  
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ 

@@ -1,0 +1,82 @@
+﻿
+@{
+    var lang = DataCultureHelper.GetCurrent(Context.Request.Query);
+}
+<script>
+     window.customLocalization ={
+         "error" : "@Localizer["error"]",
+         "success" : "@Localizer["success"]",
+         "deleted" : "@Localizer["deleted"]",
+         "deleted_successfully" : "@Localizer["deleted_successfully"]",
+         "item_deleted" : "@Localizer["item_deleted"]",
+         "confirm_title" : "@Localizer["confirm_title"]",
+         "confirm_text" : "@Localizer["confirm_text"]",
+         "confirm_yes" : "@Localizer["confirm_yes"]",
+         "Confirm_cancel" : "@Localizer["Confirm_cancel"]",
+         "characters" : "@Localizer["characters"]",
+         "text_will_be_truncated" : "@Localizer["text_will_be_truncated"]",
+         "text_count_be_more_than" : "@Localizer["text_count_be_more_than"]",
+         "updateted_successfully" : "@Localizer["updateted_successfully"]",
+         "something_wrong" : "@Localizer["something_wrong"]",
+         "published_successfully" : "@Localizer["published_successfully"]",
+         "unpublished_successfully" : "@Localizer["unpublished_successfully"]",
+         "publish" : "@Localizer["Publish"]",
+         "unpublish" :"@Localizer["unpublish"]",
+         "save": "@Localizer["save"]",
+         "block_user_from_logging_in" : "@Localizer["block_user_from_logging_in"]",
+         "email_sent" : "@Localizer["email_sent"]",
+         
+        @switch (lang){
+        case "ar":
+        <text>
+         "Slug_ar" : "@Localizer["Slug_ar"]",
+         "Title_ar" : "@Localizer["Title_ar"]",
+         "MainImage_ar" : "@Localizer["MainImage_ar"]",
+         "VideoUrl_ar": "@Localizer["VideoUrl_ar"]",
+         "Content_ar": "@Localizer["Content_ar"]",
+         "Image_ar": "@Localizer["Image_ar"]",
+        </text>
+        break;
+        case "en":
+        <text>
+         "Slug_en" : "@Localizer["Slug_en"]",
+         "Title_en" : "@Localizer["Title_en"]",
+         "MainImage_en" : "@Localizer["MainImage_en"]",
+         "VideoUrl_en": "@Localizer["VideoUrl_en"]",
+         "Content_en": "@Localizer["Content_en"]",
+         "Image_en": "@Localizer["Image_en"]",
+         </text>
+        break;
+        case "fr":
+        <text>
+         "Slug_fr" : "@Localizer["Slug_fr"]",
+         "Title_fr" : "@Localizer["Title_fr"]",
+         "MainImage_fr" : "@Localizer["MainImage_fr"]",
+         "VideoUrl_fr": "@Localizer["VideoUrl_fr"]",
+         "Content_fr": "@Localizer["Content_fr"]",
+         "Image_fr": "@Localizer["Image_fr"]",
+         </text>
+        break;
+         case "tr":
+        <text>
+         "Slug_tr" : "@Localizer["Slug_tr"]",
+         "Title_tr" : "@Localizer["Title_tr"]",
+         "MainImage_tr" : "@Localizer["MainImage_tr"]",
+         "VideoUrl_tr": "@Localizer["VideoUrl_tr"]",
+         "Content_tr": "@Localizer["Content_tr"]",
+         "Image_tr": "@Localizer["Image_tr"]",
+        </text>
+        break;
+        case "de":
+        <text>
+         "Slug_de" : "@Localizer["Slug_de"]",
+         "Title_de" : "@Localizer["Title_de"]",
+         "MainImage_de" : "@Localizer["MainImage_de"]",
+         "VideoUrl_de": "@Localizer["VideoUrl_de"]",
+         "Content_de": "@Localizer["Content_de"]",
+         "Image_de": "@Localizer["Image_de"]",
+        </text>
+        break;
+}
+}
+</script>

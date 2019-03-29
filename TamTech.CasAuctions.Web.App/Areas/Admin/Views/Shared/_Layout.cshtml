@@ -1,0 +1,145 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta Http-Equiv="Cache-Control" Content="no-cache">
+    <meta name='url' content='https://localhost:44365' id="rootUrl">
+    <link rel='fluid-icon' type='image/jpg' href='https://localhost:44365/portal/img/seoLogo.jpg' id="rootLogo">
+
+    <title>@ViewData["Title"] - @Localizer["AdminPanelWeb"]</title>
+
+    <link rel="shortcut icon" href="~/Admin/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="~/Admin/img/favicon.ico" type="image/x-icon">
+
+    @{
+        var lang = DataCultureHelper.GetCurrent(Context.Request.Query);
+
+        var styleFile = (lang == "ar") ? "style-rtl.min.css" : "style-ltr.min.css";
+    }
+
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/Admin/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/Admin/fonts/fa/css/font-awesome.min.css" />
+        <link href="~/Admin/lib/animate.css/animate.css" rel="stylesheet" />
+        @if (IsSectionDefined("Styles"))
+        {
+            @RenderSection("Styles", required: false)
+        }
+
+
+        <link rel="stylesheet" href="~/Admin/css/@styleFile" />
+
+
+
+    </environment>
+
+    <environment exclude="Development">
+
+        <link rel="stylesheet" href="~/Admin/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+        <link rel="stylesheet" href="~/Admin/lib/font-awesome/css/font-awesome.min.css" />
+
+
+
+        @if (IsSectionDefined("Styles"))
+        {
+            @RenderSection("Styles", required: false)
+        }
+
+
+ 
+        <link rel="stylesheet" href="~/Admin/css/@styleFile" />
+
+
+    </environment>
+
+</head>
+<body class="nav-md  @ViewData["UnitTestPageClass"]">
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <div class="container body">
+        <div class="main_container">
+            <div class="col-md-3 left_col menu_fixed">
+                <div class="left_col scroll-view">
+
+                    <div class="navbar nav_title" style="border: 0;">
+                        <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="site_title">
+                            <img src="~/Admin/img/logo.png" width="40">
+                            <span>TamTech</span>
+                        </a>
+                    </div>
+                    <div class="clearfix">
+
+                    </div>
+
+                    <br />
+
+                    <!-- sidebar menu -->
+                    @await Html.PartialAsync("_side_menu")
+                    <!-- /sidebar menu -->
+                </div>
+            </div>
+
+            <!-- top navigation -->
+            @await Html.PartialAsync("_topbar")
+            <!-- /top navigation -->
+
+            <div class="clearfix"></div>
+            <!-- page content -->
+
+            <div class="right_col" role="main">
+                @RenderBody()
+            </div>
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+
+                <div class="pull-right flip-dir">
+                    &copy; 2018 - @DateTime.Now.Year
+                    <a href="http://tamtech.solutions/" class="c-blue"
+                                       data-toggle="tooltip" data-placement="top" title="Visit Tamtech" target="_blank">
+                        <span class="fa fa-globe"></span>
+                        @Localizer["tamtech"]
+                    </a> @Localizer["AdminPanel"] - V @ViewBag.AppVersion
+                </div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+
+
+    
+
+    <partial name="~/Areas/Admin/Views/Shared/utilities/_localization.cshtml" />
+
+    @RenderSection("Localization", required: false)
+      
+    <script src="~/Admin/js/lib.min.js"></script>
+    <script src="~/Admin/js/script.min.js"></script>
+
+    @RenderSection("Scripts", required: false)
+
+    <partial name="~/Areas/Admin/Views/Shared/utilities/_ResultMessage_notification.cshtml" model="ViewData"/>
+
+   
+    <script>
+        $.ajaxSetup({
+            error: function (x, status, error) {
+                if(x.status == 403 || x.status == 401){
+                    window.location.href = '@Url.Action("login", "account" ,new { Area="Identity" })';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

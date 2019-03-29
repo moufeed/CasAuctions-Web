@@ -1,0 +1,58 @@
+
+
+
+ .btn-remove-link{
+    color: $red;
+    transition:  all .2s;
+    &:hover{
+        background: $red;
+        color: #fff;
+    }
+}
+
+.btn-update-link{
+   color: $orange;
+   transition:  all .2s;
+   &:hover{
+       background: $orange;  
+       color: #fff;
+   }
+}
+
+.btn-save-link{
+   color: $green;
+   transition:  all .2s;
+   &:hover{
+       background: $green;  
+       color: #fff;
+   }
+}
+
+.btn-values{
+    color: $textColor;
+    transition: all .33s;
+    &:hover{
+        background: $dark-yellow;
+        color: #fff;
+    }
+}
+
+.btn-save{
+    background: $green;
+    color: #fff; 
+    &:hover{
+        background: lighten($green,5%);
+        color: #fff;
+    }
+}
+
+.btn-blue{
+    color: #fff !important;
+    background-color: #03A9F4;
+    border-color: #03A9F4; 
+    &:hover{
+    background-color: #049be0;
+    border-color: #049be0;
+ 
+    }   
+}

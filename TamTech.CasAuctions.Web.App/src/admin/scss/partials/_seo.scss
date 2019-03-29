@@ -1,0 +1,31 @@
+
+
+.input-Ingredient,.input-category{
+    position: relative;
+    margin-bottom: 15px;
+    button{
+        @include absolute(top $right , 3px if-ltr(-2px , 3px));
+    }
+}
+
+
+.add-ingredient,.recipeInstructions ,.add-category{
+    .input-group-addon{
+        padding: 0;
+        margin: 0;
+        border: 0;
+        background: transparent;
+        button{
+            margin: 0 ;
+            margin-#{$left}: 15px ;
+            height: 38px;
+        }
+    }
+}
+
+
+#SEOField{
+    font-family: monospace;
+    text-align: left;
+    direction: ltr;
+ }

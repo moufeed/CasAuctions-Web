@@ -1,0 +1,1906 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: tamtech_cms 0.0.1.9"
+"Last-Translator: tamtech solution <support@tamtech.solution>"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
+"POT-Creation-Date:"
+"PO-Revision-Date:"
+"Language-Team:"
+
+#-------------------------------------------------------------------------
+#:admin panel
+#-------------------------------------------------------------------------
+
+msgid "AdminPanelWeb"
+msgstr "Admin Panel Web"
+
+msgid "AdminPanel"
+msgstr "Admin Panel"
+
+msgid "visit_public_site"
+msgstr "Visit public site"
+
+msgid "SEO"
+msgstr "SEO"
+ 
+msgid "Add"
+msgstr "Add"
+
+msgid "Create"
+msgstr "Create"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "close"
+msgstr "Close"
+
+msgid "save"
+msgstr "Save"
+
+msgid "delete"
+msgstr "Delete"
+
+msgid "cancel"
+msgstr "Cancel"
+
+msgid "yes"
+msgstr "Yes"
+
+msgid "remove"
+msgstr "Remove"
+
+msgid "search"
+msgstr "Search"
+
+msgid "reset"
+msgstr "Reset"
+
+msgid "send"
+msgstr "Send"
+
+msgid "Update"
+msgstr "Update"
+
+msgid "Upload"
+msgstr "Upload"
+
+msgid "edit"
+msgstr "Edit"
+
+msgid "back"
+msgstr "Back"
+
+msgid  "Browse"
+msgstr "Browse"
+
+msgid  "select"
+msgstr "Select"
+
+msgid "filter"
+msgstr "Filter"
+
+msgid "save_and_continue"
+msgstr "Save and continue"
+
+msgid "back_to_list"
+msgstr "Back to List"
+ 
+msgid "add_Item"
+msgstr "Add Item"
+ 
+msgid "title"
+msgstr "Title"
+
+msgid "published"
+msgstr "Published"
+
+msgid "unpublished"
+msgstr "Unpublished"
+
+msgid "created_date"
+msgstr "Created date"
+
+msgid "modified_date"
+msgstr "Modified date"
+
+msgid "slug"
+msgstr "Slug"
+
+msgid "summary"
+msgstr "Summary"
+
+msgid "section"
+msgstr "Section"
+
+msgid "image"
+msgstr "Image"
+
+msgid "icon"
+msgstr "Icon"
+
+msgid "total"
+msgstr "Total"
+
+msgid "locked_by_system"
+msgstr "Locked by system"
+  
+msgid "meta_keywords"
+msgstr "Meta keywords"
+
+msgid "meta_description"
+msgstr "Meta description"
+
+msgid "content"
+msgstr "Content"
+
+msgid "position"
+msgstr "Position"
+
+msgid "blocked"
+msgstr "Blocked"
+
+msgid "active"
+msgstr "Active"
+
+msgid "files"
+msgstr "Files"
+
+msgid "visible"
+msgstr "Visible"
+
+msgid "status"
+msgstr "Status"
+
+msgid "invisible"
+msgstr "Invisible"
+
+msgid "main_image"
+msgstr "Main Image"
+
+msgid "key"
+msgstr "Key"
+
+msgid "manage"
+msgstr "Manage"
+
+msgid "deleted"
+msgstr "Deleted!"
+
+msgid "confirm_title"
+msgstr "Are you sure?"
+
+msgid "confirm_text"
+msgstr "You won\'t be able to revert this!"
+
+msgid "confirm_yes"
+msgstr "Yes"
+
+msgid "Confirm_cancel"
+msgstr "Cancel"
+
+msgid "characters"
+msgstr "Characters"
+
+msgid "none"
+msgstr "None"
+ 
+msgid "more"
+msgstr "More"
+
+msgid "publish_unpublish"
+msgstr "Publish / unpublish"
+
+msgid "total_items"
+msgstr "Total items :"
+
+msgid "showing_of"
+msgstr "Showing {0} to {1} of {2}"
+ 
+msgid "all"
+msgstr "All"
+
+msgid "change_password"
+msgstr "Change password"
+
+msgid "languages"
+msgstr "Languages"
+
+#global Forms
+
+msgid "f_title"
+msgstr "Title :"
+
+msgid "f_name"
+msgstr "Name :"
+
+msgid  "f_slug"
+msgstr "Slug :"
+
+msgid  "f_section"
+msgstr "Section :"
+
+msgid  "f_main_image"
+msgstr "Main Image :"
+
+msgid  "f_video_thumbnail"
+msgstr "Video thumbnail :"
+
+msgid "f_video_url"
+msgstr "Video url :"
+
+msgid "f_video_id"
+msgstr "Video Id "
+ 
+msgid  "choose_file"
+msgstr "Choose file."
+ 
+msgid  "f_summary"
+msgstr "Summary :"
+ 
+msgid  "f_description"
+msgstr "Description :"
+
+msgid  "f_content"
+msgstr "Content :"
+
+msgid  "f_meta_keywords"
+msgstr "Meta Keywords :"
+
+msgid  "f_meta_tags"
+msgstr "Keywords :"
+
+msgid  "f_meta_description"
+msgstr "Meta description :"
+
+msgid  "f_display_order"
+msgstr "Display Order :"
+
+msgid "f_url"
+msgstr "Url :"
+
+msgid "f_url_target"
+msgstr "Url Target :"
+
+msgid "f_username"
+msgstr "Username :"
+
+msgid "f_email"
+msgstr "Email :"
+
+msgid "f_password"
+msgstr "Password :"
+
+msgid "f_confirmpassword"
+msgstr "Confirm Password :"
+
+msgid "f_phone"
+msgstr "Phone :"
+
+msgid "f_role"
+msgstr "Role :"
+
+msgid "f_gender"
+msgstr "Gender :"
+
+msgid "f_subject"
+msgstr "Subject :"
+
+msgid "f_recipients"
+msgstr "Recipients :"
+
+msgid "f_massage"
+msgstr "Message :"
+
+msgid "f_icon"
+msgstr "Icon :"
+
+msgid "f_sku"
+msgstr "Sku :"
+
+msgid "f_stock_quantity"
+msgstr "Stock quantity :"
+
+msgid "f_price"
+msgstr "Price :"
+
+msgid "f_discount_price"
+msgstr "Discount  price :"
+
+msgid "f_type"
+msgstr "Type :"
+
+msgid "f_key"
+msgstr "Key :"
+
+msgid "f_position"
+msgstr "Position :"
+
+msgid "f_public_url"
+msgstr "Public url :"
+
+msgid "f_created_date"
+msgstr "Create date"
+
+msgid "f_post_date"
+msgstr "Post Date"
+
+#seo form 
+msgid "f_headline"
+msgstr "HeadLine :"
+
+msgid "f_author"
+msgstr "Author :"
+
+msgid "f_publisher"
+msgstr "Publisher :"
+
+msgid "f_brand"
+msgstr "Brand :"
+
+msgid "f_category"
+msgstr "Category :"
+
+msgid "f_provider"
+msgstr "Provider :"
+
+msgid "f_keywords"
+msgstr "Keywords :"
+
+msgid "f_cuisine"
+msgstr "Cuisine :"
+
+msgid "f_section_parent"
+msgstr "Section parent :"
+
+msgid "f_company"
+msgstr "Company :"
+
+msgid "f_job_position"
+msgstr "Job postion :"
+
+msgid "f_avater_image"
+msgstr "Image :"
+
+msgid "f_rating"
+msgstr "Rating :"
+
+msgid "f_message"
+msgstr "Message :"
+
+
+#global Tables
+msgid  "t_title"
+msgstr "Title"
+
+msgid  "t_name"
+msgstr "Name"
+
+msgid  "t_description"
+msgstr "Description"
+
+msgid  "t_postion"
+msgstr "Postion"
+
+msgid  "t_create_date"
+msgstr "Created Date"
+
+msgid  "t_modified_date"
+msgstr "Modified Date"
+
+msgid  "t_type"
+msgstr "Type"
+
+msgid  "t_key"
+msgstr "Key"
+
+msgid  "t_visibility"
+msgstr "Visibility"
+
+msgid  "t_actions"
+msgstr "Actions"
+
+msgid  "t_published"
+msgstr "Published"
+
+msgid  "t_unpublished"
+msgstr "Unpublished"
+
+msgid  "t_publish"
+msgstr "Publish"
+
+msgid  "t_unpublish"
+msgstr "Unpublish"
+
+msgid  "t_details"
+msgstr "Details"
+
+msgid  "t_edit"
+msgstr "Edit"
+
+msgid  "t_remove"
+msgstr "Remove"
+
+msgid  "t_delete"
+msgstr "Delete"
+
+msgid  "t_order"
+msgstr "Order"
+
+msgid  "t_url"
+msgstr "Url"
+
+msgid  "t_username"
+msgstr "Username"
+
+msgid  "t_mobileNumber"
+msgstr "Mobile Number"
+
+msgid  "t_email"
+msgstr "Email Address"
+
+msgid  "t_active"
+msgstr "Active"
+
+msgid  "t_mobile_confirmed"
+msgstr "Mobile Confirmed"
+
+msgid  "t_email_confirmed"
+msgstr "Email Confirmed"
+
+msgid  "t_image"
+msgstr "Image"
+
+msgid  "t_summary"
+msgstr "Summary"
+
+msgid  "t_display_order"
+msgstr "Display Order"
+ 
+msgid  "t_sku"
+msgstr "SKU"
+ 
+msgid  "t_slug"
+msgstr "Slug"
+
+msgid  "t_quantity"
+msgstr "Quantity"
+
+msgid  "t_price"
+msgstr "Price"
+
+msgid "t_discount_price"
+msgstr "Discount  price"
+
+msgid "t_stock_quantity"
+msgstr "Stock quantity"
+
+msgid "t_attributes"
+msgstr "Attributes"
+
+msgid "t_logo"
+msgstr "Logo"
+
+msgid "t_total_items"
+msgstr "Totle Items"
+
+msgid "t_section_parent"
+msgstr "Parent"
+
+msgid "t_status"
+msgstr "Status"
+
+msgid "t_detials"
+msgstr "Detials"
+
+msgid "t_city"
+msgstr "Citt"
+
+msgid "t_position"
+msgstr "Postion"
+
+
+msgid "t_section"
+msgstr "Section"
+
+
+msgid "t_company"
+msgstr "Company"
+
+msgid "t_job_position"
+msgstr "Job Position"
+
+msgid "t_rating"
+msgstr "Rating"
+
+msgid "t_message"
+msgstr "Message"
+
+#labels
+
+msgid "l_full_name"
+msgstr "Full name"
+
+msgid "l_name"
+msgstr "Name"
+
+msgid "l_email"
+msgstr "Email"
+
+msgid "l_mobile"
+msgstr "Mobile"
+
+msgid "l_phone"
+msgstr "Phone"
+
+msgid "l_city"
+msgstr "City"
+
+msgid "l_zip_code"
+msgstr "Zip code"
+
+msgid "l_address"
+msgstr "Address"
+
+msgid "l_date"
+msgstr "Date"
+
+msgid "l_quantity"
+msgstr "Quantity"
+
+msgid "l_price"
+msgstr "Price"
+
+msgid "l_status"
+msgstr "Status"
+
+msgid "l_notes"
+msgstr "Notes"
+
+
+
+# global alerts 
+ 
+msgid "success"
+msgstr "Success"
+
+msgid "error"
+msgstr "Error"
+
+msgid "user_has_been_created"
+msgstr "User has been Created"
+
+msgid  "published_successfully"
+msgstr "Published successfully"
+
+msgid  "unpublished_successfully"
+msgstr "Unpublished successfully"
+
+msgid  "was_successfully_published"
+msgstr "Was successfully published"
+
+msgid  "was_successfully_unpublished"
+msgstr "Was successfully unpublished"
+ 
+msgid  "no_data_table"
+msgstr "No data available in table"
+ 
+msgid  "upload_failed"
+msgstr "<strong>Oops! </strong>&nbsp;&nbsp;Upload failed."
+
+msgid "email_has_been_sent"
+msgstr "The email with Title <strong>{0}</strong> has been sent to user <strong>{1}</strong> successfully"
+
+msgid "email_has_not_been_sent"
+msgstr "The email with title  <strong>{0}</strong>  has not been sent to user <strong>{1}</strong> , try again later or contact the administrator"
+
+msgid  "are_you_sure"
+msgstr "Are you sure?"
+
+msgid  "you_wont_be_able_to_revert_this"
+msgstr "You won't be able to revert this!"
+
+msgid  "yse_delete"
+msgstr "Yes, delete it!"
+
+msgid  "something_wrong"
+msgstr "Something went wrong"
+
+msgid  "description_is_only_used_in_mobile_view"
+msgstr "Note : </strong>this description is only used in mobile view."
+ 
+msgid  "image_uploading_error"
+msgstr "An error occurred while uploading the image!"
+
+msgid "service_creation_successfully"
+msgstr "The service creation was done successfully."
+
+msgid "slider_creation_successfully"
+msgstr "The Slider creation was done successfully."
+
+msgid "slider_updating_successfully"
+msgstr "The Slider updating was done successfully."
+
+
+msgid "gallery_item_creation_successfully"
+msgstr "The gallery item creation was done successfully."
+
+msgid "gallery_item_updating_successfully"
+msgstr "The gallery item updating was done successfully."
+
+msgid "deleted_successfully"
+msgstr "Deleted successfully"
+
+msgid "item_deleted"
+msgstr "Item has been deleted."
+
+msgid "block_user_from_logging_in"
+msgstr "Blocking this user will prevent him/her from logging in"
+
+msgid "text_will_be_truncated"
+msgstr "Be careful! your text will be truncated"
+
+msgid "text_count_be_more_than"
+msgstr "Text count is more than 300 characters long"
+
+msgid "updateted_successfully"
+msgstr "Updateted successfully"
+
+msgid "product_havent_attributes"
+msgstr "This product does not have any attributes"
+
+msgid "exception_msg"
+msgstr "Sorry, an error occurred while processing the process please try again later"
+
+#admin sidebar
+
+msgid "view_all"
+msgstr "View all"
+
+msgid "all_posts"
+msgstr "All Posts"
+
+msgid "all_sections"
+msgstr "All Sections"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Pages"
+msgstr "Pages"
+
+msgid "new_html_page"
+msgstr "New Html Page"
+
+msgid "new_section_page"
+msgstr "New sections page"
+
+msgid "Menus"
+msgstr "Menus"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Galleries"
+msgstr "Galleries"
+
+msgid "new_gallery"
+msgstr "New Gallery"
+
+msgid "Sliders"
+msgstr "Sliders"
+
+msgid "new_slider"
+msgstr "New slider"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Services"
+msgstr "Services"
+
+msgid "new_service"
+msgstr "New service"
+
+msgid "Users"
+msgstr "Users"
+
+msgid "new_user"
+msgstr "New user"
+
+msgid "Catelog"
+msgstr "Catalog"
+
+msgctxt "admin.Views.Shared._side_menu"
+msgid "Products"
+msgstr "Products"
+
+msgid "Manufacturer"
+msgstr "Manufacturer"
+
+msgid "Categories"
+msgstr "Categories"
+
+msgid "Reviews"
+msgstr "Reviews"
+
+msgid "Messages"
+msgstr "Messages"
+
+msgid "requests"
+msgstr "Requests"
+
+#: _SeoWebPage.cshtml
+msgid "page_description"
+msgstr "Page description :"
+
+msgid "page_name"
+msgstr "Page Name :"
+
+#:_SeoService.cshtml
+msgid "service_name"
+msgstr "Service Name :"
+
+msgid "service_description"
+msgstr "Service description :"
+
+msgid "service_provider"
+msgstr "Service Provider :"
+
+#:_SeoRecipe.cshtml
+msgid "recipe_name"
+msgstr "Recipe Name :"
+
+msgid "recipe_keywords"
+msgstr "Recipe keywords :"
+
+msgid "recipe_description"
+msgstr "Recipe description :"
+
+msgid "recipe_category"
+msgstr "Recipe Category :"
+
+msgid "recipe_cuisine"
+msgstr "Recipe Cuisine :"
+
+msgid "cook_time"
+msgstr "Cook Time :"
+
+msgid "prep_time"
+msgstr "Prep Time :"
+
+msgid "total_time"
+msgstr "Total Time :"
+
+msgid "time_in_minutes"
+msgstr "time in minutes :"
+
+msgid "number_of_servings"
+msgstr "Number of servings :"
+
+msgid "recipe_ingredient"
+msgstr "Recipe Ingredient :"
+
+msgid "add_ingredient"
+msgstr "Add Ingredient"
+
+msgid "recipe_instructions"
+msgstr "Recipe Instructions :"
+
+msgid "add_instructions"
+msgstr "Add Instructions"
+
+msgid "Author"
+msgstr "Author :"
+
+#:_SeoProduct.cshtml
+msgid "product_name"
+msgstr "Product Name :"
+
+msgid "product_description"
+msgstr "Product description :"
+
+msgid "brand_name"
+msgstr "Brand Name :"
+
+msgid "product_Category"
+msgstr "Product Category :"
+
+msgid "add_category"
+msgstr "Add category :"
+
+#:_SeoGallery.cshtml
+msgid "gallery_name"
+msgstr "Gallery Name :"
+
+msgid "gallery_description"
+msgstr "Gallery description :"
+
+msgid "gallery_author"
+msgstr "Gallery author :"
+
+#:_SeoArticle.cshtml
+msgid "article_name"
+msgstr "Article Name :"
+
+msgid "article_headLine"
+msgstr "Article HeadLine :"
+
+msgid "article_description"
+msgstr "Article Description :"
+
+msgid "article_author"
+msgstr "Article author :"
+
+msgid "article_publisher"
+msgstr "Article publisher :"
+
+#:_SeoFields.cshtml
+msgid "seo_type"
+msgstr "Seo Type :"
+
+msgid "select_type"
+msgstr "Select Type"
+
+msgid "seo_markup"
+msgstr "Seo Markup :"
+
+msgid "WebPage"
+msgstr "Web Page"
+
+msgid "Article"
+msgstr "Article"
+
+msgid "Recipe"
+msgstr "Recipe"
+
+msgid "ImageGallery"
+msgstr "Gallery"
+
+msgctxt "admin.Views.Shared._SeoFields"
+msgid "Service"
+msgstr "Service"
+
+msgctxt "admin.Views.Shared._SeoFields"
+msgid "Product"
+msgstr "Product"
+
+msgid "edit_markup"
+msgstr "Edit Markup"
+
+msgid "edit_markup_title"
+msgstr "Are you sure?"
+
+msgid "edit_markup_msg"
+msgstr "I hope you know what you\"re doing"
+
+
+
+#: CreateHtmlPage.cshtml
+msgid "create_html_page"
+msgstr "Create Html Page"
+
+msgid "html_creating_form"
+msgstr "Html Page Creating Form"
+
+msgid "author_name"
+msgstr "Author name :"
+
+#:CreateSectionsPage.cshtml
+msgid "create_sections_page"
+msgstr "Create Sections Page"
+
+msgid "sections_creating_form"
+msgstr "Sections Page Creating Form"
+
+msgid "page_content"
+msgstr "Page Content"
+
+msgid "add_content"
+msgstr "Add Content"
+
+#:EditHtmlPage.cshtml
+msgid "edit_htmal_page"
+msgstr "Edit Htmal Page"
+
+msgid "html_editing_form"
+msgstr "Html Page Editing Form"
+
+#: EditSectionsPage.cshtml
+msgid "edit_sections_page"
+msgstr "Edit Sections page"
+
+msgid "sections_editing_form"
+msgstr "Sections Page Editing Form"
+
+#: pages Controller
+msgid "c_type"
+msgstr "Type"
+
+msgid "c_id"
+msgstr "Id"
+
+msgid "parameter_required"
+msgstr "{0} parameter is required!" 
+
+msgid "html_page_creation_successfully"
+msgstr "The Html Page creation was done successfully."
+
+msgid "html_page_updating_successfully"
+msgstr "The Html Page updating was done successfully."
+
+msgid "section_page_creation_successfully"
+msgstr "The Sections Page creation was done successfully."
+
+msgid "section_page_updating_successfully"
+msgstr "The Sections Page updating was done successfully."
+  
+#: pages Index.cshtml
+msgid "new_html_page"
+msgstr "New html Page"
+
+msgid "new_section_page"
+msgstr "New Sections Page"
+
+#: HtmlPageDetails.cshtml
+msgid "page_details"
+msgstr "Page Details"
+ 
+#:menus controller
+msgid "menu_creation_successfully"
+msgstr "The Menu creation was done successfully."
+
+msgid "menu_updating_successfully"
+msgstr "The Menu updating was done successfully."
+
+#:menus Index.cshtml
+msgid "menus"
+msgstr "Menus"
+
+msgid "new_menu"
+msgstr "New Menu"
+
+#:createform.cshtml
+
+msgid "create_menu"
+msgstr "Create menu"
+
+#:EditForm.cshtml
+msgid "edit_menu"
+msgstr "Edit Menu"
+
+msgid "menu_structure"
+msgstr " Menu Structure"
+
+msgid "submenu"
+msgstr "Submenu"
+
+
+
+#: menus _modal.cshtml
+
+msgid "page"
+msgstr "Page"
+
+msgid "parent_menu"
+msgstr "Parent Menu"
+
+msgid "link"
+msgstr "Link"
+
+msgid "static_page"
+msgstr "Static Page"
+
+msgid "service"
+msgstr "Service"
+ 
+msgid "gallery"
+msgstr "Gallery"
+
+msgid "posts_section"
+msgstr "Posts Section"
+
+msgid "services_section"
+msgstr "Services Section"
+
+msgid "gallery_section"
+msgstr "Gallery Sections"
+
+msgid "add_to_menu"
+msgstr "Add to menu"
+
+msgctxt "admin.Views.Menus.partials._modal"
+msgid "product"
+msgstr "Product"
+
+msgid "Create_section"
+msgctxt "Create Section"
+
+#:users Controller
+msgid "c_roles"
+msgstr "Roles"
+
+msgid "c_roles_required"
+msgstr "Roles is required!"
+
+msgid "c_user_creation_successfully"
+msgstr "The User creation was done successfully."
+
+
+#: Users Index.cshtml
+msgid "Users"
+msgstr "Users"
+
+msgid "new_user"
+msgstr "New user"
+
+msgid "roles"
+msgstr "Roles"
+
+msgid "user_role"
+msgstr "User Role"
+
+#:Users  Create.cshtml
+msgid "User_Create"
+msgstr "User - Create"
+
+msgid "new_user"
+msgstr "New user"
+
+#: Users Edit.cshtml
+msgid "user_edit"
+msgstr "User - Edit"
+
+msgid "edit_user"
+msgstr "Edit User"
+
+msgid "choose_picture"
+msgstr "Choose a Picture"
+
+#: Users Details.cshtml
+msgid "user_details"
+msgstr "User Details"
+
+msgid "user_information"
+msgstr "User Information"
+
+msgid "user_status"
+msgstr "user status :"
+
+msgid "send_email"
+msgstr "Send Email"
+
+msgid "unblock_user"
+msgstr "Unblock user"
+
+msgid "block_user"
+msgstr "Block user"
+
+#:CreateEmail.cshtml
+msgid "new_email"
+msgstr "New Email"
+
+#:Services Controller
+
+#:Services index.cshtml
+msgctxt "admin.Views.Services.index"
+msgid "services"
+msgstr "Services"
+
+msgid "new_service"
+msgstr "New Service"
+
+#:services Form.cshtml
+
+msgid "services_edit"
+msgstr "Services - Edit "
+
+msgid "services_create"
+msgstr "Services - Create "
+
+msgid "create_service"
+msgstr "Create Service."
+
+msgid "edit_service"
+msgstr "Update Service."
+
+msgid "icon_visibility"
+msgstr "Icon Visibility"
+
+#: Services Details.cshtml
+msgid "service_details"
+msgstr "Service Details"
+
+#: Sliders index.cshtml
+msgid "new_slider"
+msgstr "New Slider"
+
+#: EditSliderItemForm.cshtml
+msgid "edit_slider_item"
+msgstr "Edit Slider Item"
+ 
+msgid "f_slider_title"
+msgstr "Slider Title"
+
+#:EditSliderForm.cshtml
+msgid "edit_slider"
+msgstr "Edit Slider"
+ 
+msgid "unpublish/publish"
+msgstr "Unpublish/Publish"
+ 
+msgid "slider"
+msgstr "Slider"
+
+#: _sliderItems.cshtml
+msgid "slider_items"
+msgstr "Slider Items"
+ 
+msgid "upload_single_image"
+msgstr "Upload Single Image"
+
+msgid "add_video"
+msgstr "Add Video"
+ 
+#: sliders Details.cshtml
+msgid "slider_details"
+msgstr "Slider Details "
+
+#:CreateSliderItemForm.cshtml
+msgid "create_slider_item"
+msgstr "Create Slider Item"
+ 
+msgid "back_to_slider"
+msgstr "Back to Slider"
+
+#:CreateSliderForm.cshtml
+msgid "create_slider"
+msgstr "Create Slider"
+
+
+#:galleries index.cshtml
+msgid "new_gallery"
+msgstr "New Gallery"
+
+
+
+#:FormGalleryItem.cshtml
+msgid "create_gallery_item"
+msgstr "Create Gallery Item"
+
+msgid "edit_gallery_item"
+msgstr "Update Gallery Item"
+
+msgid "back_to_gallery"
+msgstr "Back to Gallery"
+
+msgid "create_video_item"
+msgstr "Create Video"
+
+msgid "edit_video_item"
+msgstr "Edit Video"
+
+#:FormGallery.cshtml 
+msgid "create_gallery"
+msgstr "Create Gallery"
+
+msgid "update_gallery"
+msgstr "Update Gallery"
+ 
+msgid "upload_multiple_images"
+msgstr "Upload Multiple Images"
+
+
+#: galleries Details.cshtml
+msgid "galleries_details"
+msgstr "Gallery Details "
+
+msgid "gallery_pictures"
+msgstr "Gallery pictures"
+
+#:_galleryitems.cshtml
+msgid "gallery_items"
+msgstr "Gallery Items"
+
+msgid "publish_all"
+msgstr "Publish All"
+
+msgid "Publish"
+msgstr "Publish"
+
+msgid "unpublish"
+msgstr "Unpublish"
+
+msgid "publish_all_images"
+msgstr "Publish all Images"
+
+#:products controller
+
+msgid "product_ceation_successfully"
+msgstr "The Product creation was done successfully."
+
+msgid "product_updating_successfully"
+msgstr "The Product updating was done successfully."
+
+msgid "combination_creation_successfully"
+msgstr "The combination of product creation was done successfully."
+
+msgid "attribute_creation_successfully"
+msgstr "The attribute of product creation was done successfully."
+
+msgid "attribute_updating_successfully"
+msgstr "The attribute of product updating was done successfully."
+
+msgid "attribute_value_creation_successfully"
+msgstr "The attribute value of product creation was done successfully."
+
+msgid "attribute_value_updating_successfully"
+msgstr "The attribute value of product updating was done successfully."
+
+#: product javascript 
+msgid "delete_combination"
+msgstr "Delete Combination"
+#: products Index.cshtml
+msgctxt "admin.Views.Products.index"
+msgid "Products"
+msgstr "Products"
+
+msgid "new_product"
+msgstr "New Product"
+
+#: products List.cshtml
+msgid "Products_list"
+msgstr "Product list"
+
+#: products Form.cshtml
+msgid "create_product"
+msgstr "Create Product."
+
+msgid "edit_product"
+msgstr "Update product."
+
+msgid "product_info"
+msgstr "Product info"
+
+msgid "product_specifications"
+msgstr "Product Specifications"
+
+msgid "product_description"
+msgstr "Product Description"
+
+msgid "product_pictures"
+msgstr "Product Pictures"
+
+msgid "product_attributes"
+msgstr "Product Attributes"
+
+#: products combination Modal
+msgid "select_new_combination"
+msgstr "Select new combination and enter details below "
+
+#: _Form_information_tab.cshtml
+msgid "f_short_description"
+msgstr "Short Description :"
+
+msgid "f_full_description"
+msgstr "Full Description (WEB) :"
+
+msgid "maximum_cart_quantity"
+msgstr "Maximum Cart Quantity"
+ 
+msgid "requires_shipping"
+msgstr "Requires Shipping"
+
+msgid "free_shipping"
+msgstr "Free Shipping"
+
+msgid "weight"
+msgstr "Weight"
+
+msgid "gram"
+msgstr "Gram"
+
+msgid "millimeter"
+msgstr "Millimeter"
+
+msgid "height"
+msgstr "Height"
+
+msgid "length"
+msgstr "Length"
+
+msgid "width"
+msgstr "Width"
+
+#: products _Form_Images_tab.cshtml
+msgid "product_images"
+msgstr "Product Images"
+
+msgid "add_images"
+msgstr "Add Images"
+
+msgid "remove_selected_images"
+msgstr "Remove selected pictures"
+
+#: Products _Form_Attributes_tab.cshtml
+msgid "attributes"
+msgstr "Attributes"
+
+msgid "attribute_combinations"
+msgstr "Attribute combinations"
+
+msgid "values"
+msgstr "Values"
+
+msgid "option_value"
+msgstr "Option Value"
+
+msgid "add_option"
+msgstr "Add option"
+
+msgid "add_attribute"
+msgstr "Add Attrbute"
+
+msgid "add_combination"
+msgstr "Add combination"
+
+#: categories controller
+
+msgid "category_creation_successfully"
+msgstr "The category creation was done successfully."
+
+#: caegories index.cshtml
+msgid "new_category"
+msgstr "New Category"
+
+#: home _welcome-panel.cshtml
+msgid "welcome_to_tamcms"
+msgstr "Welcome to TamCMS Admin Panel!"
+
+msgid "welcome_message"
+msgstr "We’ve assembled some links to get you started:"
+ 
+msgid "create_page"
+msgstr "Create Page"
+ 
+msgid "next_steps"
+msgstr "Next Steps"
+
+msgid "get_started"
+msgstr "Get started"
+
+msgid "more_actions"
+msgstr "More actions"
+ 
+msgid "upload_first_gallery"
+msgstr "Upload your first gallery"
+ 
+msgid "managing_services"
+msgstr "Start managing your services"
+ 
+msgid "view_site"
+msgstr "View your site"
+ 
+msgid "check_home_slider"
+msgstr "Check your home page slider"
+
+#: validator.messages
+
+msgid "this_is_field_is_required"
+msgstr "This field is required."
+
+msgid "fix_this_field"
+msgstr "Please fix this field."
+
+msgid "enter_valid_email"
+msgstr "Please enter a valid email address."
+
+msgid "enter_valid_url"
+msgstr "Please enter a valid URL."
+
+msgid "enter_valid_date"
+msgstr "Please enter a valid date."
+
+msgid "enter_valid_iso"
+msgstr "Please enter a valid date (ISO)."
+
+msgid "enter_valid_number"
+msgstr "Please enter a valid number."
+
+msgid "enter_only_digits"
+msgstr "Please enter only digits."
+
+msgid "enter_same_value"
+msgstr "Please enter the same value again."
+
+msgid "enter_more_than_characters"
+msgstr "Please enter no more than {{0}} characters."
+
+msgid "enter_at_least_characters"
+msgstr "Please enter at least {{0}} characters."
+
+msgid "enter_value_between_characters"
+msgstr "Please enter a value between {{0}} and {{1}} characters long."
+
+msgid "enter_value_between_0_and_1"
+msgstr "Please enter a value between {{0}} and {{1}}."
+
+msgid "enter_value_less_or_equal"
+msgstr "Please enter a value less than or equal to {{0}}."
+
+msgid "enter_value_greater_or_equal"
+msgstr "Please enter a value greater than or equal to {{0}}."
+
+msgid "enter_multiple_of"
+msgstr "Please enter a multiple of {{0}}."
+
+msgid "enter_vaild_extension"
+msgstr "Please enter a value with a valid extension."
+
+#: Posts index.cshtml
+msgid "Posts"
+msgstr "Posts"
+
+msgid "new_post"
+msgstr "New post"
+
+msgid "page_size"
+msgstr "Page size"
+
+msgid "sort_by"
+msgstr "Sort by"
+
+msgid "post_name"
+msgstr "Post Title"
+
+msgid "section_name"
+msgstr "Section Name"
+
+ 
+#: Posts Form.cshtml
+msgid "post_edit"
+msgstr "Edit post"
+
+msgid "post_create"
+msgstr "Create Post"
+
+#: Posts Details.cshtml
+
+msgid "post_details"
+msgstr "Post Details"
+
+
+#: Sections Controller
+
+msgid "section_creation_successfully"
+msgstr "The section creation was done successfully."
+
+msgid "section_editing_successfully"
+msgstr "The section editing was done successfully."
+
+#:Sections index.cshtml
+
+msgid "sections"
+msgstr "Sections"
+
+msgid "new_section"
+msgstr "New Section"
+
+#:Sections Form.cshtml
+
+msgid "create_section"
+msgstr "Create Section"
+
+msgid "edit_section"
+msgstr "Edit Section"
+
+#: Section Details.cshtml
+
+msgid "section_details"
+msgstr "Section details"
+
+msgid "section_parent"
+msgstr "Section Parent"
+
+# : request index.cshtml 
+
+msgid "customer_name"
+msgstr "Cutomer name"
+
+msgid "all_cities"
+msgstr "All Cities"
+
+msgid "choice_option"
+msgstr "Choice option"
+
+#: request details.cshtml
+
+msgid "request_details"
+msgstr "Request Details"
+ 
+msgid "request_status"
+msgstr "Request Status"
+
+msgid "request_date"
+msgstr "Date"
+
+msgid "personal_information"
+msgstr "Personal information"
+
+msgid "request_information"
+msgstr "Request information"
+
+msgid "request_history"
+msgstr "Process History"
+
+msgid "process_date"
+msgstr "Process Date"
+
+msgid "current_status"
+msgstr "Current status"
+
+msgid "previous_status"
+msgstr "Previous status"
+ 
+msgid "information"
+msgstr "Information"
+
+msgid "history"
+msgstr "History"
+
+msgid "greaterThan_msg"
+msgstr "The value must be greater than "
+
+msgid "slug_msg"
+msgstr "Only use numbers,letters and   _ , - , +  symbols. no space are allowed. enter 3 numbers or letters at least."
+
+msgid "regex_msg"
+msgstr "Please check your input."
+
+ 
+msgid "lessThan_msg"
+msgstr "The value must be less than"
+
+msgid "json_msg"
+msgstr "You must Enter Valid json markup. "
+
+msgid "schemaType_msg"
+msgstr  "The @type is required and cannot be an empty string "
+
+msgid "url_msg"
+msgstr "Url must be in this form : http://example.com"
+ 
+msgid "filesize_msg"
+msgstr "File size must be less than "
+
+# :controller adminbaseController.cs // filters
+
+msgid "title_a_to_z"
+msgstr "Title: A to Z" 
+
+msgid "title_z_to_a"
+msgstr "Title: Z to A"
+
+msgid "newst_first"
+msgstr "Newest first"
+
+msgid "oldest_first"
+msgstr "Oldest first"
+ 
+
+#:home page
+
+msgid "home_page"
+msgstr "Home page"
+
+
+#: _statisticsPanel.cshtml
+msgid "h_page"
+msgstr "Pages"
+
+msgid "h_section"
+msgstr "Sections"
+
+msgid "h_service"
+msgstr "Services"
+
+msgid "h_gallery"
+msgstr "Galleries"
+
+msgid "more_info"
+msgstr "More info"
+
+msgid "fullscreen"
+msgstr "Fullscreen"
+
+msgid "Log_Out"
+msgstr "Log out"
+
+
+msgid "Slug_en"
+msgstr "Slug"
+
+msgid "Title_en"
+msgstr "Title"
+
+msgid "MainImage_en"
+msgstr "Main Image"
+
+msgid "VideoUrl_en"
+msgstr "Video Url"
+
+msgid "Content_en"
+msgstr "Content"
+
+msgid "Image_en"
+msgstr "Main Image"
+
+msgid "section_projects"
+msgstr "projects"
+
+msgid "section_works"
+msgstr "works"
+
+msgid "View_in_website"
+msgstr "View In website"
+
+msgid "new_tab"
+msgstr "New tab"
+
+msgid "same_tab"
+msgstr "Same tab"
+
+msgid "start_chat_in_whatsapp"
+msgstr "start chat"
+
+msgid "mobile_number_not_confirmed"
+msgstr "mobile number not confirmed"
+
+msgid "TAMCMS_UsersAdmin"
+msgstr "Users Admin"
+
+msgid "TAMCMS_MenusContentAdmin"
+msgstr "Menus Content Admin"
+
+msgid "TAMCMS_PagesContentAdmin"
+msgstr "Pages Content Admin"
+
+msgid "TAMCMS_PostAuthor"
+msgstr "PostAuthor"
+
+msgid "TAMCMS_GalleriesContentAdmin"
+msgstr "Galleries Content Admin"
+
+msgid "TAMCMS_SlidersContentAdmin"
+msgstr "Sliders Content Admin"
+
+msgid "TAMCMS_PostsContentAdmin"
+msgstr "Posts Content Admin"
+
+msgid "TAMCMS_ServicesContentAdmin"
+msgstr "Services Content Admin"
+
+msgid "TAMCMS_ProductsContentAdmin"
+msgstr "Products Content Admin"
+
+msgid "TAMCMS_PostsEditor"
+msgstr "Posts Editor"
+
+msgid "email_to"
+msgstr "New message to"
+
+msgid "email_sent"
+msgstr "Message sent."
+
+
+# testimonials
+msgid "new_testimonial"
+msgstr "New Testimonial"
+
+msgid "edit_testimonial"
+msgstr "Edit testimonial"
+
+msgid "create_testimonial"
+msgstr "Create testimonial"
+
+msgid "testimonial_details"
+msgstr "Testimonial details"
+
+msgid ""
+msgstr ""
+
+# adminbar
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Log_Out"
+msgstr "Log Out"
+
+# tobbar
+msgid "mail_Us"
+msgstr "Mail Us"
+
+# bootombar
+msgid "Copyright_©_2018_tamtech_solutions._All_rights_reserved."
+msgstr "Copyright © 2018 tamtech solutions. All rights reserved."
+
+msgid "Powered_by"
+msgstr "Powered by"
+
+msgid "tamtech"
+msgstr "Tamtech"
+
+# index
+msgid "Welcome_Totamtech"
+msgstr "Welcome Totamtech"
+
+msgid "Who_we_are"
+msgstr "Who we are?"
+
+msgid "services_we_offer"
+msgstr "Services we offer"
+
+msgid "What_we_do"
+msgstr "What we do"
+
+msgid "Why_Choose_Us"
+msgstr "Why Choose Us?"
+
+msgid "What_Clients_say"
+msgstr "What Clients say?"
+
+msgid "Our_Clients"
+msgstr "Our Clients"
+
+msgid "meet_our_clients"
+msgstr "Meet our clients"
+
+#about us
+
+msgid "our_mission"
+msgstr "Our Mission"
+
+msgid "happy_clients"
+msgstr "Happy Clients"
+
+msgid "years_in_business"
+msgstr "Years in Business"
+
+msgid "cups_of_coffee"
+msgstr "Cups of Coffee"
+
+msgid "no_projects"
+msgstr "No. of Projects"
+
+msgid "our_values"
+msgstr "Our Value"
+
+msgid "our_vision"
+msgstr "Our Vision"
+
+ 
+
+#: contact us
+msgid "contact_us"
+msgstr "Contact Us"
+
+msgid "Address"
+msgstr "Address"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Mobile"
+msgstr "Mobile"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Find_us"
+msgstr "Find us"
+
+msgid "Get_in_Touch"
+msgstr "Get in Touch"
+
+msgid "send_us_meesage"
+msgstr "Send us a meesage"
+
+msgid "name"
+msgstr "Name"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Send_it"
+msgstr "Send it"
+
+msgid "close"
+msgstr "Close"
+
+msgid "mobile_no"
+msgstr "Mobile No"
+
+msgid "dear_customer"
+msgstr  "Dear  <strong class=\"customer_name\"></strong>, thanks for reaching out!"
+
+msgid  "We_have_received_your_message"
+msgstr  "We have received your message and would like to thank you for writing to us. If it's urgent, You can also use the mobile number listed below to talk to us."
+
+msgid  "have_great_day"
+msgstr  "Have a great day!"
+
+
+msgid "About_Us"
+msgstr "About Us"
+
+msgid "Call_us_today_at_<span>{0}</span>_or_Email_us_at_<span>{1}</span>"
+msgstr "Call us today at <span>{0}</span> or Email us at <span>{1}</span>"
+
+msgid  "Start_Now"
+msgstr "Start Now"
+
+#:galleries
+msgid "our_galleries"
+msgstr "Our Galleries"
+
+msgid "Galleries"
+msgstr "Galleries"
+
+msgid "Gallery"
+msgstr "Gallery"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "our_services"
+msgstr "Our Services"
+
+msgid "read_more"
+msgstr "Read More"
+
+#: Products
+
+msgid "Products"
+msgstr "Products"
+
+msgid "Our_products"
+msgstr "Our Products"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "By"
+msgstr "By"
+
+msgid "share_this_post"
+msgstr "Share this Post"
+
+
+#request quote
+
+msgid "request_quote"
+msgstr "Request Quote"
+
+
+msgid "AuthorName"
+msgstr "Author name"
+
+msgid "Company"
+msgstr "Company"
+
+msgid "job_position"
+msgstr "Job position"
+
+msgid "avatar"
+msgstr "Avater"
+
+msgid "rating"
+msgstr "Rating"
+
+msgid "title"
+msgstr "Title"

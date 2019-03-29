@@ -1,0 +1,150 @@
+
+.section-contact{
+    padding: rem(75px) 0;
+}
+
+
+.c-title{
+    margin-bottom: rem(50px);
+    strong{
+        display: inline-block;
+        position: relative;
+        &:before{
+            @include absolute(bottom $left , -15px 0);
+            content : "";
+            @include size(25%,3px);
+            background: $c_title_line_color; 
+        }
+    }
+}
+.c-meesage{
+    letter-spacing: 1px ;
+    font-size: rem(16px);
+    font-weight: 400;
+}
+
+.c-list {
+    margin-top: rem(25px);
+
+   
+    li{
+        margin-bottom: rem(25px);
+        color: lighten($dark_text , 20%);
+        > i{ 
+            @include square(30px);
+            font-size: rem(22px);
+            color: $c_list_icons_color;
+            margin-#{$right}: 2px  ;
+            text-align: center;
+            line-height: 30px;
+        }
+        strong{
+            display: inline-block;
+          //  margin:side-values( 0 15px 15px 0) ;
+            margin-#{$right} : 15px;
+        }
+        address{
+            margin-top: rem(10px);
+            margin-#{$left}: rem(35px); 
+        }
+        a{
+             
+            color: $dark_text;
+            &:hover{
+                color: $blue;
+            }
+        }
+    }
+    .c-social_list{
+        display: inline;
+        @include media-breakpoint-down(sm){
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        a{
+           display: inline-block;
+           width: rem(30px);
+            
+            text-align: center;
+            margin: 0 3px;
+            color: $medium_text;
+            .fa{
+                color: $dark_text;
+           }
+           &:hover{
+               .fa{
+                   @each $i in $social-colors{
+                       &[class*="#{nth($i,1)}"]{ 
+                           color :  nth($i,2); 
+                       }
+                   } 
+               }
+           }
+        }
+    }
+
+    @include media-breakpoint-only(md){
+        @include clearfix();
+
+        li{
+            float: $left;
+            width: 49.5%;
+            address{
+                 margin-bottom: 0;
+                 margin-top: 0; 
+            }
+        }
+    }
+
+}
+ 
+
+ 
+
+.c-form{
+    @include media-breakpoint-only(md){
+            @include clearfix();
+
+            .form-group{
+                &:first-child(),&:nth-child(2){
+                    float: $left;
+                    width: 49%;
+                }
+                &:first-child(){
+                    margin-#{$right}: 2%;
+                }
+            }
+    }
+    
+    .form-control{
+        border-radius: 3px;
+        padding: rem(15px) rem(12px);
+        line-height: 1em;
+        font-weight: 400;
+        @include placeholder{
+            text-transform: capitalize;
+            color: $light_text;
+        }
+    }
+    textarea{
+        resize: vertical;
+    }
+    .btn-send{
+        background: $c_submit_btn_background;
+        color: $c_submit_btn_color;
+         
+        padding: rem(18px) rem(35px) rem(18px); 
+        border-radius: 5px;
+        font-size: rem(14px);
+        line-height: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: background .3s;
+        &:hover{
+            background: $c_submit_btn_hover_background;
+            color: $c_submit_btn_hover_color;
+        }
+     }
+}
+

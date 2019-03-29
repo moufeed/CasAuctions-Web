@@ -1,0 +1,80 @@
+
+$img:"../img/";
+$font:"../fonts";
+
+
+  // colors
+$red : #df4818;
+
+$dark-red : #A33512;
+
+$green : #69b578;
+
+$dark-green : #1c7c54;
+
+$orange : #FF8C42;
+
+$dark-orange : #E67F0D;
+
+$yellow : #FFC051;
+
+$dark-yellow : #FFB22B;
+
+
+$light-blue :#47b9fd;
+
+$blue: #2274a5;
+
+$dark-blue: #13293d;
+
+
+ 
+$textColor : #333333; 
+ 
+$gray : #C0C0C0;
+
+$dark-gray:#A9A9A9;
+
+$colors:(
+  "red"         : $red,
+  "dark-red "   : $dark-red,
+  "green"       : $green ,
+  "dark-green"  : $dark-green,
+  "blue"        : $blue,
+  "dark-blue"   : $dark-blue,
+  "gray"        : $gray,
+  "dark-gray"  : $dark-gray
+);
+
+
+$sides : (
+            t : top,
+            r : right,
+            b : bottom,
+            l : left
+        );
+
+
+$nav_menu_bg : #fff;
+
+$right_col_bg : #F3F5F8;
+$leftCol :#2F4050 ; 
+$dark-leftCol : #293846;
+$border-green-color :#19AA8D; 
+// #1f252c; //#2F4050 //#293846  //#19AA8D
+$switch-off-color : #fff;
+$switch-off-border: #eee; 
+$switch-on-color: #00c169; 
+$switch-toggle-color: #fff;
+
+$input_border_color : #ebedf2;
+ 
+$pagination : $dark-gray; 
+
+$sidebar_width :260px; 
+
+
+$color_A  : #363F6F;
+$color_B : #F6A417;
+$color_C : #00c169;
+$color_D :#3E9FD9;

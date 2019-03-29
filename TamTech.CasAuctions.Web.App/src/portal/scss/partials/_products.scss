@@ -1,0 +1,105 @@
+
+.section-products{
+    padding: rem(75px) 0;
+}
+
+
+
+.gallery-item{
+    position: relative;
+    margin-bottom: rem(30px);
+    text-align: center;
+    figure{
+        
+        overflow: hidden;
+        @include size(100% ,$gallery_item_height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: $gallery_item_figure_background ;
+        transition: box-shadow .22s;
+        img{
+            max-height: 70%;
+            max-width: 90%;
+        }
+        figcaption{
+            background: transparent;
+            transition: ease background .5s ;
+            &,a{
+                position: absolute;
+                @include square(100%);
+            }
+            a{
+                opacity: 0;
+                transition: ease opacity 300ms 100ms;
+                z-index: 2;
+                &,i{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                color: $white;
+                 
+                transition: ease opacity 300ms 100ms;
+                i{
+                    font-size: rem(14px);
+                    @include square(40px);
+                    border: 2px solid rgba($white,.85);
+                    border-radius: 50%;
+                    transform: scale(0) ;
+                    transition: ease transform .2s .12s;
+                }
+                &:hover{
+                    text-decoration: none !important;
+                }
+            }
+            &:after{
+                @include absolute( top left right bottom , rem(15px) rem(15px)  );
+                content: '';
+                border:0  solid rgba($white ,.4);
+                transition: ease border-width 300ms 200ms;
+            }
+        }
+    } 
+
+    h5{
+        text-align: center;
+        margin-bottom: 0;
+        a{
+            color: $black;
+            display: inline-block;
+            @include ellipse(16px,1.4,2);
+            &:hover{
+                text-decoration: none;
+            }
+        }  
+    } 
+    span{
+        font-size: rem(11px);
+        color: $medium-text; 
+        &.category{
+            width: 80%;
+            margin: auto;
+            @include ellipse(11px,1.1,1);
+        }
+    }
+    &:hover{
+        figure{
+            //box-shadow: 0px 17px 20px -15px rgba($black, 0.6);
+            figcaption{
+                background: rgba($deep_navy,.5);
+                a{
+                    opacity: 1;
+                    i{
+                        transform: scale(1);
+                    }
+                }
+                &:after{
+                    border-width: 10px;
+                }
+            }
+        }
+    }
+}
+  

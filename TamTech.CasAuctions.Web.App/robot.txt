@@ -1,0 +1,27 @@
+###############################
+#tamcms robots.txt file
+#
+User-agent: *
+#
+# directories robots are not allowed to index 
+#
+Disallow: /fonts/
+Disallow: /css/
+Disallow: /admin/
+Disallow: /js/
+Disallow: /lib/
+#
+#
+# files robots are not allowed to index
+#
+Disallow: /search?serachkey=
+Disallow: *?serachkey=
+Disallow: *serachkey=
+# 
+#
+allow:/wwwroot/
+# 
+#
+#End of robots.txt file
+#
+###############################
