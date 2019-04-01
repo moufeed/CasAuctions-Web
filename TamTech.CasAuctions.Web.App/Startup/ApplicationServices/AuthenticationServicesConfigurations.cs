@@ -21,26 +21,27 @@ namespace CasAdmin.AppStartup.MicroServices.ApplicationServices
 
             services.AddAuthentication(options =>
             {
-                options.DefaultScheme = identityServiceSettings.DefaultScheme;
-                options.DefaultChallengeScheme = identityServiceSettings.DefaultChallengeScheme;
+                options.DefaultScheme = "Cookies";
+                options.DefaultChallengeScheme = "oidc";
             })
-
-
-            .AddCookie(identityServiceSettings.CookieAuthenticationScheme)
-            .AddOpenIdConnect(identityServiceSettings.OpenIdConnectAuthenticationScheme, options =>
+            .AddCookie("Cookies")
+            .AddOpenIdConnect("oidc", options =>
             {
-                options.SignInScheme = identityServiceSettings.SignInScheme;
-                options.Authority = identityServiceSettings.Url;
-                options.RequireHttpsMetadata = identityServiceSettings.RequireHttpsMetadata;
-                options.ClientId = identityServiceSettings.ClientId;
-                options.ClientSecret = identityServiceSettings.ClientSecrets;
-                options.ResponseType = identityServiceSettings.ResponseType;
-                options.SaveTokens = false;
-                options.GetClaimsFromUserInfoEndpoint = false;
-                foreach (string scop in identityServiceSettings.Scops)
-                {
-                    options.Scope.Add(scop);
-                }
+                options.SignInScheme = "Cookies";
+                options.Authority = "http://localhost:59077";
+                options.RequireHttpsMetadata = false;
+                options.ClientId = "WEB";
+                options.ClientSecret = "h8yI4DydzI5ZsKCMGTs9hfTdI1vRS3qfTo9Go92q3aM=";
+                options.ResponseType = "code id_token";
+                options.SaveTokens = true;
+                options.GetClaimsFromUserInfoEndpoint = true; 
+                    options.Scope.Add("openid");
+                    options.Scope.Add("profile");
+                    options.Scope.Add("offline_access");
+                    options.Scope.Add("auctions.api");
+                    options.Scope.Add("auctions.identity.api");
+                    options.Scope.Add("auctions.web.app");
+               
             });
 
         }

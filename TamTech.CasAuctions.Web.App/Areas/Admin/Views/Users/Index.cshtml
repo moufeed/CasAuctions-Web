@@ -4,7 +4,7 @@
     ViewData["UnitTestPageClass"] = "ut-Users_index";
     var activeLang = DataCultureHelper.GetCurrent(Context.Request.Query);
 }
-
+<h1> ViewBag : @ViewBag.Authorize</h1>
 <if include-if='TempData.ContainsKey("showSuccessAlert")'>
     <div class="alert alert-success">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

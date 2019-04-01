@@ -67,14 +67,25 @@ namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
         #endregion
 
         #region Actions
+        [HttpGet("Logout")]
+        public IActionResult Logout()
+        {
+            return SignOut("Cookies", "oidc");
+        }
 
+        [Authorize(Policy = ContentSDKPoliciesConstants.SuperAdmin)]
+        [HttpGet("{Culture}/[Area]/[Controller]/Auth")]
+        public virtual async Task<IActionResult> Auth(Filters model)
+        {
+            ViewBag.Authorize = "Authorized";
+            return View("Index", new List<UserModel>());
 
-
+        }
 
         [HttpGet("{Culture}/[Area]/[Controller]")]
         public virtual async Task<IActionResult> Index(Filters model)
         {
-
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
             try
             {
                // await GetRolesList();
