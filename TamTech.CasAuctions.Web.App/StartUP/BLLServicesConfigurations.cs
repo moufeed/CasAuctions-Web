@@ -2,16 +2,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection; 
 using TamTech.CasAuctions.Web.Services.Email;
 using TamTech.CasAuctions.Web.Services.Identity;
-using TamTech.CasAuctions.Web.Services.ServiceBus;
-
+using TamTech.CasAuctions.Web.Services.ServiceBus; 
 using TamTech.CasAuctions.Web.App.Services.Configurations.AppSetting.Constants;
 using TamTech.CasAuctions.Web.Core.Settings.ServiceBus;
 
-namespace CasAdmin.AppStartup.WebApplication.ApplicationServices
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
     public static class BLLMicroServicesConfigurations
     {
-        public static void _AddBusinessLogicMicroServicesConfigurations(this IServiceCollection services, IConfiguration configuration)
+        public static void AddBLLServicesConfigurations(this IServiceCollection services, IConfiguration configuration)
         {
 
           

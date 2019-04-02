@@ -3,11 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 using TamTech.CasAuctions.Web.App.Services.Configurations.AppSetting.Constants;
 using TamTech.CasAuctions.Web.Core.EndpointsSettings.IdentityService;
 
-namespace CasAdmin.AppStartup.MicroServices.ApplicationServices
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
-    public static class UrlBackendSettingsServicesConfigurations
+    public static class UrlBackendSettingsConfigurations
     {
-        public static void MicroServices_AddUrlBackendSettingsServicesConfigurations(this IServiceCollection services, IConfiguration configuration)
+        public static void AddUrlBackendSettingsConfigurations(this IServiceCollection services, IConfiguration configuration)
         {
        
 

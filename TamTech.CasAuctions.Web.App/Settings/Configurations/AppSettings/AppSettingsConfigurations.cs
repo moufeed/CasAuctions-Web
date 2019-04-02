@@ -10,7 +10,7 @@ using TamTech.CasAuctions.Web.Core.Settings.Configurations.AppSetting;
 
 namespace CasAdmin.Services.Configurations.AppSetting
 {
-    public class WebApplicationSettingsService : IWebApplicationSettingsService
+    public class AppSettingsConfigurations : IAppSettingsConfigurations
     {
 
         #region Props 
@@ -31,7 +31,7 @@ namespace CasAdmin.Services.Configurations.AppSetting
         #endregion
 
         #region Ctors 
-        public WebApplicationSettingsService(IConfiguration configuration,
+        public AppSettingsConfigurations(IConfiguration configuration,
                                                 string webApplicationSettings = AppSettings.WebApplicationSettings,
                                                 string directBackendSDKsSettings = AppSettings.DirectBackendSDKsSettings,
                                                 string emailServiceSettings = AppSettings.DirectBackendSDK_EmailService_Settings,

@@ -29,7 +29,7 @@ namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
     {
 
         #region Props  
-        private readonly IWebApplicationSettingsService _appSettingsService;
+        private readonly IAppSettingsConfigurations _appSettingsService;
         private readonly IUsersManagerService _identityService;
     
 
@@ -37,7 +37,7 @@ namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
 
         #region Ctors  
         public HomeController(ITelemetryClientService telemetryClientService, 
-            IWebApplicationSettingsService appSettingsService, 
+            IAppSettingsConfigurations appSettingsService, 
              IStringLocalizer<AdminBaseController> localizer )
             : base(telemetryClientService,localizer)
         {

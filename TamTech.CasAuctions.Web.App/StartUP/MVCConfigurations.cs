@@ -5,44 +5,41 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
+using Microsoft.Extensions.DependencyInjection; 
 using System.IO.Compression;
-using System.Linq;
-using System.Text; 
+using System.Linq; 
 
-namespace CasAdmin.AppStartup.WebApplication.ApplicationServices
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
-    public static class MvcServicesConfigurations
+    public static class MVCConfigurations
     {
-        public static void AddMvcConfigurations(this IServiceCollection services)
-        {
-
-
+        public static void AddMVCConfigurations(this IServiceCollection services)
+        { 
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
             services.Configure<RouteOptions>(options => options.LowercaseUrls = false);
 
             services.AddMvc( )
-               .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
-               .SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddFluentValidation();
+                               .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+                               .SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddFluentValidation();
+
             services.AddPortableObjectLocalization(options => options.ResourcesPath = "Localization");
+
             services.AddMvcCore().AddJsonFormatters();
 
+            #region Response Compression
             services.Configure<GzipCompressionProviderOptions>(option =>
             {
                 option.Level = CompressionLevel.Fastest;
             });
 
             services.AddResponseCompression(options =>
-            {
-                //options.Providers.Add<BrotliCompressionProvider>();
-
+            { 
                 options.EnableForHttps = true;
                 options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[]
                 {
@@ -57,14 +54,10 @@ namespace CasAdmin.AppStartup.WebApplication.ApplicationServices
                     "font/eot",
                     "font/otf",
                     "font/opentype"
-                });
-
-
-                //options.Providers.Add<BrotliCompressionProvider>();
-                options.Providers.Add<GzipCompressionProvider>();
-
+                }); 
+                options.Providers.Add<GzipCompressionProvider>(); 
             });
-
+            #endregion
         }
     }
 }

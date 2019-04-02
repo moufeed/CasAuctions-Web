@@ -18,9 +18,10 @@ namespace TamTech.CasAuctions.Web.App.Settings.Cultures
         {
             DefaultCulture,
             new CultureModel{Name = "العربية", Culture = "ar", Lang = "ar"},
+              /* 
             new CultureModel{Name = "Türkçe", Culture = "tr", Lang = "tr"},
             new CultureModel{Name = "Français", Culture = "fr", Lang = "fr"},
-            /*
+         
             new CultureModel{Name = "Deutsch", Culture = "de", Lang = "de"}
              */
         };

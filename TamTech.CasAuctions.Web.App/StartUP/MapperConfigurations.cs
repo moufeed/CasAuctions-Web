@@ -1,11 +1,9 @@
-using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
-using System.Collections.Generic;
-using System.Text;  
+using System.Collections.Generic; 
 
-namespace CasAdmin.AppStartup.WebApplication.RequestPipeline
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
     public static class MapperConfigurations
     {

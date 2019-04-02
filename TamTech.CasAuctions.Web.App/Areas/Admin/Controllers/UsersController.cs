@@ -17,6 +17,7 @@ using TamTech.CasAuctions.Web.Core.Mappers.IdentityMapper;
 using TamTech.CasAuctions.Web.App.Controllers.Admin;
 using TamTech.CasAuctions.Web.Core.Models.CommonModels.Filters;
 using TamTech.CasAuctions.Web.Core.Models.CommonModels.Pagination;
+using IdentityServer4.AccessTokenValidation;
 
 namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
 {

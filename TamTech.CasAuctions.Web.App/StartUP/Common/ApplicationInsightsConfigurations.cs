@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -7,9 +6,9 @@ using TamTech.CasAuctions.Web.App.Services.Configurations.AppSetting.Constants;
 using TamTech.CasAuctions.Web.Core.Settings.Telemetry;
 using TamTech.CasAuctions.Web.Services.Telemetry;
 
-namespace CasAdmin.AppStartup.WebApplication.ApplicationServices
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
-    public static class _TrackApplicationsServicesConfigurations
+    public static class ApplicationInsightsConfigurations
     {
         public static void AddApplicationInsightsTelemetryConfigurations(this IServiceCollection services, IConfiguration configuration)
         {

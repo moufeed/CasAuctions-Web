@@ -6,10 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.IO.Compression;
-using System.Linq; 
-using CasAdmin.AppStartup.WebApplication.ApplicationServices;
-using CasAdmin.AppStartup.WebApplication.RequestPipeline;  
-using TamTech.CasAuctions.Web.App.Services.Configurations.AppSetting.Constants;
+using System.Linq;   
 using TamTech.CasAuctions.Web.App.Settings.Cultures;
 using TamTech.CasAuctions.Web.App.StartUP;
 
@@ -30,23 +27,18 @@ namespace CasAdmin
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddLocalizationConfigurations();
-
-            services.AddMvcConfigurations();
-
-         
+            services.AddMVCConfigurations();  
 
             services.AddFiltersConfigurations();
 
-            services.AddAuthenticationServicesConfigurations(Configuration);
+            services.AddIdentityServerAuthentication(Configuration);
 
             services.AddIdentityServerAuthorization( Configuration);
 
             services.AddCommonServicesConfigurations(Configuration);
 
-            services.AddMainServicesConfigurations(Configuration);
-
-            services.AddBusinessLogicServicesConfigurations(Configuration);
+            services.AddBLLServicesConfigurations(Configuration);
+             
 
         }
 

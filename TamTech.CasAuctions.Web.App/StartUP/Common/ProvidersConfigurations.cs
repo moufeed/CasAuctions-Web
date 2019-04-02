@@ -4,17 +4,17 @@ using Microsoft.Extensions.DependencyInjection;
 using System.Threading.Tasks;
 using TamTech.CasAuctions.Web.Core.Providers.Requests;
 
-namespace CasAdmin.AppStartup.MicroServices.ApplicationServices
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
-    public static class ProvidersServicesConfigurations
+    public static class ProvidersConfigurations
     {
-        public static void MicroServices_AddProvidersServicesConfigurations(this IServiceCollection services)
+        public static void  AddProvidersConfigurations(this IServiceCollection services)
         {
             services.AddScoped<IRequestProvider, RequestProvider>((serviceExtension) =>
             {
-                IHttpContextAccessor httpContextAccessor = serviceExtension.GetRequiredService<IHttpContextAccessor>();
                 // var _token = Task.Run(async () => await httpContextAccessor.HttpContext.GetTokenAsync("access_token")).Result;
                 // var token = GetToken(httpContextAccessor.HttpContext).GetAwaiter().GetResult();
+                IHttpContextAccessor httpContextAccessor = serviceExtension.GetRequiredService<IHttpContextAccessor>();
                 string token = GetToken(httpContextAccessor.HttpContext).Result;
                 return new RequestProvider(token);
             });

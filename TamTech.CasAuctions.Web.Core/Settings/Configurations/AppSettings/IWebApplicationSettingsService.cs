@@ -6,7 +6,7 @@ using TamTech.CasAuctions.Web.Core.Models.EmailModels;
 
 namespace TamTech.CasAuctions.Web.Core.Settings.Configurations.AppSetting
 {
-    public interface IWebApplicationSettingsService
+    public interface IAppSettingsConfigurations
     { 
 
         Guid GetHomePageSummuryId(); 

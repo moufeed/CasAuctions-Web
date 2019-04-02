@@ -1,15 +1,11 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Builder; 
 using Microsoft.AspNetCore.Routing;
-using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.Extensions.Configuration; 
 using TamTech.CasAuctions.Web.App.Services.Configurations.AppSetting.Constants;
 using TamTech.CasAuctions.Web.App.Settings.Cultures;
 using TamTech.CasAuctions.Web.Core.Settings.Routing;
 
-namespace CasAdmin.AppStartup.WebApplication.RequestPipeline
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
     public static class RouteConfigurations
     {

@@ -1,10 +1,7 @@
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Microsoft.AspNetCore.Hosting; 
 
-namespace CasAdmin.AppStartup.WebApplication.RequestPipeline
+namespace TamTech.CasAuctions.Web.App.StartUP
 {
     public static class DevelopmentEnvironmentConfigurations
     {
