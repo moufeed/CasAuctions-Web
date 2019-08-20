@@ -18,6 +18,8 @@ using TamTech.CasAuctions.Web.App.Controllers.Admin;
 using TamTech.CasAuctions.Web.Core.Models.CommonModels.Filters;
 using TamTech.CasAuctions.Web.Core.Models.CommonModels.Pagination;
 using IdentityServer4.AccessTokenValidation;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
 
 namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
 {
@@ -30,15 +32,18 @@ namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
         IRolesService _rolesService;
         private readonly IStringLocalizer<AdminBaseController> _localizer;
         #endregion
+        private readonly IHttpClientFactory _httpClientFactory;
 
+    
         #region Ctors
         public UsersController(ITelemetryClientService telemetryClientService,
                                IUsersManagerService identityService,
                                 IRolesService rolesService, 
-                                IStringLocalizer<AdminBaseController> localizer)
+                                IStringLocalizer<AdminBaseController> localizer,
+                                IHttpClientFactory httpClientFactory)
             : base(telemetryClientService, localizer)
         {
-
+            _httpClientFactory = httpClientFactory;
             this._IdentityService = identityService; 
             this._rolesService = rolesService;
             _localizer = localizer;
@@ -73,12 +78,46 @@ namespace TamTech.CasAuctions.Web.Core.Controllers.Admin
         {
             return SignOut("Cookies", "oidc");
         }
-
-        [Authorize(Policy = ContentSDKPoliciesConstants.SuperAdmin)]
-        [HttpGet("{Culture}/[Area]/[Controller]/Auth")]
-        public virtual async Task<IActionResult> Auth(Filters model)
+        //   // options.AddPolicy(Key, policy => policy.RequireRole(role));
+        //    options.AddPolicy(ContentSDKPoliciesConstants.Admin, policy => policy.RequireRole(new List<string> { "AuctionsSuperAdmin" }));
+        //    options.AddPolicy(ContentSDKPoliciesConstants.Buyer, policy => policy.RequireRole(new List<string> { "Buyer" }));
+        //    options.AddPolicy(ContentSDKPoliciesConstants.Seller, policy => policy.RequireRole(new List<string> { "Seller" }));
+        [Authorize]
+        [HttpGet("{Culture}/[Area]/[Controller]/CallAuction")]
+        public async Task<IActionResult> CallAuction()
         {
-            ViewBag.Authorize = "Authorized";
+            var token = await HttpContext.GetTokenAsync("access_token");
+
+            var client = _httpClientFactory.CreateClient();
+            client.SetBearerToken(token);
+
+            var response = await client.GetStringAsync("https://localhost:44372/api/Ping/Authorize");
+            ViewBag.Json = JArray.Parse(response).ToString();
+
+            ViewBag.Authorize = ViewBag.Json;
+            return View("Index", new List<UserModel>());
+        }
+        [Authorize(Roles = "AuctionsSuperAdmin")]
+        [HttpGet("{Culture}/[Area]/[Controller]/admin")]
+        public virtual async Task<IActionResult> admin( )
+        {
+            ViewBag.Authorize = "Admin Authorized";
+            return View("Index", new List<UserModel>());
+
+        }
+        [Authorize(Roles = "Seller")]
+        [HttpGet("{Culture}/[Area]/[Controller]/seller")]
+        public virtual async Task<IActionResult> seller( )
+        {
+            ViewBag.Authorize = "Seller Authorized";
+            return View("Index", new List<UserModel>());
+
+        }
+        [Authorize(Roles = "Buyer")]
+        [HttpGet("{Culture}/[Area]/[Controller]/buyer")]
+        public virtual async Task<IActionResult> buyer()
+        {
+            ViewBag.Authorize = "Buyer Authorized";
             return View("Index", new List<UserModel>());
 
         }

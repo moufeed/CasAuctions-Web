@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http; 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.IO.Compression;
 using System.Linq;   
 using TamTech.CasAuctions.Web.App.Settings.Cultures;
@@ -38,14 +40,14 @@ namespace CasAdmin
             services.AddCommonServicesConfigurations(Configuration);
 
             services.AddBLLServicesConfigurations(Configuration);
-             
 
+            services.AddHttpClient();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseAuthentication();
+          
             if (env.IsDevelopment())
             {
                 // app.UseBrowserLink(); from web admin panel
@@ -80,16 +82,19 @@ namespace CasAdmin
             app.UseResponseCompression();
 
 
-         //   app.UseStatusCodePagesWithRedirects("/error/{0}");
+          app.UseStatusCodePagesWithRedirects("/error/{0}");
 
             app.InitializeMapper();
 
-           
-          
+
+
+
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+            app.UseAuthentication();
 
             app.UseResponseCompression();
 
- 
+          
             app.UseAppRouter(Configuration, new CultureManager().LocalizationOptions);
             // app.UseAppRouter(Configuration, localizationOptions);
 

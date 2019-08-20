@@ -17,6 +17,9 @@ namespace TamTech.CasAuctions.Web.Core.Constants
       
         // Users related policies
         public const string SuperAdmin = "SuperAdmin";
+        public const string Admin = "policyAdmin";
+        public const string Seller = "policySeller";
+        public const string Buyer = "policyBuyer";
 
         
          

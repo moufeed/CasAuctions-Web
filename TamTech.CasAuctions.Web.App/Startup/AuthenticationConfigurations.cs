@@ -22,11 +22,14 @@ namespace TamTech.CasAuctions.Web.App.StartUP
                 options.DefaultScheme = "Cookies";
                 options.DefaultChallengeScheme = "oidc";
             })
-            .AddCookie("Cookies")
+            .AddCookie("Cookies", option =>
+            {
+                option.AccessDeniedPath = "/";
+            })
             .AddOpenIdConnect("oidc", options =>
             {
                 options.SignInScheme = "Cookies";
-                options.Authority = "http://localhost:60025";
+                options.Authority = "http://localhost:60024";
                 options.RequireHttpsMetadata = false;
                 options.ClientId = "WEB";
                 options.ClientSecret = "h8yI4DydzI5ZsKCMGTs9hfTdI1vRS3qfTo9Go92q3aM=";
